@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="js/javascript.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap">
+        <div id= "black_bg">
+        </div>
+        <div id = myInfo>
+            <div id = "who">
+                <img src="image/My CGV HOME..png" alt="">
+                <div class = "who_under">
+                    <img src="image/who_img.png" alt="">
+                    <div class = "who_ID">
+                        <h2>abc1234님</h2>
+                        <p>0101234*****</p>
+                    </div>
+                </div>
+                <div id = "reserved">
+                    <div class = "reserved_info">
+                        <h3>나의 예매 내역<span>.</span></h3>
+                        <p>울산 삼산점</p>
+                        <h1>6층 3관</h1>
+                        <div>
+                            <p>F-10 F-11</p>
+                            <a href="#" class="arrow"></a>
+                        </div>
+                    </div>
+                    <div class = "img">
+                        <a href="#">
+                            <img src="image/reserved_img.png" alt="">
+                            <div class="bg"></div>
+                            <img src="image/outline_search_white_24dp.png" alt="" class = "search">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id = "coupon_point">
+                <div class = "coupon">
+                    <h2>MY COUPON<span>.</span></h2>
+                    <div class= "more">
+                        <p>CGV VIP에 도전하세요!</p>
+                        <p><a href="#" class = "btn_more">혜택보기</a></p>
+                    </div>
+                    <div class= "more">
+                        <p>CGV 할인쿠폰</p>
+                        <p><a href="#" class = "btn_more">혜택보기</a></p>
+                    </div>
+                    <div class= "more">
+                        <p>CGV 영화관람권</p>
+                        <p><a href="#" class = "btn_more">혜택보기</a></p>
+                    </div>
+                    <div class= "more">
+                        <p>포토티켓 패스카드</p>
+                        <p><a href="#" class = "btn_more">혜택보기</a></p>
+                    </div>
+                </div>
+                <div class="point">
+                    <h2>CJ ONE POINT<span>.</span></h2>
+                    <div class = "point_text">
+                        <div class = "cjPoint">
+                            <p>CJ 사용가능 포인트</p>
+                            <p class = "howmuchpoint">12500<span>  점</span></p>
+                        </div>   
+                        <div class = "VIPpoint">
+                            <p>CJ 사용가능 포인트</p>
+                            <p class = "howmuchpoint">4700<span>  점</span></p>
+                        </div>
+                        <div class = "pointInfo">
+                            <p>포인트 적립 사용안내</p><a href="#" class="arrow"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id = menu>
+                <div class = "nav">
+                    <p onclick="navOn()">나의 예매내역<span><img src="image/menu_img.png" alt=""></span></p>
+                    <p onclick="navOn()">관람권·할인쿠폰<span><img src="image/menu_img.png" alt=""></span></p>
+                    <p onclick="navOn()">CJ ONE포인트<span><img src="image/menu_img.png" alt=""></span></p>
+                    <p onclick="navOn()">이벤트 참여내역<span><img src="image/menu_img.png" alt=""></span></p>
+                    <p onclick="navOn()">회원정보·프로필<span><img src="image/menu_img.png" alt=""></span></p>
+                    <p onclick="navOn()">나의문의내역<span><img src="image/menu_img.png" alt=""></span></p>
+                    <p onclick="navOn()">기프트샵<span><img src="image/menu_img.png" alt=""></span></p>
+                </div>
+                <div class = "movie_poster">
+                    <img src="image/movie_poster.png" alt="">
+                </div>
+                <div class = "nav_depth_menu">
+                    <div class= "depth_text1_1 depth_text1">
+                        <p><a href="#">신용카드 영수증 출력</a></p>
+                        <p><a href="#">기대되는 영화</a></p>
+                        <p><a href="#">내가 본 영화</a></p>
+                        <p><a href="#">무비다이어리</a></p>
+                    </div>
+                    <div class= "depth_text1_2 depth_text1">
+                        <p><a href="#">CGV 영화관람권</a></p>
+                        <p><a href="#">CGV 할인쿠폰</a></p>
+                        <p><a href="#">4DX RED CARD</a></p>
+                        <p><a href="#">노블레스 BLACK 카드</a></p>
+                        <p><a href="#">CGV 무비패스카드</a></p>
+                        <p><a href="#">CGV 포토티켓 패스카드</a></p>
+                        <p><a href="#">간편결제 ․ 카드사 할인쿠폰</a></p>
+                    </div>
+                    <div class= "depth_text1_3 depth_text1">
+                        <p><a href="#">포인트 적립 ․ 이용안내</a></p>
+                        <p><a href="#">매점이용 포인트 적립</a></p>
+                        <p><a href="#">포인트 적립 ․ 사용내역</a></p>
+                    </div>
+                    <div class= "depth_text1_4 depth_text1">
+                        <p><a href="#">키즈 패밀리클럽 이벤트</a></p>
+                        <p><a href="#">청년2030 클럽 이벤트</a></p>
+                        <p><a href="#">커플링 클럽 이벤트</a></p>
+                    </div>
+                    <div class= "depth_text1_5 depth_text1">
+                        <p><a href="#">개인정보 변경</a></p>
+                        <p><a href="#">간편로그인 설정</a></p>
+                        <p><a href="#">CGV 서비스 이용동의 설정</a></p>
+                        <p><a href="#">Email ․ SNS 수신설정</a></p>
+                        <p><a href="#">회원탈퇴</a></p>
+                    </div>
+                    <div class= "depth_text1_6 depth_text1">
+                        <p><a href="#">1:1문의하기</a></p>
+                        <p><a href="#">분실물 문의</a></p>
+                    </div>
+                    <div class= "depth_text1_7 depth_text1">
+                        <p><a href="#">CGV 기프트콘 내역 조회하기</a></p>
+                        <p><a href="#">CGV 기프트콘 선물하기</a></p>
+                        <p><a href="#">CGV 기프트콘 등록하기</a></p>
+                    </div>
+                    <div class= "depth_text2">
+                        <p>영화 그 이상의 감동을 전합니다.</p>
+                        <img src="image/navimg.png" alt="">
+                    </div>
+                    <div class= "depth_text3">
+                        <h4><a href="#">개인처리정보방침</a></h4>
+                        <p><a href="#">이용약관</a></p>
+                        <p><a href="#">법적고지</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

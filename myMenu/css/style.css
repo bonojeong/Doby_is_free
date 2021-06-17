@@ -1,0 +1,585 @@
+@font-face {
+  font-family: 'YoonGothic710';
+  src: url("../webfont/YoonGothic710.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'YoonGothic720';
+  src: url("../webfont/YoonGothic720_1.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'YoonGothic730';
+  src: url("../webfont/YoonGothic730_1.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'YoonGothic740';
+  src: url("../webfont/YoonGothic740.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'YoonGothic750';
+  src: url("../webfont/YoonGothic750.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'YoonGothic760';
+  src: url("../webfont/YoonGothic760.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'YoonGothic770';
+  src: url("../webfont/YoonGothic770.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'YoonGothic780';
+  src: url("../webfont/YoonGothic780.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'YoonGothic790';
+  src: url("../webfont/YoonGothic790.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Helvetica75';
+  src: url("../webfont/Helvetica75-Bold.woff") format("woff");
+}
+
+@-webkit-keyframes arrowMove {
+  0% {
+    right: -2px;
+  }
+  50% {
+    right: 5px;
+  }
+  100% {
+    right: -2px;
+  }
+}
+
+@keyframes arrowMove {
+  0% {
+    right: -2px;
+  }
+  50% {
+    right: 5px;
+  }
+  100% {
+    right: -2px;
+  }
+}
+
+body {
+  width: 559px;
+  height: 100vh;
+  font-size: 13px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+body #myInfo {
+  width: 559px;
+  height: 100%;
+}
+
+body #myInfo #who {
+  position: relative;
+  background-image: url("../image/who_bg.png");
+  width: 559px;
+  height: 317px;
+  padding-left: 24px;
+  padding-top: 60px;
+}
+
+body #myInfo #who > img {
+  padding-bottom: 38px;
+}
+
+body #myInfo #who .who_under {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+body #myInfo #who .who_under .who_ID {
+  padding-left: 10px;
+  font-family: "YoonGothic 750";
+}
+
+body #myInfo #who .who_under .who_ID h2 {
+  font-size: 23px;
+}
+
+body #myInfo #who #reserved {
+  position: absolute;
+  background: #fff;
+  bottom: -74px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 531px;
+  height: 148px;
+  border-radius: 0 12px 12px 0;
+  -webkit-box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.26);
+          box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.26);
+  font-family: 'YoonGothic720';
+}
+
+body #myInfo #who #reserved .reserved_info {
+  width: 50%;
+  padding-left: 44px;
+}
+
+body #myInfo #who #reserved .reserved_info h3 {
+  font-size: 17px;
+}
+
+body #myInfo #who #reserved .reserved_info h3 span {
+  color: #E30613;
+  font-size: 36px;
+}
+
+body #myInfo #who #reserved .reserved_info > p {
+  padding-top: 5px;
+  color: #464646;
+}
+
+body #myInfo #who #reserved .reserved_info h1 {
+  font-family: 'YoonGothic750';
+  font-size: 30px;
+  padding-top: 0px;
+  color: #464646;
+}
+
+body #myInfo #who #reserved .reserved_info div {
+  padding-top: 3px;
+  padding-right: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #myInfo #who #reserved .reserved_info div p {
+  color: #E30613;
+}
+
+body #myInfo #who #reserved .reserved_info div .arrow {
+  width: 44.17px;
+  height: 6px;
+  position: relative;
+  background: url(../image/arrow.png);
+  -webkit-animation: arrowMove;
+          animation: arrowMove;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+body #myInfo #who #reserved .reserved_info div .arrow::after {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 0.3px solid #E30613;
+  border-radius: 50%;
+  opacity: 0.5;
+  content: "";
+  position: absolute;
+  top: -5.5px;
+  right: -0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body #myInfo #who #reserved .reserved_info div .arrow:hover::after {
+  background: #E30613;
+}
+
+body #myInfo #who #reserved .img {
+  position: relative;
+}
+
+body #myInfo #who #reserved .img a {
+  display: inline-block;
+  width: 281px;
+  height: 148px;
+}
+
+body #myInfo #who #reserved .img .bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 281px;
+  height: 148px;
+  opacity: 0.52;
+  border-radius: 0 12px 12px 0;
+  background: #000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body #myInfo #who #reserved .img .search {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body #myInfo #who #reserved .img:hover .bg {
+  opacity: 0;
+}
+
+body #myInfo #who #reserved .img:hover .search {
+  opacity: 0;
+}
+
+body #myInfo #coupon_point {
+  padding-top: 97px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #myInfo #coupon_point .coupon {
+  width: 274px;
+  height: 158px;
+  background: #575757;
+  color: #C1C1C1;
+  padding-left: 44px;
+  border-radius: 0 12px 12px 0;
+  -webkit-box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.26);
+          box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.26);
+  font-family: "YoonGothic720";
+}
+
+body #myInfo #coupon_point .coupon h2 {
+  font-size: 17px;
+  padding-bottom: 8px;
+  font-family: "YoonGothic750";
+  color: #fff;
+}
+
+body #myInfo #coupon_point .coupon h2 span {
+  font-size: 32px;
+}
+
+body #myInfo #coupon_point .coupon .more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 4px;
+  padding-right: 14px;
+}
+
+body #myInfo #coupon_point .coupon .more p:first-child {
+  padding-right: 10px;
+}
+
+body #myInfo #coupon_point .coupon .more p .btn_more {
+  display: none;
+  font-size: 12px;
+  width: 70px;
+  height: 20px;
+  background-color: #E30613;
+  color: #fff;
+  border-radius: 12px;
+  text-align: center;
+  line-height: 20px;
+  font-family: "YoonGothic730";
+}
+
+body #myInfo #coupon_point .coupon .more:hover .btn_more {
+  display: inline-block;
+}
+
+body #myInfo #coupon_point .coupon .more:hover > p:first-child {
+  color: #fff;
+  font-family: "YoonGothic730";
+}
+
+body #myInfo #coupon_point .point {
+  width: 246px;
+  height: 158px;
+  border-radius: 12px;
+  background-color: #E30613;
+  margin-left: 11px;
+  color: #fff;
+  padding-left: 21px;
+  padding-right: 14px;
+  -webkit-box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.26);
+          box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.26);
+  font-family: 'YoonGothic720';
+}
+
+body #myInfo #coupon_point .point h2 {
+  font-size: 17px;
+  font-family: 'YoonGothic750';
+}
+
+body #myInfo #coupon_point .point h2 span {
+  font-size: 32px;
+  color: #000;
+}
+
+body #myInfo #coupon_point .point .point_text > div {
+  padding-top: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+body #myInfo #coupon_point .point .point_text > div p:first-child {
+  opacity: 0.8;
+}
+
+body #myInfo #coupon_point .point .point_text > div .howmuchpoint {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFF700;
+  font-family: 'Helvetica75';
+}
+
+body #myInfo #coupon_point .point .point_text > div .howmuchpoint span {
+  font-size: 13px;
+  font-weight: normal;
+  color: #fff;
+}
+
+body #myInfo #coupon_point .point .point_text .pointInfo {
+  padding-top: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #myInfo #coupon_point .point .point_text .pointInfo .arrow {
+  width: 44.17px;
+  height: 6px;
+  position: relative;
+  background: url("../image/arrow2.png");
+  -webkit-animation: arrowMove;
+          animation: arrowMove;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+body #myInfo #coupon_point .point .point_text .pointInfo .arrow::after {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 0.3px solid #fff;
+  opacity: 0.5;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  top: -5.5px;
+  right: 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body #myInfo #coupon_point .point .point_text .pointInfo .arrow:hover::after {
+  background: #fff;
+}
+
+body #myInfo #menu {
+  padding-top: 21px;
+  padding-left: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+body #myInfo #menu .nav {
+  width: 274px;
+  height: 374px;
+  padding-top: 20px;
+  font-family: 'YoonGothic750';
+}
+
+body #myInfo #menu .nav p {
+  font-size: 24px;
+  padding-bottom: 15px;
+  padding-left: 2px;
+  color: #fff;
+  cursor: pointer;
+}
+
+body #myInfo #menu .nav p img {
+  padding-left: 8px;
+  padding-top: 6px;
+  display: none;
+}
+
+body #myInfo #menu .nav p:hover {
+  color: #E30613;
+}
+
+body #myInfo #menu .nav p:hover img {
+  display: inline-block;
+}
+
+body #myInfo #menu .movie_poster {
+  width: 250px;
+  height: 374px;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body #myInfo #menu .movie_poster img {
+  width: 100%;
+}
+
+body #myInfo #menu .nav_depth_menu {
+  width: 274px;
+  height: 374px;
+  padding-top: 22px;
+  padding-left: 21px;
+  padding-bottom: 15px;
+  padding-right: 19px;
+  background: #fff;
+  -webkit-box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.26);
+          box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.26);
+  border-radius: 12px 0 0 0;
+  position: relative;
+  bottom: 0;
+  right: -274px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body #myInfo #menu .nav_depth_menu .depth_text1 {
+  display: none;
+  font-size: 17px;
+}
+
+body #myInfo #menu .nav_depth_menu .depth_text1 p {
+  position: relative;
+  font-family: 'YoonGothic710';
+}
+
+body #myInfo #menu .nav_depth_menu .depth_text1 p:not(:last-child) {
+  padding-bottom: 15px;
+}
+
+body #myInfo #menu .nav_depth_menu .depth_text1 p::before {
+  width: 5px;
+  height: 24px;
+  display: none;
+  background-color: #E30613;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -21px;
+}
+
+body #myInfo #menu .nav_depth_menu .depth_text1 p:hover::before {
+  display: inline-block;
+}
+
+body #myInfo #menu .nav_depth_menu .depth_text1 p:hover {
+  font-family: 'YoonGothic730';
+}
+
+body #myInfo #menu .nav_depth_menu .on {
+  display: block;
+}
+
+body #myInfo #menu .nav_depth_menu .depth_text2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 34px;
+}
+
+body #myInfo #menu .nav_depth_menu .depth_text2 p {
+  color: #E30613;
+  font-size: 11px;
+  padding-right: 33px;
+  letter-spacing: -1.5px;
+}
+
+body #myInfo #menu .nav_depth_menu .depth_text2 img {
+  width: 51px;
+  height: 57px;
+}
+
+body #myInfo #menu .nav_depth_menu .depth_text3 {
+  position: absolute;
+  bottom: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-family: 'YoonGothic710';
+}
+
+body #myInfo #menu .nav_depth_menu .depth_text3 h4 {
+  font-size: 14px;
+  padding-top: 1px;
+  padding-right: 6px;
+  -webkit-text-decoration: #BFBFBF underline;
+          text-decoration: #BFBFBF underline;
+}
+
+body #myInfo #menu .nav_depth_menu .depth_text3 p {
+  font-size: 11px;
+}
+
+body #myInfo #menu .nav_depth_menu .depth_text3 p:nth-child(2) {
+  padding-right: 4px;
+  border-right: 1px solid #BFBFBF;
+}
+
+body #myInfo #menu .nav_depth_menu .depth_text3 p:nth-child(3) {
+  padding-left: 5px;
+}
+
+body #myInfo #menu .navToggle {
+  right: 0;
+}
