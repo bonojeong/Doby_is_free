@@ -1,0 +1,17 @@
+폰트 
+
+헤더
+영어 - Helvetica75-Bold 13 자간28 줄간격75  강조색 : #E30613
+
+메인1
+영어 - Helvetica75 16 
+한글 - S-CoreDream-7ExtraBold 52
+버튼 - YoonGothic770 16
+
+메인1에 좌단
+영어 - Helvetica75-Bold 12
+메인1에 우하단
+영어 - Segoe UI 12 Regular
+한글 - YoonGothic760 18
+
+------------------------------------------------------------------------------------

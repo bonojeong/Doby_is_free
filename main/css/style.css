@@ -1,0 +1,1827 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Helvetica-Bold';
+  src: url("../font/webfont/Helvetica75-Bold.woff") format("truetype");
+}
+
+@font-face {
+  font-family: 'SCD7';
+  src: url("../font/webfont/SCDream7.woff") format("truetype");
+}
+
+@font-face {
+  font-family: 'Yun780';
+  src: url("../font/webfont/YoonGothic780.woff") format("truetype");
+}
+
+@font-face {
+  font-family: 'Yun770';
+  src: url("../font/webfont/YoonGothic770.woff") format("truetype");
+}
+
+@font-face {
+  font-family: 'Yun760';
+  src: url("../font/webfont/YoonGothic760.woff") format("truetype");
+}
+
+@font-face {
+  font-family: 'Yun750';
+  src: url("../font/webfont/YoonGothic750.woff") format("truetype");
+}
+
+@font-face {
+  font-family: 'Yun740';
+  src: url("../font/webfont/YoonGothic740.woff") format("truetype");
+}
+
+@font-face {
+  font-family: 'Yun730';
+  src: url("../font/webfont/YoonGothic730.woff") format("truetype");
+}
+
+@font-face {
+  font-family: 'Yun720';
+  src: url("../font/webfont/YoonGothic720.woff") format("truetype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+span {
+  color: #E30613;
+  opacity: 1;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  width: 100%;
+  height: 200vh;
+  font-weight: normal;
+  font-family: "Segoe UI", san-serif;
+}
+
+#scroll {
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  color: #252526;
+  background-color: white;
+  font-size: 36px;
+  line-height: 50px;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 100;
+}
+
+header {
+  position: absolute;
+  z-index: 100;
+  top: 5px;
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 64px;
+  font-size: 13px;
+  font-family: "Helvetica-bold";
+}
+
+header h1 {
+  font-size: 40px;
+  line-height: 40px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+header h1 img {
+  width: 70px;
+  height: 30px;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: flex-end;
+  color: white;
+}
+
+header ul:nth-child(2) li {
+  padding-left: 66px;
+}
+
+header ul:nth-child(3) {
+  padding-left: 80px;
+}
+
+header ul:nth-child(3) li {
+  padding-left: 27px;
+}
+
+header ul:nth-child(4) li {
+  padding-left: 24px;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#main video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+#main .viewbg {
+  opacity: 1;
+}
+
+#sidebg {
+  position: absolute;
+  top: 0%;
+  z-index: 1;
+  width: 50%;
+  height: 100vh;
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 1;
+}
+
+#sidebg > div:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1074px;
+  height: 100vh;
+  background: url("../image/main1/black_bg.png") no-repeat center center;
+  background-size: cover;
+}
+
+#sidebg ul {
+  position: relative;
+  top: 40%;
+  color: white;
+  padding-left: 64px;
+  opacity: 0.85;
+  font-size: 12px;
+  font-family: "Helvetica-bold";
+}
+
+#sidebg ul li {
+  opacity: 1;
+  padding-top: 34px;
+}
+
+#sidebg ul li span {
+  padding-left: 15px;
+}
+
+#sidebg .movieSlide li {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0.4;
+}
+
+#sidebg .movieSlide li .bar {
+  display: inline-block;
+  background-color: #E30613;
+  position: relative;
+  top: 3px;
+  width: 2px;
+  height: 14px;
+  padding: 0;
+  margin: 0;
+  margin-right: 5px;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#sidebg .movieSlide li:nth-child(1) {
+  opacity: 1;
+}
+
+#sidebg .movieSlide li:nth-child(1) .bar {
+  opacity: 1;
+}
+
+.index {
+  width: 1000px;
+  z-index: 5;
+  position: absolute;
+  top: 160px;
+  left: 250px;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.index > * {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.index p {
+  opacity: 0.85;
+  -webkit-transition: 1s;
+  transition: 1s;
+  font-size: 16;
+  font-weight: regular;
+  display: block;
+  padding-left: 7px;
+  padding-bottom: 27px;
+}
+
+.index p span {
+  font-size: 30px;
+}
+
+.index h2 {
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+  font-family: "SCD7";
+  font-size: 52px;
+  text-shadow: 1px 1px 1px black;
+}
+
+.index h2 span {
+  color: #FFBB00;
+}
+
+.index button {
+  margin-top: 60px;
+}
+
+.btn {
+  width: 220px;
+  height: 48px;
+  line-height: 48px;
+  color: white;
+  border: none;
+  border-radius: 23.5px;
+  background-color: #E30613;
+  letter-spacing: 1.5px;
+  font-family: 'Yun750';
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.btn img {
+  padding-left: 7px;
+  position: relative;
+  top: -2px;
+}
+
+#sidebg .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 350px;
+  left: 600px;
+  z-index: 6;
+}
+
+#sidebg .slide li {
+  opacity: 1;
+  margin: 5.5px;
+}
+
+#main .ad {
+  position: absolute;
+  bottom: 180px;
+  right: 160px;
+  width: 216px;
+  height: 202px;
+  background: url("../image/main1/popup.png") no-repeat center center;
+  background-size: cover;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#main .ad:hover {
+  background: url("../image/main1/popup_hover.png") no-repeat center center;
+}
+
+#main .ad img {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+#main .event {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main .event li {
+  position: absolute;
+  bottom: -70px;
+  padding-top: 15px;
+  padding-left: 19px;
+  width: 230px;
+  height: 115px;
+  background-color: aliceblue;
+  color: #535252;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#main .event li:nth-child(1) {
+  right: 460px;
+}
+
+#main .event li:nth-child(2) {
+  background-color: #E30613;
+  color: #D3D3D3;
+  right: 230px;
+}
+
+#main .event li:nth-child(2) h3 {
+  color: white;
+}
+
+#main .event li:nth-child(2) h3 span {
+  color: white;
+}
+
+#main .event li:nth-child(3) {
+  right: 0;
+}
+
+#main .event li:hover {
+  bottom: 0;
+}
+
+#main .event li:hover img {
+  top: 65.5px;
+}
+
+#main .event li p {
+  font-size: 12px;
+  font-weight: normal;
+  padding-bottom: 15px;
+}
+
+#main .event li h3 {
+  font-size: 18px;
+  font-weight: normal;
+  font-family: "Yun760";
+}
+
+#main .event li h3 span {
+  font-size: 30px;
+}
+
+#main .event li img {
+  position: absolute;
+  top: 18px;
+  right: 30px;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+#weekMovie {
+  width: 100%;
+  height: 825px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("../image/main2/patternBg.png") no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#weekMovie .left {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#weekMovie .left div:nth-child(1) {
+  width: 80px;
+  height: 100%;
+  background-color: #E30613;
+}
+
+#weekMovie .left div:nth-child(2) {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#weekMovie .left div:nth-child(2) .num {
+  color: #E30613;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 65px;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Yun750";
+}
+
+#weekMovie .left div:nth-child(2) .subTitle > * {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.subTitle {
+  margin: 88px;
+  margin-top: 144px;
+  color: white;
+  line-height: 1.25;
+  overflow: hidden;
+}
+
+.subTitle .redp {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Yun740";
+  color: #E30613;
+  padding-bottom: 30px;
+  padding-left: 1px;
+}
+
+.subTitle h2 {
+  font-size: 52px;
+  font-weight: normal;
+  font-family: "Yun770";
+}
+
+#weekMovie .right {
+  width: 58%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 60px;
+  overflow: hidden;
+}
+
+#weekMovie .right .weekslidedom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#weekMovie .right .poster {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+  padding-top: 80px;
+  padding-right: 110px;
+}
+
+#weekMovie .right .poster .posterimg {
+  -webkit-box-shadow: 3px 3px 5px black;
+          box-shadow: 3px 3px 5px black;
+  -webkit-box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.25);
+          box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.25);
+}
+
+#weekMovie .right .poster .posterLetter {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 24px;
+}
+
+#weekMovie .right .poster .posterLetter > div {
+  width: 240px;
+}
+
+#weekMovie .right .poster .posterLetter h2 {
+  position: absolute;
+  top: -10px;
+  left: -35px;
+  padding-right: 10px;
+}
+
+#weekMovie .right .poster .posterLetter .score {
+  width: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#weekMovie .right .poster .posterLetter .score p {
+  position: relative;
+  font-size: 17;
+  font-weight: normal;
+  font-family: "Yun720";
+  color: #B3B3B3;
+  padding-left: 20px;
+}
+
+#weekMovie .right .poster .posterLetter .score img {
+  display: inline;
+  width: 18px;
+  height: 18px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  top: 10px;
+  padding-right: 10px;
+}
+
+#weekMovie .right .poster .posterLetter h3 {
+  text-align: center;
+  font-size: 23px;
+  font-weight: normal;
+  font-family: "Yun750";
+  padding-bottom: 16px;
+  padding-top: 6px;
+}
+
+#scrollBanner {
+  width: 100%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+#scrollBanner .bannerslide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition: 50ms;
+  transition: 50ms;
+  position: relative;
+  left: 30%;
+}
+
+#scrollBanner div:last-child {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 2;
+}
+
+#scrollBanner .banner {
+  position: relative;
+  right: 0;
+  width: 33.3333vw;
+  height: 100%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Yun750";
+  padding-top: 16.5px;
+  padding-right: 40px;
+  padding-left: 63.5px;
+  padding-bottom: 42px;
+}
+
+#scrollBanner .banner * {
+  position: relative;
+  z-index: 4;
+}
+
+#scrollBanner .banner span {
+  color: #ECA100;
+  font-size: 18px;
+}
+
+#scrollBanner .banner p:first-child {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+#scrollBanner .banner p:last-child {
+  padding-top: 16px;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+#scrollBanner .banner h2 {
+  font-size: 23px;
+  font-weight: normal;
+  line-height: 23px;
+  margin-top: auto;
+  justify-self: flex-end;
+}
+
+#scrollBanner .banner h2::before {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 22px;
+  content: "l  ";
+  color: #ECA100;
+}
+
+#scrollBanner .banner:nth-child(1) {
+  background: url("../image/main2/banner_1.png") no-repeat center center;
+  background-size: cover;
+}
+
+#scrollBanner .banner:nth-child(1) p:first-child {
+  color: #E30613;
+}
+
+#scrollBanner .banner:nth-child(2) {
+  background: url("../image/main2/banner_2.png") no-repeat center center;
+  background-size: cover;
+}
+
+#scrollBanner .banner:nth-child(2) p:first-child {
+  color: #ECA100;
+}
+
+#scrollBanner .banner:nth-child(3) {
+  background: url("../image/main2/banner_3.png") no-repeat center center;
+  background-size: cover;
+}
+
+#scrollBanner .banner:nth-child(3) p:first-child {
+  color: #E30613;
+}
+
+#scrollBanner .banner:nth-child(4) {
+  background: url("../image/main2/banner_1.png") no-repeat center center;
+  background-size: cover;
+}
+
+#scrollBanner .banner:nth-child(4) p:first-child {
+  color: #E30613;
+}
+
+#scrollBanner .banner:nth-child(5) {
+  background: url("../image/main2/banner_2.png") no-repeat center center;
+  background-size: cover;
+}
+
+#scrollBanner .banner:nth-child(5) p:first-child {
+  color: #ECA100;
+}
+
+#scrollBanner .banner:nth-child(6) {
+  background: url("../image/main2/banner_3.png") no-repeat center center;
+  background-size: cover;
+}
+
+#scrollBanner .banner:nth-child(6) p:first-child {
+  color: #E30613;
+}
+
+#recommendMovie {
+  width: 100%;
+  height: 960px;
+  background: url("../image/main3/redblack_bg.png") no-repeat center center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  overflow: hidden;
+}
+
+#recommendMovie .recommendimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#recommendMovie .recommendimg .recommendslide {
+  width: 952px;
+  height: 782px;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#recommendMovie .recommendimg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#recommendMovie .recommendimg ul {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding-bottom: 120px;
+  padding-left: 30px;
+}
+
+#recommendMovie .recommendimg li {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 8px;
+  height: 8px;
+  margin: 10px;
+  border-radius: 4px;
+  background-color: #B3B3B3;
+  opacity: 0.4;
+}
+
+#recommendMovie .recommendimg li:nth-child(1) {
+  background-color: #ECA100;
+  opacity: 1;
+}
+
+#recommendMovie .recommendText {
+  padding-right: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#recommendMovie .recommendText h2 {
+  font-size: 52px;
+  font-weight: normal;
+  font-family: "Yun770";
+}
+
+#recommendMovie .recommendText p {
+  position: relative;
+  color: #E30613;
+  letter-spacing: 10px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+#recommendMovie .recommendText p span {
+  position: absolute;
+  top: 62px;
+  left: 200px;
+  display: block;
+  height: 1px;
+  width: 600px;
+  background-color: #E30613;
+}
+
+#recommendMovie .recommendText ul li {
+  color: #949494;
+  padding: 8px 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#recommendMovie .recommendText ul li:hover {
+  color: white;
+}
+
+#cardEvent {
+  width: 100%;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#cardEvent .left {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F6F6F6;
+}
+
+#cardEvent .left div:nth-child(1) {
+  width: 70px;
+  height: 100%;
+  background-color: #ECA100;
+}
+
+#cardEvent .left .subTitle {
+  overflow: hidden;
+}
+
+#cardEvent .left .subTitle > * {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+#cardEvent .left .subTitle h2 {
+  color: black;
+}
+
+#cardEvent .left .subTitle div:last-child {
+  position: relative;
+  left: -50px;
+  margin-top: 50px;
+}
+
+#cardEvent .left .cardleft {
+  padding-top: 90px;
+  padding-left: 55px;
+  overflow: hidden;
+}
+
+#cardEvent .left .cardleft h3 {
+  font-size: 23px;
+  font-weight: normal;
+  font-family: "Yun780";
+  padding-bottom: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#cardEvent .left .cardleft .bigcard {
+  padding-left: 5px;
+  width: 240px;
+  height: 370px;
+  background: url("../image/main4/bigCard_1.png") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#cardEvent .left .cardleft div:nth-child(3) {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Yun720";
+  letter-spacing: -1.5px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  padding: 22px 0;
+}
+
+#cardEvent .left .cardleft div:nth-child(3) span {
+  color: black;
+  font-family: 'Yun770';
+}
+
+#cardEvent .left .cardleft div:nth-child(3) p {
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+#cardEvent .right {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#cardEvent .right .cardsmall {
+  width: 100%;
+  padding-top: 160px;
+  padding-left: 40px;
+  padding-right: 0;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+
+#cardEvent .right .cardsmall .cardslide {
+  width: 466.6667%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.cardslide > div {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 350px;
+  margin-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cardslide > div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cardslide > div p {
+  font-size: 20px;
+  font-weight: normal;
+  font-family: "Yun750";
+}
+
+.cardslide > div .btnS {
+  width: 150px;
+  height: 30px;
+  border: none;
+  background-color: white;
+  border: 1.5px solid #E30613;
+  color: #E30613;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Yun750";
+  border-radius: 23.5px;
+  letter-spacing: 1.5px;
+}
+
+#cardEvent .right > div:nth-child(2) {
+  width: 50%;
+  height: 49px;
+  line-height: 49px;
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+#cardEvent .right > div:nth-child(2) .smallcardgage {
+  border-radius: 5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 200px;
+  height: 10px;
+  background-color: #ccc;
+}
+
+#cardEvent .right > div:nth-child(2) .smallcardgage div {
+  border-radius: 5px;
+  background-color: black;
+  width: 42.85px;
+  height: 10px;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#cardEvent .right > div:nth-child(2) img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#cinema {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+#cinema article:nth-child(1) {
+  padding: 190px 280px 170px 300px;
+  width: 100%;
+  height: 900px;
+  background: url("../image/main5/backgound5.png") no-repeat center center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#cinema article:nth-child(1) > div:nth-child(1) {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: 'Yun750';
+  border-bottom: 1px solid #E30613;
+  padding-bottom: 90px;
+}
+
+#cinema article:nth-child(1) > div:nth-child(1) h2 {
+  padding-top: 20px;
+  line-height: 1.1;
+  font-size: 60px;
+  font-weight: normal;
+  font-family: "Yun770";
+}
+
+#cinema article:nth-child(1) > div:nth-child(2) {
+  width: 100%;
+  padding-top: 78px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#cinema article:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+  width: 30%;
+}
+
+#cinema article:nth-child(1) > div:nth-child(2) > div:nth-child(1) div {
+  width: 60px;
+  height: 60px;
+  background-color: #C6C6C6;
+  border: #E30613 2px solid;
+  color: #E30613;
+  font-size: 50px;
+  line-height: 1.1;
+  text-align: center;
+  font-family: "Yun780";
+}
+
+#cinema article:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
+  width: 65%;
+}
+
+#cinema article:nth-child(1) > div:nth-child(2) > div:nth-child(2) span {
+  color: #ECA100;
+}
+
+#cinema article:nth-child(1) > div:nth-child(2) > div:nth-child(2) p:nth-child(1) {
+  font-size: 18px;
+  font-weight: normal;
+  font-family: "Yun780";
+  margin-bottom: 20px;
+}
+
+#cinema article:nth-child(1) > div:nth-child(2) > div:nth-child(2) p:nth-child(2) {
+  font-size: 17px;
+  font-weight: normal;
+  font-family: "Yun720";
+  letter-spacing: -0.9895px;
+}
+
+#cinema article:nth-child(2) {
+  width: 100%;
+}
+
+#cinema article:nth-child(2) ul {
+  position: relative;
+  width: 100%;
+  height: 16.6666vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+}
+
+#cinema article:nth-child(2) ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  width: 16.6667%;
+  height: 16.6666vw;
+  bottom: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(2) {
+  left: 16.6666%;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(3) {
+  left: 33.3333%;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(4) {
+  left: 49.9999%;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(5) {
+  left: 66.6666%;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(6) {
+  left: 83.3333%;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(1):hover {
+  height: 20vw;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(1):hover div {
+  visibility: hidden;
+  width: 100%;
+  height: 50%;
+  margin: 0;
+  padding-top: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 14px;
+  font-family: "Yun740";
+  line-height: 1.5;
+  border: none;
+  border-radius: 0;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(1):hover div::before {
+  visibility: visible;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(1):hover div::before {
+  content: '4DX는 영화의 장면에 맞추어 움직이는 모션시트와 더불어 바람, 빛, 안개, 향기, 진동 등의 다양한 환경 효과를 느낄 수 있는 오감 체험 특별 상영관입니다.';
+}
+
+#cinema article:nth-child(2) ul li:nth-child(2):hover {
+  height: 20vw;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(2):hover div {
+  visibility: hidden;
+  width: 100%;
+  height: 50%;
+  margin: 0;
+  padding-top: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 14px;
+  font-family: "Yun740";
+  line-height: 1.5;
+  border: none;
+  border-radius: 0;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(2):hover div::before {
+  visibility: visible;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(2):hover div::before {
+  content: '골드클래스 대관 서비스는 고객님의 단체관람이나 이벤트를 진행할 수 있도록 공간을 빌려드리고, 행사 성격에 맞는 설비 지원을 제공하는 서비스입니다. ';
+}
+
+#cinema article:nth-child(2) ul li:nth-child(3):hover {
+  height: 20vw;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(3):hover div {
+  visibility: hidden;
+  width: 100%;
+  height: 50%;
+  margin: 0;
+  padding-top: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 14px;
+  font-family: "Yun740";
+  line-height: 1.5;
+  border: none;
+  border-radius: 0;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(3):hover div::before {
+  visibility: visible;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(3):hover div::before {
+  content: "IMAX는 Image Maximum의 약자로 '인간이 볼 수 있는 한계까지 보여준다'는 의미입니다. CGV와 함께 인간의 한계를 체험해 보세요";
+}
+
+#cinema article:nth-child(2) ul li:nth-child(4):hover {
+  height: 20vw;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(4):hover div {
+  visibility: hidden;
+  width: 100%;
+  height: 50%;
+  margin: 0;
+  padding-top: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 14px;
+  font-family: "Yun740";
+  line-height: 1.5;
+  border: none;
+  border-radius: 0;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(4):hover div::before {
+  visibility: visible;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(4):hover div::before {
+  content: "ScreenX는 스크린의 경계를 넘어 극대화된 몰입감을 제공하는 '세계 최초 멀티프로젝션' 특별관입니다.";
+}
+
+#cinema article:nth-child(2) ul li:nth-child(5):hover {
+  height: 20vw;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(5):hover div {
+  visibility: hidden;
+  width: 100%;
+  height: 50%;
+  margin: 0;
+  padding-top: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 14px;
+  font-family: "Yun740";
+  line-height: 1.5;
+  border: none;
+  border-radius: 0;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(5):hover div::before {
+  visibility: visible;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(5):hover div::before {
+  content: "스타리움은 초대형 스크린과 초고해상도 디지털 영상에 '16채널 사운드 시스템' 으로 구성된 프리미엄 상영관입니다.";
+}
+
+#cinema article:nth-child(2) ul li:nth-child(6):hover {
+  height: 20vw;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(6):hover div {
+  visibility: hidden;
+  width: 100%;
+  height: 50%;
+  margin: 0;
+  padding-top: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 14px;
+  font-family: "Yun740";
+  line-height: 1.5;
+  border: none;
+  border-radius: 0;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(6):hover div::before {
+  visibility: visible;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(6):hover div::before {
+  content: '특별한 초대의 시간에 진정한 품격을 더합니다. 꿈이 현실로 이루어지는 씨네드쉐프에서 소중한 분들과 함께 최고의 가치를 경험하십시오.';
+}
+
+#cinema article:nth-child(2) ul li h3 {
+  font-size: 52px;
+  font-weight: normal;
+  font-family: "Yun750";
+  color: #ECA100;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 36px;
+  padding-left: 50px;
+}
+
+#cinema article:nth-child(2) ul li div {
+  width: 60px;
+  height: 60px;
+  line-height: 47px;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 200;
+  border-radius: 30px;
+  border: 1px solid white;
+  margin-bottom: 50px;
+  opacity: 0.6;
+}
+
+#cinema article:nth-child(2) ul li p {
+  position: relative;
+  z-index: 5;
+  padding-bottom: 32px;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Yun750";
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#cinema article:nth-child(2) ul li img {
+  opacity: 0.5;
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+  z-index: 2;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(odd) {
+  background-color: #E30613;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(odd) img {
+  width: 90px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(odd):hover {
+  background-color: #fff;
+  color: black;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(odd):hover h3 {
+  color: #E30613;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(odd):hover p {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+#cinema article:nth-child(2) ul li:nth-child(odd):hover img {
+  visibility: hidden;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(even) {
+  background-color: #313033;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(even) img {
+  width: 110px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(even):hover {
+  background-color: #fff;
+  color: black;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(even):hover h3 {
+  color: #E30613;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(even):hover p {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+#cinema article:nth-child(2) ul li:nth-child(even):hover img {
+  visibility: hidden;
+}
+
+#brand {
+  width: 100%;
+  height: 98vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+}
+
+#brand article:nth-child(1) {
+  width: 47%;
+  padding-top: 80px;
+  padding-left: 360px;
+  letter-spacing: -1.75px;
+}
+
+#brand article:nth-child(1) img {
+  position: relative;
+  top: 110px;
+  left: -120px;
+}
+
+#brand article:nth-child(1) p {
+  font-size: 17px;
+  font-weight: normal;
+  font-family: 'Yun730';
+  padding-left: 10px;
+  padding-bottom: 15px;
+}
+
+#brand article:nth-child(1) h2 {
+  font-size: 72px;
+  font-weight: normal;
+  font-family: 'Yun770';
+  line-height: 1.085;
+  padding-left: 10px;
+  padding-bottom: 60px;
+}
+
+#brand article:nth-child(2) {
+  position: relative;
+  width: 52%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#brand article:nth-child(2) > div > p {
+  width: 250px;
+  padding-bottom: 70px;
+}
+
+#brand article:nth-child(2) div {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Yun770";
+}
+
+#brand article:nth-child(2) div:not(:last-child) {
+  padding-top: 92px;
+  width: 300px;
+}
+
+#brand article:nth-child(2) div ul {
+  width: 250px;
+}
+
+#brand article:nth-child(2) div ul p {
+  font-family: "Yun730";
+  padding-top: 25px;
+}
+
+#brand article:nth-child(2) div ul li {
+  padding-bottom: 60px;
+}
+
+#brand article:nth-child(2) div:last-child img {
+  width: 400px;
+  position: relative;
+  top: 20px;
+}
+
+#QnA {
+  width: 100%;
+  height: 300px;
+  color: white;
+  background: url("../image/main7/info_background.png") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#QnA img {
+  position: absolute;
+  top: -100px;
+  left: 35%;
+}
+
+#QnA h2 {
+  font-size: 33px;
+  font-weight: normal;
+  font-family: "Yun770";
+}
+
+#QnA p {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Yun730";
+  color: #C5C5C5;
+  padding-top: 14px;
+  padding-bottom: 52px;
+}
+
+#QnA .btn {
+  border: 1px solid white;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 530px;
+}
+
+footer > div {
+  width: 100%;
+  height: 255px;
+}
+
+footer > div:nth-child(1) {
+  background-color: white;
+}
+
+footer > div:nth-child(1) div {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer > div:nth-child(1) div:nth-child(1) {
+  padding: 50px 220px 0px 210px;
+}
+
+footer > div:nth-child(1) div:nth-child(1) ul {
+  color: #989898;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Yun770";
+}
+
+footer > div:nth-child(1) div:nth-child(1) ul li {
+  padding-left: 26px;
+}
+
+footer > div:nth-child(1) div:nth-child(2) p {
+  color: #989898;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Yun760";
+  padding-left: 414px;
+  padding-bottom: 80px;
+  letter-spacing: -0.95px;
+}
+
+footer > div:nth-child(1) div:nth-child(2) ul {
+  opacity: 0.5;
+  padding-right: 240px;
+  padding-bottom: 81px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+footer > div:nth-child(1) div:nth-child(2) ul i {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  padding-left: 30px;
+}
+
+footer > div:nth-child(1) ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer > div:nth-child(2) {
+  background-color: #252526;
+  color: #C6C6C6;
+  padding-left: 256px;
+  padding-top: 66px;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Yun740";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer > div:nth-child(2) div:nth-child(1) ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Yun770";
+  padding-bottom: 35px;
+}
+
+footer > div:nth-child(2) div:nth-child(1) ul li {
+  padding-right: 20px;
+}
+
+footer > div:nth-child(2) div:nth-child(1) address {
+  color: #535353;
+}
+
+footer > div:nth-child(2) div:nth-child(2) {
+  margin: 0px 230px 0px 280px;
+  width: 212px;
+  height: 38px;
+  overflow: hidden;
+  line-height: 37px;
+  font-size: 14px;
+  font-family: "Yun740";
+  color: #535353;
+  background-color: black;
+}
+
+footer > div:nth-child(2) div:nth-child(2) ul {
+  margin-left: 10px;
+  width: 190px;
+  height: 38px;
+  border-bottom: 2px solid #535353;
+}
+
+footer > div:nth-child(2) div:nth-child(2) ul span {
+  width: 100px;
+  display: inline-block;
+}

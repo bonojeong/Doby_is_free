@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/cab2926ccf.js" crossorigin="anonymous"></script>
+    <script defer src="js/main.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    
+</head>
+<body>
+    <div id="wrap">
+        <div id="scroll"></div>
+        <header>
+            <h1><img src="image/main1/cgvLogo.png" alt="CGV 로고"></h1>
+            <ul>
+                <li><a href="#">MOVIE</a></li>
+                <li><a href="#">TICKET</a></li>
+                <li><a href="#">THEATER</a></li>
+                <li><a href="#">CULTUREPLEX</a></li>
+            </ul>
+            <ul>
+                <li><span><a href="#">LOGIN</span></a></li>
+                <li><a href="#">JOIN US</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><i class="fas fa-history"></i></a></li>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                <li><a href="#"><i class="fas fa-align-justify"></i></a></li>
+            </ul>
+        </header>
+        <section id="main">
+            <div class="videobox">
+            <video muted autoplay loop>
+                <source src="video/video1.mp4" type="video/mp4">
+                <strong>Your browser does not support the video tag.</strong>
+            </video>
+            </div>
+            <div id="sidebg">
+                <div></div>
+                <ul class="movieSlide">
+                    <li><span class="bar"></span> 01<span>Endgame</span></li>
+                    <li><span class="bar"></span> 02<span>Hobbs & Shaw</span></li>
+                    <li><span class="bar"></span> 03<span>CoCo</span></li>
+                    <li><span class="bar"></span> 04<span>Entman</span></li>
+                </ul>
+                <div class="index">
+                    <p>Running in theater<span>.</span></p>
+                    <h2>운명을 바꿀 <span>최후의 전쟁</span>이</h2>
+                    <h2>지금 펼쳐진다!</h2>
+                    <button class="btn">바로 예매하기 <img src="image/main1/mainButton.png" alt="버튼"></button>
+                </div>
+                <ul class="slide">
+                    <li class="preBtn"><img src="image/main1/button_1.png" alt="이전"></li>
+                    <li class="stopBtn"><img src="image/main1/button_2.png" alt="정지"></li>
+                    <li class="nextBtn"><img src="image/main1/button_3.png" alt="다음"></li>
+                </ul> 
+            </div>
+            <div class="ad">
+                <img class="closead" src="image/main1/popup_closeButton.png" alt="닫기">
+            </div>
+            <ul class="event">
+                <li>
+                    <p>MOVIE NEWS</p>
+                    <h3>영화상영이벤트<span>.</span></h3>
+                    <img src="image/main1/subButton.png" alt="화살표">
+                </li>
+                <li>
+                    <p>SNACK EVENT</p>
+                    <h3>영화상영이벤트<span>.</span></h3>
+                    <img src="image/main1/subButton.png" alt="화살표">
+                </li>
+                <li>
+                    <p>MOVIE NEWS</p>
+                    <h3>영화상영이벤트<span>.</span></h3>
+                    <img src="image/main1/subButton.png" alt="화살표">
+                </li>
+            </ul>
+        </section>
+        <section id="weekMovie">
+            <article class="left">
+                <div></div>
+                <div>
+                    <p class="num">01 / 06</p>
+                    <div class="subTitle">
+                        <p class="redp"><img src="image/main2/title_litle.png" alt="#"> 이번 주 영화 순위를 한눈에 확인하세요!</p>
+                        <h2>금주의 영화</h2>
+                        <h2>상상 그 이상의 감동</h2>
+                        <h2><img src="image/main2/titlelogo.png" alt="#">에서</h2>
+                        <h2>예매차트를 확인하세요.</h2>
+                    </div>
+                </div>
+            </article>
+            <article class="right">
+                <div class="weekslidedom">
+                <div class="poster">
+                    <img src="image/main2/one_poster.png" alt="포스터1 어벤져스" class="posterimg">
+                    <div class="posterLetter">
+                        <h2><img src="image/main2/1.png" alt="1"></h2>
+                        <div>
+                            <h3>어벤져스 : 엔드게임</h3>
+                            <div class="score">
+                                <p>
+                                    예매율 76.2% <br>
+                                    2019.12.14 개봉
+                                </p>
+                                <p>
+                                    <img src="image/main2/goldeen_egg.png" alt="#"><span>98%</span><br>
+                                    <span>상영 중</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster">
+                    <img src="image/main2/two_poster.png" alt="포스터2 분노의 질주" class="posterimg">
+                    <div class="posterLetter">
+                        <h2><img src="image/main2/2.png" alt="2"></h2>
+                        <div>
+                            <h3>분노의 질주 : 홉스&쇼</h3>
+                            <div class="score">
+                                <p>
+                                    예매율 56.2% <br>
+                                    2019.12.11 개봉
+                                </p>
+                                <p>
+                                    <img src="image/main2/goldeen_egg.png" alt="#"><span>92%</span><br>
+                                    <span>상영 중</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster">
+                    <img src="image/main2/three_poster.png" alt="포스터3 코코" class="posterimg">
+                    <div class="posterLetter">
+                        <h2><img src="image/main2/3.png" alt="3"></h2>
+                        <div>
+                            <h3>코코</h3>
+                            <div class="score">
+                                <p>
+                                    예매율 46.2% <br>
+                                    2019.12.07 개봉
+                                </p>
+                                <p>
+                                    <img src="image/main2/goldeen_egg.png" alt="#"><span>99%</span><br>
+                                    <span>상영 중</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster">
+                    <img src="image/main2/four_poster.png" alt="포스터4 엔트맨" class="posterimg">
+                    <div class="posterLetter">
+                        <h2><img src="image/main2/4.png" alt="4"></h2>
+                        <div>
+                            <h3>엔트맨</h3>
+                            <div class="score">
+                                <p>
+                                    예매율 36.2% <br>
+                                    2019.12.14 개봉
+                                </p>
+                                <p>
+                                    <img src="image/main2/goldeen_egg.png" alt="#"><span>78%</span><br>
+                                    <span>상영 중</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster">
+                    <img src="image/main2/five_poster.png" alt="포스터5 크루엘라" class="posterimg">
+                    <div class="posterLetter">
+                        <h2><img src="image/main2/5.png" alt="5"></h2>
+                        <div>
+                            <h3>크루엘라</h3>
+                            <div class="score">
+                                <p>
+                                    예매율 56.2% <br>
+                                    2019.12.14 개봉
+                                </p>
+                                <p>
+                                    <img src="image/main2/goldeen_egg.png" alt="#"><span>88%</span><br>
+                                    <span>상영 중</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster">
+                    <img src="image/main2/six_poster.png" alt="포스터6 테넷" class="posterimg">
+                    <div class="posterLetter">
+                        <h2><img src="image/main2/6.png" alt="6"></h2>
+                        <div>
+                            <h3>테넷</h3>
+                            <div class="score">
+                                <p>
+                                    예매율 36.2% <br>
+                                    2019.12.14 개봉
+                                </p>
+                                <p>
+                                    <img src="image/main2/goldeen_egg.png" alt="#"><span>88%</span><br>
+                                    <span>상영 중</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster">
+                    <img src="image/main2/one_poster.png" alt="포스터1 어벤져스" class="posterimg">
+                    <div class="posterLetter">
+                        <h2><img src="image/main2/1.png" alt="1"></h2>
+                        <div>
+                            <h3>어벤져스 : 엔드게임</h3>
+                            <div class="score">
+                                <p>
+                                    예매율 76.2% <br>
+                                    2019.12.14 개봉
+                                </p>
+                                <p>
+                                    <img src="image/main2/goldeen_egg.png" alt="#"><span>98%</span><br>
+                                    <span>상영 중</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster">
+                    <img src="image/main2/two_poster.png" alt="포스터2 분노의 질주" class="posterimg">
+                    <div class="posterLetter">
+                        <h2><img src="image/main2/2.png" alt="2"></h2>
+                        <div>
+                            <h3>분노의 질주 : 홉스&쇼</h3>
+                            <div class="score">
+                                <p>
+                                    예매율 56.2% <br>
+                                    2019.12.11 개봉
+                                </p>
+                                <p>
+                                    <img src="image/main2/goldeen_egg.png" alt="#"><span>92%</span><br>
+                                    <span>상영 중</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster">
+                    <img src="image/main2/three_poster.png" alt="포스터3 코코" class="posterimg">
+                    <div class="posterLetter">
+                        <h2><img src="image/main2/3.png" alt="3"></h2>
+                        <div>
+                            <h3>코코</h3>
+                            <div class="score">
+                                <p>
+                                    예매율 46.2% <br>
+                                    2019.12.07 개봉
+                                </p>
+                                <p>
+                                    <img src="image/main2/goldeen_egg.png" alt="#"><span>99%</span><br>
+                                    <span>상영 중</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </article>
+        </section>
+        <section id="scrollBanner">
+        <article class="bannerslide">
+            <article class="banner">
+                <p>comming soon</p>
+                <h2><span>Event</span> N차 챌린지</h2>
+                <p>스탬프 2개이상 획득 고객님께 1천 포인트 적립</p>
+            </article>
+            <article class="banner">
+                <p>Currently in progress </p>
+                <h2><span>Event</span> 테넷 필름마크 증정</h2>
+                <p>영화 속 명장면을 내 손 안에 담아보는 나만의 컬렉터   </p>
+            </article>
+            <article class="banner">
+                <p>comming soon</p>
+                <h2><span>Event</span> N차 챌린지</h2>
+                <p>스탬프 2개이상 획득 고객님께 1천 포인트 적립</p>
+            </article>
+            <article class="banner">
+                <p>comming soon</p>
+                <h2><span>Event</span> N차 챌린지</h2>
+                <p>스탬프 2개이상 획득 고객님께 1천 포인트 적립</p>
+            </article>
+            <article class="banner">
+                <p>Currently in progress </p>
+                <h2><span>Event</span> 테넷 필름마크 증정</h2>
+                <p>영화 속 명장면을 내 손 안에 담아보는 나만의 컬렉터   </p>
+            </article>
+            <article class="banner">
+                <p>comming soon</p>
+                <h2><span>Event</span> N차 챌린지</h2>
+                <p>스탬프 2개이상 획득 고객님께 1천 포인트 적립</p>
+            </article>
+        </article>
+        <div></div>
+        </section>   
+        <section id="recommendMovie">
+            <article class="recommendimg">
+                <div class="recommendslide">
+                    <img src="image/main3/photo1.png" alt="아이언맨 이미지">
+                    <img src="image/main3/photo2.png" alt="아이언맨 이미지2">
+                    <img src="image/main3/photo3.png" alt="아이언맨 이미지3">
+                    <img src="image/main3/photo4.png" alt="아이언맨 이미지4">
+                </div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </article>
+            <article class="recommendText">
+                <h2>전 세계가 기다려온 <span>단</span> 하나의<br>
+                    액션 블록 버스터<span>.</span>
+                </h2>
+                <p>Behind Story<span></span></p>
+                <ul>
+                    <li><a href="#">출연 배우들의 단독 인터뷰</a></li>
+                    <li><a href="#">포토카드 1+1 이벤트</a></li>
+                    <li><a href="#">어벤져스 콤보 출시 기념 이벤트</a></li>
+                    <li><a href="#">주연 배우들의 내한 기념 시사회 [용산 CGV점]</a></li>
+                </ul>
+            </article>
+        </section>
+        <section id="cardEvent">
+            <article class="left">
+                <div></div>
+                <div class="subTitle">
+                    <p class="redp"><img src="image/main2/title_litle.png" alt="#"> 이번 주 영화 순위를 한눈에 확인하세요!</p>
+                    <h2>
+                        할인카드가 너무 <br>
+                        많아서 찾기 힘드시죠?<br>
+                        <img src="image/main4/title_logoBig.png" alt="">가 알려드릴게요.<br>
+                        <span>알뜰</span>한 영화할인<span>.</span>
+                    </h2>
+                    <div><img src="image/main4/popcorni.png" alt="팝콘이"></div>    
+                </div>
+                <div class="cardleft">
+                    <h3>M포인트 the red</h3>
+                    <div class="bigcard"></div>
+                    <div>
+                        <p>전월카드 이용실적 <span>30만원 이상 시</span> 할인</p><br>
+                        <p>티켓단가 7천원 이상 시 <span>온라인</span></p>
+                        <p>     5,000원</p><br>
+                        <p><span>오프라인 (매표소) </span></p>
+                        <p>            3,000원</p>
+                    </div>
+                    <button class="btn">자세히 보기<img src="image/main4/button_arrow.png" alt="화살표"></button>
+                </div>  
+            </article> 
+            <article class="right"> 
+                <div class="cardsmall">
+                    <div class="cardslide">
+                        <div>
+                            <img src="image/main4/smallCard_2.png" alt="카드2" onclick="cardchange(this)">
+                            <div>
+                                <p>메리어트 본보이™</p>
+                                <p>더 베스트 신한카드</p>
+                            </div>
+                            <button class="btnS">자세히 보기</button>
+                        </div>
+                        <div>
+                            <img src="image/main4/smallCard_3.png" alt="카드3" onclick="cardchange(this)">
+                            <div>
+                                <p>신한카드 LABE</p>
+                                <p>국민행복카드</p>
+                            </div>
+                            <button class="btnS">자세히 보기</button>
+                        </div>
+                        <div>
+                            <img src="image/main4/smallCard_4.png" alt="카드4" onclick="cardchange(this)">
+                            <div>
+                                <p>신한카드 The More</p> 
+                            </div>
+                            <button class="btnS">자세히 보기</button>
+                        </div>
+                        <div>
+                            <img src="image/main4/smallCard_5.png" alt="카드5" onclick="cardchange(this)">
+                            <div>
+                                <p>요기요 신한카드™</p>
+                            </div>
+                            <button class="btnS">자세히 보기</button>
+                        </div>
+                        <div>
+                            <img src="image/main4/smallCard_6.png" alt="카드6" onclick="cardchange(this)">
+                            <div>
+                                <p>Deep Once</p>
+                                <p>신한카드</p>
+                            </div>
+                            <button class="btnS">자세히 보기</button>
+                        </div>
+                        <div>
+                            <img src="image/main4/smallCard_7.png" alt="카드7" onclick="cardchange(this)">
+                            <div>
+                                <p>RPM+ Platinum</p>
+                                <p>신한카드</p> 
+                            </div>
+                            <button class="btnS">자세히 보기</button>
+                        </div>
+                        <div>
+                            <img src="image/main4/smallCard_1.png" alt="카드1" onclick="cardchange(this)">
+                            <div>
+                                <p>M포인트 the red</p> 
+                            </div>
+                            <button class="btnS">자세히 보기</button>
+                        </div>
+                        <div>
+                            <img src="image/main4/smallCard_2.png" alt="카드2" onclick="cardchange(this)">
+                            <div>
+                                <p>메리어트 본보이™</p>
+                                <p>더 베스트 신한카드</p>
+                            </div>
+                            <button class="btnS">자세히 보기</button>
+                        </div>
+                        <div>
+                            <img src="image/main4/smallCard_3.png" alt="카드3" onclick="cardchange(this)">
+                            <div>
+                                <p>신한카드 LABE</p>
+                                <p>국민행복카드</p>
+                            </div>
+                            <button class="btnS">자세히 보기</button>
+                        </div>
+                        <div>
+                            <img src="image/main4/smallCard_4.png" alt="카드4" onclick="cardchange(this)">
+                            <div>
+                                <p>신한카드 The More</p> 
+                            </div>
+                            <button class="btnS">자세히 보기</button>
+                        </div>
+                        <div>
+                            <img src="image/main4/smallCard_5.png" alt="카드5" onclick="cardchange(this)">
+                            <div>
+                                <p>요기요 신한카드™</p>
+                            </div>
+                            <button class="btnS">자세히 보기</button>
+                        </div>
+                        <div>
+                            <img src="image/main4/smallCard_6.png" alt="카드6" onclick="cardchange(this)">
+                            <div>
+                                <p>Deep Once</p>
+                                <p>신한카드</p>
+                            </div>
+                            <button class="btnS">자세히 보기</button>
+                        </div>
+                        <div>
+                            <img src="image/main4/smallCard_7.png" alt="카드7" onclick="cardchange(this)">
+                            <div>
+                                <p>RPM+ Platinum</p>
+                                <p>신한카드</p> 
+                            </div>
+                            <button class="btnS">자세히 보기</button>
+                        </div>
+                        <div>
+                            <img src="image/main4/smallCard_1.png" alt="카드1" onclick="cardchange(this)">
+                            <div>
+                                <p>M포인트 the red</p> 
+                            </div>
+                            <button class="btnS">자세히 보기</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img class="leftbtn" src="image/main4/beforeButton.png" alt="왼쪽">
+                    <div class="smallcardgage"> <div></div></div>
+                    <img class="rightbtn" src="image/main4/afterButton.png" alt="오른쪽">
+                </div>
+            </article>
+        </section>
+        <section id="cinema">
+            <article>
+                <div>
+                    <p><img src="image/main5/arrow5.png" alt="화살표">오감체험 특별한 영화관</p>
+                    <h2>
+                        ABSOLUTE CINEMA<br>
+                        <span>EXPERIENCE.</span>
+                    </h2>
+                </div>
+                <div>
+                    <div><div class="cinema_alphabet">G</div></div>
+                    <div>
+                        <p class="cinema_main_title">
+                            PREMIUM & COZY CINEMA.<br><span>GOLD CLASS</span>
+                        </p>
+                        <p>
+                            최고의 몰입감을 주는 <span>Curved스크린</span>과 디테일한 사운드를 느끼실 수 있는 라인어웨이 스피커, 최상의 안락함을 주는 리클라이너
+                            좌석까지 최고릐 관람 확경을 제공함과 동시에 웰컴음료/컴포트 패키지, 핸드폰 충전 서비스, 개인물품 수납 테이블 등
+                            고객 맞춤형 서비스까지 제공되는 프리미엄 상영관입니다. CGV왕십리 골드 클래스에 최초 도입된 <span>FLEXOUND</span>는 필란드에서
+                            연구, 생산된 고음질 개인증강오디오 시스템으로 각각의 시트마다. 정교하게 튜닝된 시스템이 기존 상영관의 오디오 시스템과
+                            더불어 좌석 별 최적의 사운드 존을 만들어냅니다.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <article>
+                   <ul class="cinemaul">
+                       <li>
+                           <h3>1</h3>
+                           <img src="image/main5/box_4re.png" alt="이미지">
+                           <div class="cinema_li_index">+</div>
+                           <p>오감체험 특별한 영화관 4DX</p>
+                       </li>
+                       <li>
+                           <h3>2</h3>
+                           <img src="image/main5/box_2.JPG" alt="이미지">
+                           <div class="cinema_li_index">+</div>
+                           <p>특별한 고객님을 위한 GLODCLASS</p>
+                       </li>
+                       <li>
+                           <h3>3</h3>
+                           <img src="image/main5/box_4re.png" alt="">
+                           <div class="cinema_li_index">+</div>
+                           <p>가장 선명하고 뛰어난 비주얼 IMAX</p>
+                       </li>
+                       <li>
+                           <h3>4</h3>
+                           <img src="image/main5/box_3.JPG" alt="">
+                           <div class="cinema_li_index">+</div>
+                           <p>세상에 없던 몰입감 SCREEN X</p>
+                       </li>
+                       <li>
+                           <h3>5</h3>
+                           <img src="image/main5/box_4re.png" alt="">
+                           <div class="cinema_li_index">+</div>
+                           <p>최대 시야각을 보장하는 STARIUM</p>
+                       </li>
+                       <li> 
+                           <h3>6</h3>
+                           <img src="image/main5/box_2.JPG" alt="">
+                           <div class="cinema_li_index">+</div>
+                           <p>상영관과 다이닝룸 CINE DE CHEF</p>
+                       </li> 
+                   </ul>  
+            </article>
+        </section>
+        <section id="brand">
+            <article class="left">
+                <img src="image/main6/lighht.png" alt="#">
+                <p>문화컬쳐 플렉스의 선두주자</p>
+                <h2>
+                    Let<span>’</span>s<br>
+                    make your<br>
+                    brand<br>
+                    unique<span>.</span>
+                </h2>
+                <button class="btn">더 알아보기</button>
+            </article>
+            <article class="right">
+                <div>
+                    <p>다양한 고객님과 다양한 영화를 위해 항상 노력합니다.</p>
+                    <ul>
+                        <li>
+                            <img src="image/main6/leftLogo_1.png" alt="스페어X 로고">
+                            <p>나를 감싸는 극강의 몰입감, 좌석별 최적의 사운드 존</p>
+                        </li>
+                        <li>
+                            <img src="image/main6/leftLogo_2.png" alt="템퍼 로고">
+                            <p>프리미엄 매트리스&배게브랜드와 함께 탄생한 세계 최초 리클라이닝 영화관</p>
+                        </li>
+                        <li>
+                            <img src="image/main6/leftLogo_3.png" alt="스카이박스 로고">
+                            <p>우리만의 특별한 기간, 연인 가족과 함께 프라이빗한 독립적 공간</p>
+                        </li>
+                        <li>
+                            <img src="image/main6/leftLogo_4.png" alt="스타리움 로고">
+                            <p>놀랍도록 생생한 화질과 가슴을 뛰게하는 16개의 음질 사운드 영화관</p>
+                        </li>
+                        <li>
+                            <img src="image/main6/rightLogo_1.png" alt="포디스크린 로고">
+                            <p>오감체험관 4DX와 다면 상영관 SCREEN X가 결합한 대표 기술 통합관</p>
+                        </li> 
+                    </ul>
+                </div>
+                <div>
+                    <p>GET into the Action</p>
+                    <ul>
+                        <li>
+                            <img src="image/main6/rightLogo_1.png" alt="포디스크린 로고">
+                            <p>오감체험관 4DX와 다면 상영관 SCREEN X가 결합한 대표 기술 통합관</p>
+                        </li>
+                        <li>
+                            <img src="image/main6/rightLogo_2.png" alt="골드클래스 로고">
+                            <p>최고의 안락함을 주는 최적의 관람관 그리고 고객 맞춤형 개별 서비스 제공</p>
+                        </li>
+                        <li>
+                            <img src="image/main6/rightLogo_3.png" alt="사운드x 로고">
+                            <p>영상의 움직임에 따라 소리의 방향성과 거리감을 완벽하게 재현하는 3D입체 음향</p>
+                        </li>
+                        <li>
+                            <img src="image/main6/leftLogo_1.png" alt="스페어x 로고">
+                            <p>나를 감싸는 극강의 몰입감, 좌석별 최적의 사운드 존</p>
+                        </li>
+                        <li>
+                            <img src="image/main6/leftLogo_2.png" alt="템퍼 로고">
+                            <p>프리미엄 매트리스&배게브랜드와 함께 탄생한 세계 최초 리클라이닝 영화관</p>
+                        </li>
+                    </ul>
+                </div>
+                <div><img src="image/main6/bgLogo.png" alt="CGV"></div>
+            </article>
+        </section>
+        <section id="QnA">
+            <img src="image/main7/popconi_7.png" alt="팝콘이">
+            <h2>무엇이든 물어보세요<span>.</span></h2>
+            <p>항상 고객님을 위해 상담사가 대기중입니다.</p>
+            <button class="btn">고객센터 바로가기</button>
+        </section>
+        <footer>
+            <div>
+                <div>
+                    <img src="image/footer/footer_logo.png" alt="CJ CGV">
+                    <ul>
+                        <li>개인정보 취급방침</li>
+                        <li>제휴제안 문의</li>
+                        <li>고객센터</li>
+                    </ul>
+                    <img src="image/footer/brands.png" alt="브랜드들">
+                </div>
+                <div>
+                    <p>ⓒ 2020 CJ CGV Enterprise. TCJ CGV. All Rights Reserved.</p>
+                    <ul>Share
+                        <li><i class="fab fa-facebook-square"></i></li>
+                        <li><i class="fab fa-instagram"></i></li>
+                        <li><i class="fab fa-twitter-square"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                 <div>
+                     <ul>
+                         <li><a href="#">회사소개</a></li>
+                         <li><a href="#">IR</a></li>
+                         <li><a href="#">채용정보</a></li>
+                         <li><a href="#">광고/프로모션문의</a></li>
+                         <li><a href="#">제휴문의</a></li>
+                         <li><a href="#">출점문의</a></li>
+                         <li><a href="#">이용약관</a></li>
+                         <li><a href="#">평성기준</a></li>
+                         <li><a href="#">개인정보 처리방침</a></li>
+                         <li><a href="#">법적고지</a></li>
+                         <li><a href="#">이메일주소</a></li>
+                     </ul>
+                     <address>
+                        <p>
+                            (04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)<br>
+                            대표이사 : 최병환사업자등록번호 : 104-81-45690통신판매업신고번호 : 2017-서울용산-0662 사업자정보확인
+                        </p>
+                        <p>
+                            호스팅사업자 : CJ올리브네트웍스개인정보보호 책임자 : 이동현대표이메일 : cjcgvmaster@cj.netCGV고객센터 : 1544-1122
+                        </p> 
+                    </address>
+                 </div>
+                 <div>
+                    <ul>Family Site <span></span><img src="image/footer/up_brand.png" alt="#">
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                    </ul>
+                 </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
