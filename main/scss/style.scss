@@ -55,6 +55,18 @@ body{
     font-weight : normal;
     font-family : "Segoe UI", san-serif;
 }
+.my_menu {
+    height: 100%;
+    width: 559px;
+    position: fixed;
+    top: 0;
+    right: -559px;
+    z-index: 1;
+    transition: 1s;
+}
+.myMenuOn {
+    right: 0px;
+}
 #scroll{
     width: 100px;
     height: 50px;

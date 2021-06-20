@@ -73,20 +73,20 @@
 }
 
 body {
-  width: 559px;
   height: 100vh;
   font-size: 13px;
-  background-color: rgba(0, 0, 0, 0.9);
 }
 
 body #myInfo {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
   width: 559px;
   height: 100%;
 }
 
 body #myInfo #who {
   position: relative;
-  background-image: url("../image/who_bg.png");
+  background-image: url("../../myMenu/image/who_bg.png");
   width: 559px;
   height: 317px;
   padding-left: 24px;
@@ -180,7 +180,7 @@ body #myInfo #who #reserved .reserved_info div .arrow {
   width: 44.17px;
   height: 6px;
   position: relative;
-  background: url(../image/arrow.png);
+  background: url(../../myMenu/image/arrow.png);
   -webkit-animation: arrowMove;
           animation: arrowMove;
   -webkit-animation-duration: 2.5s;
@@ -388,7 +388,7 @@ body #myInfo #coupon_point .point .point_text .pointInfo .arrow {
   width: 44.17px;
   height: 6px;
   position: relative;
-  background: url("../image/arrow2.png");
+  background: url("../../myMenu/image/arrow2.png");
   -webkit-animation: arrowMove;
           animation: arrowMove;
   -webkit-animation-duration: 2.5s;
@@ -428,7 +428,7 @@ body #myInfo #menu {
 
 body #myInfo #menu .nav {
   width: 274px;
-  height: 374px;
+  height: 376px;
   padding-top: 20px;
   font-family: 'YoonGothic750';
 }
@@ -582,4 +582,5 @@ body #myInfo #menu .nav_depth_menu .depth_text3 p:nth-child(3) {
 
 body #myInfo #menu .navToggle {
   right: 0;
+  bottom: 0;
 }

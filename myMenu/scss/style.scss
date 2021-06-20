@@ -52,17 +52,17 @@
     }
 }
 
-body { 
-    width: 559px;
+body {
     height: 100vh;
     font-size: 13px;
-    background-color: rgba(0, 0, 0, 0.9);
     #myInfo{
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.9);
         width: 559px;
         height: 100%;
         #who {
             position: relative;
-            background-image: url("../image/who_bg.png");
+            background-image: url("../../myMenu/image/who_bg.png");
             width: 559px;
             height: 317px;
             padding-left: 24px;
@@ -126,7 +126,7 @@ body {
                             width: 44.17px;
                             height: 6px;
                             position: relative;
-                            background: url(../image/arrow.png);
+                            background: url(../../myMenu/image/arrow.png);
                             animation: arrowMove;
                             animation-duration: 2.5s;
                             animation-iteration-count: infinite;
@@ -287,7 +287,7 @@ body {
                             width: 44.17px;
                             height: 6px;
                             position: relative;
-                            background: url('../image/arrow2.png');
+                            background: url('../../myMenu/image/arrow2.png');
                             animation: arrowMove;
                             animation-duration: 2.5s;
                             animation-iteration-count: infinite;
@@ -320,7 +320,7 @@ body {
             position: relative;
             .nav{
                 width: 274px;
-                height: 374px;
+                height: 376px;
                 padding-top: 20px;
                 font-family: 'YoonGothic750';
                 p{
@@ -439,6 +439,7 @@ body {
             }
             .navToggle{
                 right: 0;
+                bottom: 0;
             }
         }
     }

@@ -16,6 +16,20 @@ const h2text = ['운명을 바꿀<span>최후의 전쟁</span>이',
 const h2text2 = ['지금 펼쳐진다!','이것이 <span>K-FAST</span>의 위엄!','<span>모험</span>이 시작된다','<span>히든카드</span>가 온다']
 console.log(indexchild);
 
+//a태그 새로고침 방지
+$('a[href="#"]').click(function(e) {
+    e.preventDefault();
+});
+
+//my_menu 생성
+$(document).ready(function(){
+    $(".my_menu").load("../../myMenu/myMenu.html");
+})
+//my_menu on
+function menuOn() {
+    document.querySelector('.my_menu').classList.toggle('myMenuOn');
+}
+
 let videoNum = 1;
 let videostop = 0;
 

@@ -12,7 +12,8 @@
     
 </head>
 <body>
-    <div id="wrap">
+    <div id="wrap" include-html="">
+        <div class="my_menu"></div>
         <div id="scroll"></div>
         <header>
             <h1><img src="image/main1/cgvLogo.png" alt="CGV 로고"></h1>
@@ -29,7 +30,7 @@
             <ul>
                 <li><a href="#"><i class="fas fa-history"></i></a></li>
                 <li><a href="#"><i class="fas fa-search"></i></a></li>
-                <li><a href="#"><i class="fas fa-align-justify"></i></a></li>
+                <li onclick="menuOn()"><a href="#" ><i class="fas fa-align-justify"></i></a></li>
             </ul>
         </header>
         <section id="main">
