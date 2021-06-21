@@ -28,6 +28,7 @@ $(document).ready(function(){
 //my_menu on
 function menuOn() {
     document.querySelector('.my_menu').classList.toggle('myMenuOn');
+    document.querySelector('.my_menu_bg').classList.toggle('my_menu_bg_on')
 }
 
 let videoNum = 1;

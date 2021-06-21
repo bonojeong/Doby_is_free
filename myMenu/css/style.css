@@ -72,6 +72,10 @@
   }
 }
 
+p, h1, h2, h3, h4, li {
+  cursor: default;
+}
+
 body {
   height: 100vh;
   font-size: 13px;
@@ -79,7 +83,7 @@ body {
 
 body #myInfo {
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #fff;
   width: 559px;
   height: 100%;
 }
@@ -260,8 +264,8 @@ body #myInfo #coupon_point {
 body #myInfo #coupon_point .coupon {
   width: 274px;
   height: 158px;
-  background: #575757;
-  color: #C1C1C1;
+  background: #E5E5E5;
+  color: #3D3D3D;
   padding-left: 44px;
   border-radius: 0 12px 12px 0;
   -webkit-box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.26);
@@ -273,7 +277,6 @@ body #myInfo #coupon_point .coupon h2 {
   font-size: 17px;
   padding-bottom: 8px;
   font-family: "YoonGothic750";
-  color: #fff;
 }
 
 body #myInfo #coupon_point .coupon h2 span {
@@ -315,6 +318,7 @@ body #myInfo #coupon_point .coupon .more:hover .btn_more {
 body #myInfo #coupon_point .coupon .more:hover > p:first-child {
   color: #fff;
   font-family: "YoonGothic730";
+  cursor: default;
 }
 
 body #myInfo #coupon_point .point {
@@ -439,6 +443,7 @@ body #myInfo #menu .nav p {
   padding-left: 2px;
   color: #fff;
   cursor: pointer;
+  color: #3D3D3D;
 }
 
 body #myInfo #menu .nav p img {
@@ -456,17 +461,14 @@ body #myInfo #menu .nav p:hover img {
 }
 
 body #myInfo #menu .movie_poster {
-  width: 250px;
-  height: 374px;
+  width: 204px;
   position: absolute;
   right: 0px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  bottom: 17px;
 }
 
 body #myInfo #menu .movie_poster img {
-  width: 100%;
+  width: 204px;
 }
 
 body #myInfo #menu .nav_depth_menu {
