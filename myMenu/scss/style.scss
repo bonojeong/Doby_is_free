@@ -347,28 +347,27 @@ body {
                 }
             }
             .movie_poster {
-                width: 204px;
+                width: 246px;
                 position: absolute;
-                right: 0px;
-                bottom: 17px;
+                right: 28px;
+                bottom: 0px;
                 img {
-                    width: 204px;
+                    width: 246px;
                     
                 }
             }
             .nav_depth_menu{
-                width: 274px;
-                height: 374px;
+                width: 305px;
+                height: 376px;
                 padding-top: 22px;
                 padding-left: 21px;
                 padding-bottom: 15px;
                 padding-right: 19px;
                 background: #fff;
-                box-shadow: 0px 3px 25px rgba($color: #000, $alpha: 0.26);
                 border-radius: 12px 0 0 0;
                 position: relative;
                 bottom: 0;
-                right: -274px;
+                right: -305px;
                 transition: 1s;
                 .depth_text1 {
                     display: none;
@@ -443,6 +442,7 @@ body {
             .navToggle{
                 right: 0;
                 bottom: 0;
+                box-shadow: 0px 3px 25px rgba($color: #000, $alpha: 0.26);
             }
         }
     }

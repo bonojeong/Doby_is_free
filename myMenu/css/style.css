@@ -461,30 +461,28 @@ body #myInfo #menu .nav p:hover img {
 }
 
 body #myInfo #menu .movie_poster {
-  width: 204px;
+  width: 246px;
   position: absolute;
-  right: 0px;
-  bottom: 17px;
+  right: 28px;
+  bottom: 0px;
 }
 
 body #myInfo #menu .movie_poster img {
-  width: 204px;
+  width: 246px;
 }
 
 body #myInfo #menu .nav_depth_menu {
-  width: 274px;
-  height: 374px;
+  width: 305px;
+  height: 376px;
   padding-top: 22px;
   padding-left: 21px;
   padding-bottom: 15px;
   padding-right: 19px;
   background: #fff;
-  -webkit-box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.26);
-          box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.26);
   border-radius: 12px 0 0 0;
   position: relative;
   bottom: 0;
-  right: -274px;
+  right: -305px;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -585,4 +583,6 @@ body #myInfo #menu .nav_depth_menu .depth_text3 p:nth-child(3) {
 body #myInfo #menu .navToggle {
   right: 0;
   bottom: 0;
+  -webkit-box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.26);
+          box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.26);
 }
