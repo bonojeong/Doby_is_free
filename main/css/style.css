@@ -93,7 +93,6 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
   background: rgba(0, 0, 0, 0);
   -webkit-transition: 1s;
   transition: 1s;
@@ -101,6 +100,7 @@ body {
 
 .my_menu_bg_on {
   background: rgba(0, 0, 0, 0.75);
+  z-index: 299;
 }
 
 .myMenuOn {
