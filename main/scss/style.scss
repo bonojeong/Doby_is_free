@@ -61,7 +61,7 @@ body{
     position: fixed;
     top: 0;
     right: -559px;
-    z-index: 5;
+    z-index: 300;
     transition: 1s;
 }
 .my_menu_bg {
@@ -70,7 +70,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 4;
+    z-index: 1;
     background: rgba(0, 0, 0, 0);
     transition: 1s;
 }

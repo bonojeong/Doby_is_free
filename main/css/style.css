@@ -82,7 +82,7 @@ body {
   position: fixed;
   top: 0;
   right: -559px;
-  z-index: 5;
+  z-index: 300;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -93,7 +93,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 4;
+  z-index: 1;
   background: rgba(0, 0, 0, 0);
   -webkit-transition: 1s;
   transition: 1s;

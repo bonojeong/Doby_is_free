@@ -27,8 +27,13 @@ $(document).ready(function(){
 })
 //my_menu on
 function menuOn() {
-    document.querySelector('.my_menu').classList.toggle('myMenuOn');
-    document.querySelector('.my_menu_bg').classList.toggle('my_menu_bg_on')
+    document.querySelector('.my_menu').classList.add('myMenuOn');
+    document.querySelector('.my_menu_bg').classList.add('my_menu_bg_on')
+}
+//my_menu off
+function menuOff(){
+    document.querySelector('.my_menu').classList.remove('myMenuOn');
+    document.querySelector('.my_menu_bg').classList.remove('my_menu_bg_on')
 }
 
 let videoNum = 1;

@@ -70,8 +70,13 @@ body {
             height: 317px;
             padding-left: 24px;
             padding-top: 60px;
-            >img {
+            .who_bg {
                 padding-bottom: 38px;
+            }
+            .close_btn {
+                position: absolute;
+                top: 16px;
+                right: 16px;
             }
             .who_under {
                 display: flex;
@@ -233,7 +238,6 @@ body {
                         display: inline-block;
                     }
                     &:hover >p:first-child {
-                        color: #fff;
                         font-family: "YoonGothic730";
                         cursor: default;
                     }
@@ -351,10 +355,15 @@ body {
                 position: absolute;
                 right: 28px;
                 bottom: 0px;
+                opacity: 1;
+                transition: 1s;
                 img {
                     width: 246px;
-                    
+                    border-radius: 12px 12px 0px 0;
                 }
+            }
+            .movie_poster_off {
+                opacity: 0;
             }
             .nav_depth_menu{
                 width: 305px;

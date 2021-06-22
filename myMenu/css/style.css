@@ -97,8 +97,14 @@ body #myInfo #who {
   padding-top: 60px;
 }
 
-body #myInfo #who > img {
+body #myInfo #who .who_bg {
   padding-bottom: 38px;
+}
+
+body #myInfo #who .close_btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
 }
 
 body #myInfo #who .who_under {
@@ -316,7 +322,6 @@ body #myInfo #coupon_point .coupon .more:hover .btn_more {
 }
 
 body #myInfo #coupon_point .coupon .more:hover > p:first-child {
-  color: #fff;
   font-family: "YoonGothic730";
   cursor: default;
 }
@@ -465,10 +470,18 @@ body #myInfo #menu .movie_poster {
   position: absolute;
   right: 28px;
   bottom: 0px;
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 body #myInfo #menu .movie_poster img {
   width: 246px;
+  border-radius: 12px 12px 0px 0;
+}
+
+body #myInfo #menu .movie_poster_off {
+  opacity: 0;
 }
 
 body #myInfo #menu .nav_depth_menu {
