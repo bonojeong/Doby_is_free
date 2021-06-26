@@ -604,10 +604,119 @@ body{
     footer {
         display: flex;
         flex-direction: column;
+        position: relative;
         .white_footer {
             width: 100%;
             height: 253px;
             background: #fff;
+            padding: 47px 0 0 207px;
+            .white_upper {
+                display: flex;
+                align-items: center;
+                padding-bottom: 30.3px;
+                padding-right: 228px;
+                .footer_logo {
+                    margin-right: 150px;
+                }
+                .menu{
+                    display: flex;
+                    padding-right: 97px;
+                    font-family: 'YoonGothic770';
+                    font-size: 14px;
+                    letter-spacing: -1.5px;
+                    color: #989898;
+                    li {
+                        &:not(:last-child) {
+                            padding-right: 24px;
+                        }
+                    }
+                }
+            }
+            .white_lower {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-left: 414px;
+                padding-right: 234px;
+                >p {
+                    font-family: 'YoonGothic760';
+                    font-size: 14px;
+                    color: #989898;
+                }
+                div {
+                    display: flex;
+                    align-items: center;
+                    font-family: 'YoonGothic760';
+                    font-size: 15px;
+                    img {
+                        margin-left: 9px;
+                    }
+                }
+            }
+        }
+        .gototheTop {
+            position: absolute;
+            top: 50%;
+            right: 93px;
+            transform: translateY(-65%);
+        }
+        .black_footer {
+            height: 279px;
+            color : #C6C6C6;
+            padding: 66.4px 0 0 254px;
+            background-color: #252526;
+            div {
+                display: flex;
+                justify-content: space-between;
+                padding-right: 253px;
+                ul {
+                    display: flex;
+                    font-family: 'YoonGothic770';
+                    font-size: 14px;
+                    padding-bottom: 35px;
+                    li {
+                        &:not(:last-child) {
+                            padding-right: 24px;
+                        }
+                    }
+                }
+                .Family_Site {
+                    width: 212px;
+                    height: 37.01px;
+                    color: #535353;
+                    background: #000 url('../image/footer/select_arrow.png') 189px 50% no-repeat;
+                    font-family: 'YoonGothic740';
+                    font-size: 14px;
+                    padding: 0px 10px;
+                    border-bottom: 1px solid #E3E3E3;
+                    appearance:none;
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        top: 0%;
+                        left: 0;
+                        display: block;
+                        width: 191px;
+                        height: 1px;
+                        background-color: #E3E3E3;
+                        content: "";
+                    }
+                }
+            }
+            address {
+                font-family: 'YoonGothic740';
+                font-size: 14px;
+                color: #535353;
+                padding-bottom: 14px;
+                span {
+                    display: block;
+                }
+            }
+            >p {
+                font-family: 'YoonGothic740';
+                font-size: 14px;
+                color: #535353;
+            }
         }
     }
 }

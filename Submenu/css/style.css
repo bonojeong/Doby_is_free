@@ -809,10 +809,158 @@ body footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 body footer .white_footer {
   width: 100%;
   height: 253px;
   background: #fff;
+  padding: 47px 0 0 207px;
+}
+
+body footer .white_footer .white_upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 30.3px;
+  padding-right: 228px;
+}
+
+body footer .white_footer .white_upper .footer_logo {
+  margin-right: 150px;
+}
+
+body footer .white_footer .white_upper .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 97px;
+  font-family: 'YoonGothic770';
+  font-size: 14px;
+  letter-spacing: -1.5px;
+  color: #989898;
+}
+
+body footer .white_footer .white_upper .menu li:not(:last-child) {
+  padding-right: 24px;
+}
+
+body footer .white_footer .white_lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 414px;
+  padding-right: 234px;
+}
+
+body footer .white_footer .white_lower > p {
+  font-family: 'YoonGothic760';
+  font-size: 14px;
+  color: #989898;
+}
+
+body footer .white_footer .white_lower div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'YoonGothic760';
+  font-size: 15px;
+}
+
+body footer .white_footer .white_lower div img {
+  margin-left: 9px;
+}
+
+body footer .gototheTop {
+  position: absolute;
+  top: 50%;
+  right: 93px;
+  -webkit-transform: translateY(-65%);
+          transform: translateY(-65%);
+}
+
+body footer .black_footer {
+  height: 279px;
+  color: #C6C6C6;
+  padding: 66.4px 0 0 254px;
+  background-color: #252526;
+}
+
+body footer .black_footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 253px;
+}
+
+body footer .black_footer div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'YoonGothic770';
+  font-size: 14px;
+  padding-bottom: 35px;
+}
+
+body footer .black_footer div ul li:not(:last-child) {
+  padding-right: 24px;
+}
+
+body footer .black_footer div .Family_Site {
+  width: 212px;
+  height: 37.01px;
+  color: #535353;
+  background: #000 url("../image/footer/select_arrow.png") 189px 50% no-repeat;
+  font-family: 'YoonGothic740';
+  font-size: 14px;
+  padding: 0px 10px;
+  border-bottom: 1px solid #E3E3E3;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+}
+
+body footer .black_footer div .Family_Site::after {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  display: block;
+  width: 191px;
+  height: 1px;
+  background-color: #E3E3E3;
+  content: "";
+}
+
+body footer .black_footer address {
+  font-family: 'YoonGothic740';
+  font-size: 14px;
+  color: #535353;
+  padding-bottom: 14px;
+}
+
+body footer .black_footer address span {
+  display: block;
+}
+
+body footer .black_footer > p {
+  font-family: 'YoonGothic740';
+  font-size: 14px;
+  color: #535353;
 }
