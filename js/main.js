@@ -23,7 +23,7 @@ $('a[href="#"]').click(function(e) {
 
 //my_menu 생성
 $(document).ready(function(){
-    $(".my_menu").load("../myMenu/myMenu.html");
+    $(".my_menu").load("myMenu/index.html");
 })
 //my_menu on
 function menuOn() {

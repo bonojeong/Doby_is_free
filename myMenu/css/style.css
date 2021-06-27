@@ -351,7 +351,7 @@ body #myInfo #coupon_point .point h2 span {
 }
 
 body #myInfo #coupon_point .point .point_text > div {
-  padding-top: 6px;
+  padding-top: 4.5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -404,15 +404,16 @@ body main .selection .sel_movies .sel_movie_poster .more_img {
           transform: translate(-50%, -50%);
   -webkit-transition: 1s;
   transition: 1s;
+  opacity: 0;
 }
 
 body main .selection .sel_movies .sel_movie_poster:hover .poster {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 body main .selection .sel_movies .sel_movie_poster:hover .more_img {
-  opacity: 0;
+  opacity: 1;
 }
 
 body main .selection .sel_movies .sel_movies_left {
