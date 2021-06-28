@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CGV</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="myMenu/css/style.css">
+    <script defer src="myMenu/js/javascript.js"></script>
     <script src="https://kit.fontawesome.com/cab2926ccf.js" crossorigin="anonymous"></script>
     <script defer src="js/main.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
-    
 </head>
 <body>
-    <div id="wrap" include-html="">
+    <div id="wrap">
         <div class="my_menu_bg"></div>
         <div class="my_menu"></div>
-        <div id="scroll"></div>
         <header>
             <h1><img src="image/main1/cgvLogo.png" alt="CGV 로고"></h1>
             <ul>
@@ -26,13 +25,13 @@
                 <li><a href="#">CULTUREPLEX</a></li>
             </ul>
             <ul>
-                <li><span><a href="#">LOGIN</span></a></li>
+                <li><span><a href="#">LOGIN</a></span></li>
                 <li><a href="#">JOIN US</a></li>
             </ul>
             <ul>
                 <li><a href="#"><i class="fas fa-history"></i></a></li>
                 <li><a href="#"><i class="fas fa-search"></i></a></li>
-                <li onclick="menuOn()"><a href="#" ><i class="fas fa-align-justify"></i></a></li>
+                <li onclick="menuOn()"><a href="#"><i class="fas fa-align-justify"></i></a></li>
             </ul>
         </header>
         <section id="main">
@@ -82,6 +81,7 @@
                     <img src="image/main1/subButton.png" alt="화살표">
                 </li>
             </ul>
+            <div class="filmindex">GCV Film Mark Pressented</div>
         </section>
         <section id="weekMovie">
             <article class="left">
@@ -490,12 +490,12 @@
                     </h2>
                 </div>
                 <div>
-                    <div><div class="cinema_alphabet">G</div></div>
+                    <div><div class="cinema_alphabet"><span>G</span></div></div>
                     <div>
                         <p class="cinema_main_title">
                             PREMIUM & COZY CINEMA.<br><span>GOLD CLASS</span>
                         </p>
-                        <p>
+                        <p class="cinema_main_index">
                             최고의 몰입감을 주는 <span>Curved스크린</span>과 디테일한 사운드를 느끼실 수 있는 라인어웨이 스피커, 최상의 안락함을 주는 리클라이너
                             좌석까지 최고릐 관람 확경을 제공함과 동시에 웰컴음료/컴포트 패키지, 핸드폰 충전 서비스, 개인물품 수납 테이블 등
                             고객 맞춤형 서비스까지 제공되는 프리미엄 상영관입니다. CGV왕십리 골드 클래스에 최초 도입된 <span>FLEXOUND</span>는 필란드에서
@@ -549,65 +549,114 @@
         <section id="brand">
             <article class="left">
                 <img src="image/main6/lighht.png" alt="#">
-                <p>문화컬쳐 플렉스의 선두주자</p>
-                <h2>
-                    Let<span>’</span>s<br>
-                    make your<br>
-                    brand<br>
-                    unique<span>.</span>
-                </h2>
-                <button class="btn">더 알아보기</button>
+                <div class="brand_title">
+                    <p>문화컬쳐 플렉스의 선두주자</p>
+                    <h2>
+                        Let<span>’</span>s<br>
+                        make your<br>
+                        brand<br>
+                        unique<span>.</span>
+                    </h2>
+                    <button class="btn">더 알아보기</button>
+                </div>
             </article>
             <article class="right">
                 <div>
-                    <p>다양한 고객님과 다양한 영화를 위해 항상 노력합니다.</p>
-                    <ul>
-                        <li>
-                            <img src="image/main6/leftLogo_1.png" alt="스페어X 로고">
-                            <p>나를 감싸는 극강의 몰입감, 좌석별 최적의 사운드 존</p>
-                        </li>
-                        <li>
-                            <img src="image/main6/leftLogo_2.png" alt="템퍼 로고">
-                            <p>프리미엄 매트리스&배게브랜드와 함께 탄생한 세계 최초 리클라이닝 영화관</p>
-                        </li>
-                        <li>
-                            <img src="image/main6/leftLogo_3.png" alt="스카이박스 로고">
-                            <p>우리만의 특별한 기간, 연인 가족과 함께 프라이빗한 독립적 공간</p>
-                        </li>
-                        <li>
-                            <img src="image/main6/leftLogo_4.png" alt="스타리움 로고">
-                            <p>놀랍도록 생생한 화질과 가슴을 뛰게하는 16개의 음질 사운드 영화관</p>
-                        </li>
-                        <li>
-                            <img src="image/main6/rightLogo_1.png" alt="포디스크린 로고">
-                            <p>오감체험관 4DX와 다면 상영관 SCREEN X가 결합한 대표 기술 통합관</p>
-                        </li> 
-                    </ul>
+                    <p>다양한 고객님과 다양한 영화를 위해<br>항상 노력합니다.</p>
+                    <div class="leftslide">
+                        <ul class="brand_left">
+                            <li>
+                                <img src="image/main6/leftLogo_1.png" alt="스페어X 로고">
+                
+                
+                                <p>나를 감싸는 극강의 몰입감, 좌석별 최적의 사운드 존</p>
+                            </li>
+                            <li>
+                                <img src="image/main6/leftLogo_2.png" alt="템퍼 로고">
+                                <p>프리미엄 매트리스&배게브랜드와 함께 탄생한 세계 최초 리클라이닝 영화관</p>
+                            </li>
+                            <li>
+                                <img src="image/main6/leftLogo_3.png" alt="스카이박스 로고">
+                                <p>우리만의 특별한 기간, 연인 가족과 함께 프라이빗한 독립적 공간</p>
+                            </li>
+                            <li>
+                                <img src="image/main6/leftLogo_4.png" alt="스타리움 로고">
+                                <p>놀랍도록 생생한 화질과 가슴을 뛰게하는 16개의 음질 사운드 영화관</p>
+                            </li>
+                            <li>
+                                <img src="image/main6/rightLogo_1.png" alt="포디스크린 로고">
+                                <p>오감체험관 4DX와 다면 상영관 SCREEN X가 결합한 대표 기술 통합관</p>
+                            </li>
+                            <li>
+                                <img src="image/main6/leftLogo_1.png" alt="스페어X 로고">
+                                <p>나를 감싸는 극강의 몰입감, 좌석별 최적의 사운드 존</p>
+                            </li>
+                            <li>
+                                <img src="image/main6/leftLogo_2.png" alt="템퍼 로고">
+                                <p>프리미엄 매트리스&배게브랜드와 함께 탄생한 세계 최초 리클라이닝 영화관</p>
+                            </li>
+                            <li>
+                                <img src="image/main6/leftLogo_3.png" alt="스카이박스 로고">
+                                <p>우리만의 특별한 기간, 연인 가족과 함께 프라이빗한 독립적 공간</p>
+                            </li>
+                            <li>
+                                <img src="image/main6/leftLogo_4.png" alt="스타리움 로고">
+                                <p>놀랍도록 생생한 화질과 가슴을 뛰게하는 16개의 음질 사운드 영화관</p>
+                            </li>
+                            <li>
+                                <img src="image/main6/rightLogo_1.png" alt="포디스크린 로고">
+                                <p>오감체험관 4DX와 다면 상영관 SCREEN X가 결합한 대표 기술 통합관</p>
+                            </li> 
+                        </ul>
+                    </div>
                 </div>
                 <div>
                     <p>GET into the Action</p>
-                    <ul>
-                        <li>
-                            <img src="image/main6/rightLogo_1.png" alt="포디스크린 로고">
-                            <p>오감체험관 4DX와 다면 상영관 SCREEN X가 결합한 대표 기술 통합관</p>
-                        </li>
-                        <li>
-                            <img src="image/main6/rightLogo_2.png" alt="골드클래스 로고">
-                            <p>최고의 안락함을 주는 최적의 관람관 그리고 고객 맞춤형 개별 서비스 제공</p>
-                        </li>
-                        <li>
-                            <img src="image/main6/rightLogo_3.png" alt="사운드x 로고">
-                            <p>영상의 움직임에 따라 소리의 방향성과 거리감을 완벽하게 재현하는 3D입체 음향</p>
-                        </li>
-                        <li>
-                            <img src="image/main6/leftLogo_1.png" alt="스페어x 로고">
-                            <p>나를 감싸는 극강의 몰입감, 좌석별 최적의 사운드 존</p>
-                        </li>
-                        <li>
-                            <img src="image/main6/leftLogo_2.png" alt="템퍼 로고">
-                            <p>프리미엄 매트리스&배게브랜드와 함께 탄생한 세계 최초 리클라이닝 영화관</p>
-                        </li>
-                    </ul>
+                    <div class="rightslide">
+                        <ul class="brand_right">
+                            <li>
+                                <img src="image/main6/rightLogo_1.png" alt="포디스크린 로고">
+                                <p>오감체험관 4DX와 다면 상영관 SCREEN X가 결합한 대표 기술 통합관</p>
+                            </li>
+                            
+                            <li>
+                                <img src="image/main6/rightLogo_2.png" alt="골드클래스 로고">
+                                <p>최고의 안락함을 주는 최적의 관람관 그리고 고객 맞춤형 개별 서비스 제공</p>
+                            </li>
+                            <li>
+                                <img src="image/main6/rightLogo_3.png" alt="사운드x 로고">
+                                <p>영상의 움직임에 따라 소리의 방향성과 거리감을 완벽하게 재현하는 3D입체 음향</p>
+                            </li>
+                            <li>
+                                <img src="image/main6/leftLogo_1.png" alt="스페어x 로고">
+                                <p>나를 감싸는 극강의 몰입감, 좌석별 최적의 사운드 존</p>
+                            </li>
+                            <li>
+                                <img src="image/main6/leftLogo_2.png" alt="템퍼 로고">
+                                <p>프리미엄 매트리스&배게브랜드와 함께 탄생한 세계 최초 리클라이닝 영화관</p>
+                            </li>
+                            <li>
+                                <img src="image/main6/rightLogo_1.png" alt="포디스크린 로고">
+                                <p>오감체험관 4DX와 다면 상영관 SCREEN X가 결합한 대표 기술 통합관</p>
+                            </li>
+                            <li>
+                                <img src="image/main6/rightLogo_2.png" alt="골드클래스 로고">
+                                <p>최고의 안락함을 주는 최적의 관람관 그리고 고객 맞춤형 개별 서비스 제공</p>
+                            </li>
+                            <li>
+                                <img src="image/main6/rightLogo_3.png" alt="사운드x 로고">
+                                <p>영상의 움직임에 따라 소리의 방향성과 거리감을 완벽하게 재현하는 3D입체 음향</p>
+                            </li>
+                            <li>
+                                <img src="image/main6/leftLogo_1.png" alt="스페어x 로고">
+                                <p>나를 감싸는 극강의 몰입감, 좌석별 최적의 사운드 존</p>
+                            </li>
+                            <li>
+                                <img src="image/main6/leftLogo_2.png" alt="템퍼 로고">
+                                <p>프리미엄 매트리스&배게브랜드와 함께 탄생한 세계 최초 리클라이닝 영화관</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div><img src="image/main6/bgLogo.png" alt="CGV"></div>
             </article>
@@ -631,7 +680,8 @@
                 </div>
                 <div>
                     <p>ⓒ 2020 CJ CGV Enterprise. TCJ CGV. All Rights Reserved.</p>
-                    <ul>Share
+                    <ul>
+                        <li>Share</li> 
                         <li><i class="fab fa-facebook-square"></i></li>
                         <li><i class="fab fa-instagram"></i></li>
                         <li><i class="fab fa-twitter-square"></i></li>
@@ -664,7 +714,7 @@
                     </address>
                  </div>
                  <div>
-                    <ul>Family Site <span></span><img src="image/footer/up_brand.png" alt="#">
+                    <ul><li>Family Site <span></span><img src="image/footer/up_brand.png" alt="#"></li> 
                         <li><a href="#">1</a></li>
                         <li><a href="#">2</a></li>
                         <li><a href="#">3</a></li>
@@ -674,5 +724,6 @@
             </div>
         </footer>
     </div>
+
 </body>
 </html>

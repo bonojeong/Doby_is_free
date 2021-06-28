@@ -245,15 +245,27 @@ body main .visual .vis_lower_text span {
   display: block;
 }
 
+body main .visual .movie_controler {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 13px;
+}
+
 body main .visual .movie_underbar {
   position: absolute;
   bottom: 0;
   left: 0;
   display: block;
   content: "";
-  width: 653px;
+  width: 0px;
   height: 13px;
   background-color: #E30613;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 body main .selection {
@@ -637,19 +649,33 @@ body main .movie_info .movie_info_list .info_left .info_left_img {
   height: 375px;
   position: relative;
   padding-bottom: 9.2px;
+  overflow: hidden;
 }
 
 body main .movie_info .movie_info_list .info_left .info_left_img .info_poster {
   width: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 body main .movie_info .movie_info_list .info_left .info_left_img .play_btn {
+  -webkit-transition: 1s;
+  transition: 1s;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   cursor: pointer;
+}
+
+body main .movie_info .movie_info_list .info_left .info_left_img:hover .info_poster {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body main .movie_info .movie_info_list .info_left .info_left_img:hover .play_btn {
+  opacity: 0;
 }
 
 body main .movie_info .movie_info_list .info_left .info_left_bottom {

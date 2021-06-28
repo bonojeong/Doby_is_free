@@ -23,4 +23,4 @@ caption { overflow: hidden; width: 0; height: 0; font-size: 0; line-height: 0;}
 a { color:inherit; text-decoration: none;}
 a:hover, a:focus, a:active, a:visited { text-decoration: none; color: inherit;}
 
-img {border: 0; vertical-align: top; }
+img {border: 0; }

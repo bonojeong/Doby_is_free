@@ -96,6 +96,7 @@ body {
   background: rgba(0, 0, 0, 0);
   -webkit-transition: 1s;
   transition: 1s;
+  z-index: -1;
 }
 
 .my_menu_bg_on {
@@ -105,21 +106,6 @@ body {
 
 .myMenuOn {
   right: 0px;
-}
-
-#scroll {
-  width: 100px;
-  height: 50px;
-  text-align: center;
-  color: #252526;
-  background-color: white;
-  font-size: 36px;
-  line-height: 50px;
-  position: fixed;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  z-index: 100;
 }
 
 header {
@@ -177,6 +163,15 @@ header ul:nth-child(3) li {
 
 header ul:nth-child(4) li {
   padding-left: 24px;
+}
+
+header ul li {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header ul li:hover {
+  color: #E30613;
 }
 
 #main {
@@ -240,20 +235,22 @@ header ul:nth-child(4) li {
 #sidebg .movieSlide li {
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  position: relative;
   opacity: 0.4;
 }
 
 #sidebg .movieSlide li .bar {
   display: inline-block;
-  background-color: #E30613;
-  position: relative;
-  top: 3px;
-  width: 2px;
-  height: 14px;
+  background-color: #fff;
+  position: absolute;
+  top: 55px;
+  left: -85px;
+  width: 10px;
+  height: 2px;
   padding: 0;
   margin: 0;
   margin-right: 5px;
-  opacity: 0;
+  opacity: 0.2;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -263,6 +260,7 @@ header ul:nth-child(4) li {
 }
 
 #sidebg .movieSlide li:nth-child(1) .bar {
+  width: 100px;
   opacity: 1;
 }
 
@@ -276,6 +274,7 @@ header ul:nth-child(4) li {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   overflow: hidden;
+  border-left: 1px solid #333;
 }
 
 .index > * {
@@ -335,6 +334,7 @@ header ul:nth-child(4) li {
   padding-left: 7px;
   position: relative;
   top: -2px;
+  vertical-align: none;
 }
 
 #sidebg .slide {
@@ -447,6 +447,21 @@ header ul:nth-child(4) li {
   transition: 0.5s ease-out;
 }
 
+#main .filmindex {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  color: #fff;
+  position: absolute;
+  width: 300px;
+  bottom: 100px;
+  left: -80px;
+  font-size: 14px;
+  line-height: 1.1;
+  border-bottom: 1px solid #fff;
+  z-index: 100;
+  opacity: 0.3;
+}
+
 #weekMovie {
   width: 100%;
   height: 825px;
@@ -494,10 +509,14 @@ header ul:nth-child(4) li {
           transform: rotate(-90deg);
   -ms-flex-item-align: start;
       align-self: flex-start;
-  padding: 65px;
+  margin-top: 65px;
+  margin-left: 65px;
+  padding-right: 65px;
+  margin-bottom: 65px;
   font-size: 14px;
   font-weight: normal;
   font-family: "Yun750";
+  border-bottom: 1px solid #333;
 }
 
 #weekMovie .left div:nth-child(2) .subTitle > * {
@@ -513,6 +532,7 @@ header ul:nth-child(4) li {
   color: white;
   line-height: 1.25;
   overflow: hidden;
+  border-left: 1px solid #333;
 }
 
 .subTitle .redp {
@@ -924,6 +944,16 @@ header ul:nth-child(4) li {
 
 #cardEvent .left .subTitle {
   overflow: hidden;
+  border-left: none;
+}
+
+#cardEvent .left .subTitle::before {
+  content: "";
+  display: block;
+  border-left: 1px solid #ccc;
+  width: 0px;
+  height: 305px;
+  position: absolute;
 }
 
 #cardEvent .left .subTitle > * {
@@ -987,6 +1017,10 @@ header ul:nth-child(4) li {
 #cardEvent .left .cardleft div:nth-child(3) p {
   display: inline-block;
   padding-bottom: 15px;
+}
+
+#cardEvent .left .cardleft .btn {
+  width: 240px;
 }
 
 #cardEvent .right {
@@ -1076,6 +1110,13 @@ header ul:nth-child(4) li {
   font-family: "Yun750";
   border-radius: 23.5px;
   letter-spacing: 1.5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cardslide > div .btnS:hover {
+  background-color: #E30613;
+  color: white;
 }
 
 #cardEvent .right > div:nth-child(2) {
@@ -1161,6 +1202,12 @@ header ul:nth-child(4) li {
   font-family: "Yun770";
 }
 
+#cinema article:nth-child(1) > div:nth-child(1) img {
+  position: relative;
+  top: 1px;
+  padding-right: 3px;
+}
+
 #cinema article:nth-child(1) > div:nth-child(2) {
   width: 100%;
   padding-top: 78px;
@@ -1188,8 +1235,14 @@ header ul:nth-child(4) li {
   font-family: "Yun780";
 }
 
+#cinema article:nth-child(1) > div:nth-child(2) > div:nth-child(1) div span {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 #cinema article:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
   width: 65%;
+  overflow: hidden;
 }
 
 #cinema article:nth-child(1) > div:nth-child(2) > div:nth-child(2) span {
@@ -1197,6 +1250,8 @@ header ul:nth-child(4) li {
 }
 
 #cinema article:nth-child(1) > div:nth-child(2) > div:nth-child(2) p:nth-child(1) {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   font-size: 18px;
   font-weight: normal;
   font-family: "Yun780";
@@ -1204,6 +1259,8 @@ header ul:nth-child(4) li {
 }
 
 #cinema article:nth-child(1) > div:nth-child(2) > div:nth-child(2) p:nth-child(2) {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   font-size: 17px;
   font-weight: normal;
   font-family: "Yun720";
@@ -1600,6 +1657,16 @@ header ul:nth-child(4) li {
   letter-spacing: -1.75px;
 }
 
+#brand article:nth-child(1) .brand_title {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+}
+
+#brand article:nth-child(1) .brand_title .btn {
+  margin-left: 15px;
+}
+
 #brand article:nth-child(1) img {
   position: relative;
   top: 110px;
@@ -1612,6 +1679,10 @@ header ul:nth-child(4) li {
   font-family: 'Yun730';
   padding-left: 10px;
   padding-bottom: 15px;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 #brand article:nth-child(1) h2 {
@@ -1621,6 +1692,17 @@ header ul:nth-child(4) li {
   line-height: 1.085;
   padding-left: 10px;
   padding-bottom: 60px;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#brand article:nth-child(1) button {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 #brand article:nth-child(2) {
@@ -1639,31 +1721,64 @@ header ul:nth-child(4) li {
   padding-bottom: 70px;
 }
 
-#brand article:nth-child(2) div {
+#brand article:nth-child(2) > div > p::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  border-left: 1px solid #eee;
+  color: black;
+  width: 1px;
+  height: 110px;
+}
+
+#brand article:nth-child(2) > div {
   font-size: 14px;
   font-weight: normal;
   font-family: "Yun770";
 }
 
-#brand article:nth-child(2) div:not(:last-child) {
+#brand article:nth-child(2) > div:not(:last-child) {
   padding-top: 92px;
   width: 300px;
 }
 
-#brand article:nth-child(2) div ul {
+#brand article:nth-child(2) > div .leftslide {
   width: 250px;
+  height: 68vh;
+  overflow: hidden;
 }
 
-#brand article:nth-child(2) div ul p {
+#brand article:nth-child(2) > div .rightslide {
+  width: 250px;
+  height: 68vh;
+  overflow: hidden;
+}
+
+#brand article:nth-child(2) > div ul p {
   font-family: "Yun730";
   padding-top: 25px;
 }
 
-#brand article:nth-child(2) div ul li {
+#brand article:nth-child(2) > div ul li {
   padding-bottom: 60px;
 }
 
-#brand article:nth-child(2) div:last-child img {
+#brand article:nth-child(2) > div .brand_left {
+  -webkit-transition: 10ms;
+  transition: 10ms;
+  position: relative;
+}
+
+#brand article:nth-child(2) > div .brand_right {
+  -webkit-transition: 10ms;
+  transition: 10ms;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#brand article:nth-child(2) > div:last-child img {
   width: 400px;
   position: relative;
   top: 20px;
@@ -1836,13 +1951,19 @@ footer > div:nth-child(2) div:nth-child(1) address {
 footer > div:nth-child(2) div:nth-child(2) {
   margin: 0px 230px 0px 280px;
   width: 212px;
-  height: 38px;
+  height: 40px;
   overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   line-height: 37px;
   font-size: 14px;
   font-family: "Yun740";
   color: #535353;
   background-color: black;
+}
+
+footer > div:nth-child(2) div:nth-child(2):hover {
+  height: 200px;
 }
 
 footer > div:nth-child(2) div:nth-child(2) ul {
@@ -1855,4 +1976,13 @@ footer > div:nth-child(2) div:nth-child(2) ul {
 footer > div:nth-child(2) div:nth-child(2) ul span {
   width: 100px;
   display: inline-block;
+}
+
+footer > div:nth-child(2) div:nth-child(2) ul li {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer > div:nth-child(2) div:nth-child(2) ul li:not(:first-child):hover {
+  background-color: wheat;
 }
