@@ -48,6 +48,85 @@ progress.addEventListener('mousemove', (e) => mousedown && scrub(e));
 progress.addEventListener('mousedown', () => mousedown = true); 
 progress.addEventListener('mouseup', () => mousedown = false);
 
+let visualInnerText = document.querySelector('.vis_upper_text p').children
+let reserve_btn = document.querySelector('.reserve_btn');
+let visLowerInnerText = document.querySelector('.vis_lower_text > p ');
+//visual 텍스트 effect
+function mainEffect(){ 
+    setTimeout(function(){
+        setTimeout(function() {      
+            visualInnerText[0].style.left = `0px`;
+        }, 300);
+        setTimeout(function() {      
+            visualInnerText[1].style.left = `0px`;
+        }, 1000);
+        setTimeout(function() {      
+            visualInnerText[2].style.left = `0px`;
+        }, 1500);
+        setTimeout(function() {      
+            reserve_btn.style.left = `0px`;
+        }, 2200);
+        setTimeout(function() {
+            visLowerInnerText.style.transform = `translateX(0)`;
+        }, 3000)
+    }, 500);
+}
+mainEffect();
+
+
+//addEventListener로 scroll이벤트를 줘서 값을 구한다음 
+//selcetionAnimation 함수 적용하기
+let selectedAnimation = function() {
+    let selMovieTextsArr, selMoviePosterArr, winH;
+    
+    let initModule = function(){
+        selMovieTextsArr = document.querySelectorAll('.sel_movie_texts');
+        selMoviePosterArr = document.querySelectorAll('.sel_movie_poster');
+        //윈도우 높이
+        winH = window.innerHeight; // 969px
+        _addEventHandlers();
+    }
+//스크롤, 파일이 load됐을 때 function _checkPosition 작동
+//resize 됐을 때 function initModule 작동
+let _addEventHandlers = function(){
+    window.addEventListener("scroll", _checkPosition);
+    window.addEventListener("load", _checkPosition);
+    window.addEventListener("resize", initModule);
+}
+let _checkPosition = function () {
+    for (let i = 0; i < selMovieTextsArr.length; i++) {
+        //selMovieTextsArr 의 Top값이 winH보다 작을 때 함수 작동
+        let posFromTop = selMovieTextsArr[i].getBoundingClientRect().top;
+        if (winH > posFromTop + 500) {
+                //classList.add로 클래스 이름 주기
+                selMovieTextsArr[i].classList.add("sel_movie_effect1");
+                selMoviePosterArr[i].classList.add("sel_movie_effect2");
+            }
+        }
+    }  
+    //이거는 잘 모르겠..ㅎ
+    return {
+        init: initModule
+    }
+}
+selectedAnimation().init();
+
+
+//eventpage 
+//목록에 있는것을 아무거나 누르면 메인스크린에 있는 번호랑 바뀐다(addEventListener 마우스 효과적용)
+//바뀔때 목록은 다시 재배치 되는데
+// 재배치될 떄 1234 순으로 된다. ( map 사용해서 배열 재구성)
+// 메인에 있는 인덱스 번호는 목록에는 있으면 안된다. (filter로 메인번호 거른다)
+// 번호 + 선 먼저나오고  // 텍스트 한번에 나오고 (위-먼저)
+// 텍스트나오고 버튼나온다 (아래-나중)
+let eventPageEffect = function(){
+    let (
+        screen_number, screen_under_line, 
+        screen_texts, screen_lower_h4, screen_lower_p
+    )
+}
+
+
 
 
 //gototheTop 눌렀을 때 페이지 상단으로 이동

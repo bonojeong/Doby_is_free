@@ -50,31 +50,53 @@
 
 @-webkit-keyframes diagonal {
   0% {
-    bottom: 0;
-    right: 0;
+    bottom: -10px;
+    right: 20px;
   }
   50% {
-    bottom: -10px;
-    right: 10px;
+    bottom: 0px;
+    right: 15px;
   }
   100% {
-    bottom: 0;
-    right: 0;
+    bottom: -10px;
+    right: 20px;
   }
 }
 
 @keyframes diagonal {
   0% {
-    bottom: 0;
-    right: 0;
+    bottom: -10px;
+    right: 20px;
   }
   50% {
-    bottom: -10px;
-    right: 10px;
+    bottom: 0px;
+    right: 15px;
   }
   100% {
-    bottom: 0;
-    right: 0;
+    bottom: -10px;
+    right: 20px;
+  }
+}
+
+@-webkit-keyframes sel_movie_move {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes sel_movie_move {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
@@ -202,6 +224,7 @@ body main .visual {
   overflow: hidden;
   width: 100%;
   position: relative;
+  padding-left: 255px;
 }
 
 body main .visual video {
@@ -213,8 +236,10 @@ body main .visual video {
 }
 
 body main .visual .vis_upper_text {
+  overflow: hidden;
   padding-top: 169.3px;
-  padding-left: 255px;
+  padding-left: 1px;
+  position: relative;
 }
 
 body main .visual .vis_upper_text p {
@@ -228,6 +253,46 @@ body main .visual .vis_upper_text p span {
   display: block;
 }
 
+body main .visual .vis_upper_text p .vis_innertext1 {
+  position: relative;
+  left: -500px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body main .visual .vis_upper_text p .vis_innertext2 {
+  position: relative;
+  left: -210px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body main .visual .vis_upper_text p .vis_innertext3 {
+  position: relative;
+  left: -750px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body main .visual .vis_upper_text .reserve_btn {
+  position: relative;
+  left: -220px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body main .visual .vis_upper_text::before {
+  display: block;
+  content: "";
+  width: 1px;
+  height: 440px;
+  background: #fff;
+  position: absolute;
+  left: 3px;
+  bottom: 90px;
+  opacity: 0.2;
+}
+
 body main .visual .vis_lower_text {
   float: right;
   text-align: right;
@@ -235,9 +300,14 @@ body main .visual .vis_lower_text {
   padding-right: 166.1px;
   font-size: 20px;
   color: #fff;
+  overflow: hidden;
 }
 
 body main .visual .vis_lower_text p {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   font-family: 'YoonGothic730';
 }
 
@@ -331,6 +401,7 @@ body main .selection .sel_movies {
 
 body main .selection .sel_movies > ul {
   width: 731px;
+  overflow: hidden;
 }
 
 body main .selection .sel_movies .sel_movie_texts {
@@ -346,6 +417,8 @@ body main .selection .sel_movies .sel_movie_texts {
   position: relative;
   padding-top: 13px;
   margin-bottom: 48.8px;
+  -webkit-transform: translateX(-101%);
+          transform: translateX(-101%);
 }
 
 body main .selection .sel_movies .sel_movie_texts .movie_texts1 {
@@ -387,8 +460,6 @@ body main .selection .sel_movies .sel_movie_texts .movie_texts2 span {
 
 body main .selection .sel_movies .sel_movie_texts a {
   position: absolute;
-  bottom: 0;
-  right: 0;
   -webkit-animation: diagonal;
           animation: diagonal;
   -webkit-animation-duration: 2s;
@@ -400,6 +471,8 @@ body main .selection .sel_movies .sel_movie_texts a {
 body main .selection .sel_movies .sel_movie_poster {
   position: relative;
   overflow: hidden;
+  -webkit-transform: translateX(-101%);
+          transform: translateX(-101%);
 }
 
 body main .selection .sel_movies .sel_movie_poster .poster {
@@ -416,7 +489,6 @@ body main .selection .sel_movies .sel_movie_poster .more_img {
           transform: translate(-50%, -50%);
   -webkit-transition: 1s;
   transition: 1s;
-  opacity: 0;
 }
 
 body main .selection .sel_movies .sel_movie_poster:hover .poster {
@@ -444,6 +516,26 @@ body main .selection .sel_movies .sel_movies_right {
 
 body main .selection .sel_movies .sel_movies_right .left_lower {
   padding-top: 104px;
+}
+
+body main .selection .sel_movie_effect1 {
+  -webkit-animation: sel_movie_move;
+          animation: sel_movie_move;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+body main .selection .sel_movie_effect2 {
+  -webkit-animation: sel_movie_move;
+          animation: sel_movie_move;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 body main .event {
@@ -486,6 +578,9 @@ body main .event .event_screen .screen_upper .screen_number {
   font-family: 'YoonGothic750';
   font-size: 250px;
   color: #E30613;
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 body main .event .event_screen .screen_upper .screen_text {
@@ -493,9 +588,12 @@ body main .event .event_screen .screen_upper .screen_text {
   font-size: 45px;
   line-height: 1.1;
   padding-bottom: 35px;
+  overflow: hidden;
 }
 
 body main .event .event_screen .screen_upper .screen_text span {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
   display: block;
 }
 
@@ -508,6 +606,8 @@ body main .event .event_screen .screen_upper::after {
   width: 958px;
   height: 1px;
   content: "";
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 body main .event .event_screen .screen_lower {
@@ -517,16 +617,24 @@ body main .event .event_screen .screen_lower {
   padding-top: 45.6px;
 }
 
+body main .event .event_screen .screen_lower .screen_lower_text {
+  overflow: hidden;
+}
+
 body main .event .event_screen .screen_lower .screen_lower_text h4 {
   font-family: 'YoonGothic730';
   font-size: 17px;
   padding-bottom: 15.7px;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
 body main .event .event_screen .screen_lower .screen_lower_text p {
   color: #A7A7A7;
   padding-bottom: 35.6px;
   line-height: 1.24;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
 body main .event .event_screen .screen_lower .screen_lower_text p span {
@@ -537,6 +645,12 @@ body main .event .event_screen .screen_lower .event_btn {
   position: absolute;
   bottom: -45.6px;
   right: 168px;
+  overflow: hidden;
+}
+
+body main .event .event_screen .screen_lower .event_btn a {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
 body main .event .event_list {
@@ -557,6 +671,8 @@ body main .event .event_list ul .screens {
   width: 50%;
   height: 50%;
   padding: 51.5px 0 55.4px 54px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 body main .event .event_list ul .screens h1 {
@@ -576,8 +692,8 @@ body main .event .event_list ul .screens p span {
   display: block;
 }
 
-body main .event .event_list ul .small_screen1 {
-  background-color: #E30613;
+body main .event .event_list ul .screens:hover {
+  background: #E30613;
 }
 
 body main .event .event_list ul .small_screen1, body main .event .event_list ul .small_screen3 {
@@ -727,21 +843,38 @@ body main .movie_info .movie_info_list .info_right ul .info_right2 > p {
 
 body main .movie_info .movie_info_list .info_right ul li {
   width: 488px;
+  overflow: hidden;
 }
 
 body main .movie_info .movie_info_list .info_right ul li .info_right_poster {
   width: 100%;
+  height: 322px;
+  overflow: hidden;
   position: relative;
 }
 
 body main .movie_info .movie_info_list .info_right ul li .info_right_poster .poster {
   width: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  overflow: hidden;
 }
 
 body main .movie_info .movie_info_list .info_right ul li .info_right_poster .more_btn {
   position: absolute;
   top: 21px;
   right: 21px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body main .movie_info .movie_info_list .info_right ul li .info_right_poster:hover .poster {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body main .movie_info .movie_info_list .info_right ul li .info_right_poster:hover .more_btn {
+  opacity: 0;
 }
 
 body main .movie_info .movie_info_list .info_right ul li .info_right_text {

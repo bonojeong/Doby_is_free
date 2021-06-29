@@ -141,12 +141,12 @@ preBtn.onclick = function(e){
     }
     movieSlide[videoNum-1].style.opacity = '1';
     bar[videoNum-1].style.opacity = '1';
-    bar[videoNum-1].style.width = '100px';
+    bar[videoNu-1].style.width = '100px';
 };
 nextBtn.onclick = function(){
     resetEffect();
     if(videoNum == 4){
-        videoNum = 1;
+        videoNum = 1;m
         video.src = preLoadVideo[videoNum];
         indexchild[1].innerHTML = h2text[videoNum-1];
         indexchild[2].innerHTML = h2text2[videoNum-1];
