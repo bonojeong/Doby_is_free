@@ -97,7 +97,7 @@ let _checkPosition = function () {
     for (let i = 0; i < selMovieTextsArr.length; i++) {
         //selMovieTextsArr 의 Top값이 winH보다 작을 때 함수 작동
         let posFromTop = selMovieTextsArr[i].getBoundingClientRect().top;
-        if (winH > posFromTop + 500) {
+        if (winH > posFromTop + 300) {
                 //classList.add로 클래스 이름 주기
                 selMovieTextsArr[i].classList.add("sel_movie_effect1");
                 selMoviePosterArr[i].classList.add("sel_movie_effect2");
@@ -112,6 +112,8 @@ let _checkPosition = function () {
 selectedAnimation().init();
 
 
+// -------------------------------------------------------------
+
 //eventpage 
 //목록에 있는것을 아무거나 누르면 메인스크린에 있는 번호랑 바뀐다(addEventListener 마우스 효과적용)
 //바뀔때 목록은 다시 재배치 되는데
@@ -119,14 +121,116 @@ selectedAnimation().init();
 // 메인에 있는 인덱스 번호는 목록에는 있으면 안된다. (filter로 메인번호 거른다)
 // 번호 + 선 먼저나오고  // 텍스트 한번에 나오고 (위-먼저)
 // 텍스트나오고 버튼나온다 (아래-나중)
-let eventPageEffect = function(){
-    let (
-        screen_number, screen_under_line, 
-        screen_texts, screen_lower_h4, screen_lower_p
-    )
+
+//스크린용 class 생성
+class eventSelect {
+    constructor(screen_n, screen_T1, screen_T2, screen_H4, screen_P){
+        this.screen_n = screen_n;
+        this.screen_T1 = screen_T1;
+        this.screen_T2 = screen_T2;
+        this.screen_H4 = screen_H4;
+        this.screen_P = screen_P;
+    }
 }
+const eventText = [
+    new eventSelect(
+        '1', 
+        'FILM MARK EVENT', 
+        'LUCA', 
+        '영화 속 명장면을 내 손 안에 담아보는 나만의 컬렉터블 기프트 No.15',
+        '바다 밖은 위험해?!아니, 궁금해!'
+    ),
+    new eventSelect(
+        '2', 
+        'FILM MARK EVENT', 
+        'LUCA', 
+        '영화 속 명장면을 내 손 안에 담아보는 나만의 컬렉터블 기프트 No.15',
+        '바다 밖은 위험해?!아니, 궁금해!'
+    ),
+    new eventSelect(
+        '3', 
+        'FILM MARK EVENT', 
+        'LUCA', 
+        '영화 속 명장면을 내 손 안에 담아보는 나만의 컬렉터블 기프트 No.15',
+        '바다 밖은 위험해?!아니, 궁금해!'
+    ),
+    new eventSelect(
+        '4', 
+        'FILM MARK EVENT', 
+        'LUCA', 
+        '영화 속 명장면을 내 손 안에 담아보는 나만의 컬렉터블 기프트 No.15',
+        '바다 밖은 위험해?!아니, 궁금해!'
+    ),
+    new eventSelect(
+        '5', 
+        'FILM MARK EVENT', 
+        'LUCA', 
+        '영화 속 명장면을 내 손 안에 담아보는 나만의 컬렉터블 기프트 No.15',
+        '바다 밖은 위험해?!아니, 궁금해!'
+    )
+]
+//리스트용 class 생성
+class eventSmallSelect {
+    constructor(screen_Sn, screen_ST1, screen_ST2){
+        this.screen_Sn = screen_Sn;
+        this.screen_ST1 = screen_ST1;
+        this.screen_ST2 = screen_ST2;
+    }
+}
+const eventSmallText = [
+    new eventSmallSelect(1, 'FILM MARK EVENT', 'LUCA'),
+    new eventSmallSelect(2, 'FILM MARK EVENT', 'Call Restriction'),
+    new eventSmallSelect(3, 'FILM MARK EVENT', `Killer's Bodyguard 2`),
+    new eventSmallSelect(4, 'FILM MARK EVENT', 'Cash Truck'),
+    new eventSmallSelect(5, 'FILM MARK EVENT', 'In-Game Item'),
+]
 
+let screen_number = document.querySelector('.screen_number');
+let screen_texts = document.querySelectorAll('.screen_text span');
+let screen_lower_h4 = document.querySelector('.screen_lower_text h4');
+let screen_lower_p = document.querySelector('.screen_lower p');
+let event_btn = document.querySelector('.event_btn a');
 
+console.log(screen_number)
+// function ListClick_2(){
+//     screen_number.textcontent = eventText[1].screen_n;
+//     screen_texts.textcontent = eventText[1].screen_T1;
+//     screen_lower_h4.textcontent = eventText[1].screen_H4;
+//     screen_lower_p.textcontent = eventText[1].screen_p;
+// }
+
+let eventNum =1;
+function test(eventNum){
+    screen_number.textcontent = eventText[eventNum-1].screen_n
+}
+test(eventNum)
+
+function eventEffect(id){
+    eventNum = id.getAttribute('data-num')
+    test(eventNum);
+    console.log(eventNum); 
+    setTimeout(function(){
+        setTimeout(function() {      
+            screen_number.style.opacity = `1`;
+        }, 300);
+        setTimeout(function() {      
+            screen_texts[0].style.transform = `translateX(0)`;
+        }, 800);
+        setTimeout(function() {      
+            screen_texts[1].style.transform = `translateX(0)`;
+        }, 800);
+        setTimeout(function() {      
+            screen_lower_h4.style.transform = `translateX(0)`;
+        }, 1200);
+        setTimeout(function() {
+            screen_lower_p.style.transform = `translateX(0)`;
+        }, 1500)
+        setTimeout(function() {
+            event_btn.style.transform = `translateX(0)`;
+        }, 1800)
+    }, 500);
+}
+// ----------------------------------------------
 
 
 //gototheTop 눌렀을 때 페이지 상단으로 이동

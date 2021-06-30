@@ -100,6 +100,24 @@
   }
 }
 
+@-webkit-keyframes event_under_bar {
+  from {
+    width: 0;
+  }
+  to {
+    width: 958px;
+  }
+}
+
+@keyframes event_under_bar {
+  from {
+    width: 0;
+  }
+  to {
+    width: 958px;
+  }
+}
+
 body {
   width: 100%;
   background: #000;
@@ -578,7 +596,7 @@ body main .event .event_screen .screen_upper .screen_number {
   font-family: 'YoonGothic750';
   font-size: 250px;
   color: #E30613;
-  opacity: 1;
+  opacity: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -592,9 +610,11 @@ body main .event .event_screen .screen_upper .screen_text {
 }
 
 body main .event .event_screen .screen_upper .screen_text span {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   display: block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 body main .event .event_screen .screen_upper::after {
@@ -603,11 +623,19 @@ body main .event .event_screen .screen_upper::after {
   left: 161px;
   display: block;
   background: #E30613;
-  width: 958px;
+  width: 0px;
   height: 1px;
   content: "";
   -webkit-transition: 1s;
   transition: 1s;
+  -webkit-animation: event_under_bar;
+          animation: event_under_bar;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 body main .event .event_screen .screen_lower {
@@ -625,16 +653,20 @@ body main .event .event_screen .screen_lower .screen_lower_text h4 {
   font-family: 'YoonGothic730';
   font-size: 17px;
   padding-bottom: 15.7px;
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 body main .event .event_screen .screen_lower .screen_lower_text p {
   color: #A7A7A7;
   padding-bottom: 35.6px;
   line-height: 1.24;
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 body main .event .event_screen .screen_lower .screen_lower_text p span {
@@ -649,8 +681,10 @@ body main .event .event_screen .screen_lower .event_btn {
 }
 
 body main .event .event_screen .screen_lower .event_btn a {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 body main .event .event_list {

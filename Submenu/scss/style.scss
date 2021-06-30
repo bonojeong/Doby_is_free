@@ -63,6 +63,15 @@
     }
 }
 
+@keyframes event_under_bar {
+    from {
+        width: 0;
+    }
+    to {
+        width: 958px;
+    }
+}
+
 body{
     width: 100%;
     background: #000;
@@ -421,7 +430,7 @@ body{
                         font-family: 'YoonGothic750';
                         font-size: 250px;
                         color: #E30613;
-                        opacity: 1;
+                        opacity: 0;
                         transition: 0.5s;
                     }
                     .screen_text {
@@ -431,8 +440,9 @@ body{
                         padding-bottom: 35px;
                         overflow: hidden;
                         span {
-                            transform: translateX(0%);
+                            transform: translateX(-100%);
                             display: block;
+                            transition: 0.5s;
                         }
                     }
                     &::after {
@@ -441,17 +451,15 @@ body{
                         left: 161px;
                         display: block;
                         background: #E30613;
-                        width: 958px;
+                        width: 0px;
                         height: 1px;
                         content: "";
                         transition: 1s;
+                        animation: event_under_bar;
+                        animation-delay: 0.8s;
+                        animation-duration: 1s;
+                        animation-fill-mode: forwards;
                     }
-                    // &:hover .screen_number {
-                    //     opacity: 1;
-                    // }
-                    // &:hover::after {
-                    //     width: 958px;
-                    // }
                 }
                 .screen_lower {
                     float: right;
@@ -464,13 +472,15 @@ body{
                             font-family: 'YoonGothic730';
                             font-size: 17px;
                             padding-bottom: 15.7px;
-                            transform: translateX(0%);
+                            transform: translateX(-100%);
+                            transition: 0.5s;
                         }
                         p {
                             color: #A7A7A7;
                             padding-bottom: 35.6px;
                             line-height: 1.24;
-                            transform: translateX(0%);
+                            transform: translateX(-100%);
+                            transition: 0.5s;
                             span {
                                 display: block;
                             }
@@ -482,7 +492,8 @@ body{
                         right: 168px;
                         overflow: hidden;
                         a {
-                            transform: translateX(0%);
+                            transform: translateX(-100%);
+                            transition: 0.5s;
                         }
                     }
                 }
