@@ -138,53 +138,51 @@ const eventText = [
         'FILM MARK EVENT', 
         'LUCA', 
         '영화 속 명장면을 내 손 안에 담아보는 나만의 컬렉터블 기프트 No.15',
-        '바다 밖은 위험해?!아니, 궁금해!'
+        `바다 밖은 위험해?!아니, 궁금해!<span>바다 밖 세상이 궁금하지만, 두렵기도 한 호기심 많은 소년'루카'</span>`
     ),
     new eventSelect(
         '2', 
         'FILM MARK EVENT', 
-        'LUCA', 
+        `Call Restricion`, 
         '영화 속 명장면을 내 손 안에 담아보는 나만의 컬렉터블 기프트 No.15',
-        '바다 밖은 위험해?!아니, 궁금해!'
+        `바다 밖은 위험해?!아니, 궁금해!<span>바다 밖 세상이 궁금하지만, 두렵기도 한 호기심 많은 소년'루카'</span>`
     ),
     new eventSelect(
         '3', 
         'FILM MARK EVENT', 
-        'LUCA', 
+        `Killer's Bodyguard2`, 
         '영화 속 명장면을 내 손 안에 담아보는 나만의 컬렉터블 기프트 No.15',
-        '바다 밖은 위험해?!아니, 궁금해!'
+        `바다 밖은 위험해?!아니, 궁금해!<span>바다 밖 세상이 궁금하지만, 두렵기도 한 호기심 많은 소년'루카'</span>`
     ),
     new eventSelect(
         '4', 
         'FILM MARK EVENT', 
-        'LUCA', 
+        'Cash Truck', 
         '영화 속 명장면을 내 손 안에 담아보는 나만의 컬렉터블 기프트 No.15',
-        '바다 밖은 위험해?!아니, 궁금해!'
+        `바다 밖은 위험해?!아니, 궁금해!<span>바다 밖 세상이 궁금하지만, 두렵기도 한 호기심 많은 소년'루카'</span>`
     ),
     new eventSelect(
         '5', 
-        'FILM MARK EVENT', 
-        'LUCA', 
+        'Battleground PCS4 Live', 
+        'In-Game Item', 
         '영화 속 명장면을 내 손 안에 담아보는 나만의 컬렉터블 기프트 No.15',
-        '바다 밖은 위험해?!아니, 궁금해!'
+        `바다 밖은 위험해?!아니, 궁금해!<span>바다 밖 세상이 궁금하지만, 두렵기도 한 호기심 많은 소년'루카'</span>`
     )
 ]
 //리스트용 class 생성
 class eventSmallSelect {
-    constructor(screen_Sn, screen_ST1, screen_ST2){
+    constructor(screen_Sn, screen_ST){
         this.screen_Sn = screen_Sn;
-        this.screen_ST1 = screen_ST1;
-        this.screen_ST2 = screen_ST2;
+        this.screen_ST = screen_ST;
     }
 }
 const eventSmallText = [
-    new eventSmallSelect(1, 'FILM MARK EVENT', 'LUCA'),
-    new eventSmallSelect(2, 'FILM MARK EVENT', 'Call Restriction'),
-    new eventSmallSelect(3, 'FILM MARK EVENT', `Killer's Bodyguard 2`),
-    new eventSmallSelect(4, 'FILM MARK EVENT', 'Cash Truck'),
-    new eventSmallSelect(5, 'FILM MARK EVENT', 'In-Game Item'),
+    new eventSmallSelect(1, 'FILM MARK EVENT<span>LUCA</span>'),
+    new eventSmallSelect(2, 'FILM MARK EVENT<span>Call Restriction</span>'),
+    new eventSmallSelect(3, `FILM MARK EVENT<span>Killer's Bodyguard 2</span>`),
+    new eventSmallSelect(4, 'FILM MARK EVENT<span>Cash Truck</span>'),
+    new eventSmallSelect(5, 'FILM MARK EVENT<span>In-Game Item</span>'),
 ]
-
 let screen_number = document.querySelector('.screen_number');
 let screen_texts = document.querySelectorAll('.screen_text span');
 let screen_lower_h4 = document.querySelector('.screen_lower_text h4');
@@ -192,41 +190,66 @@ let screen_lower_p = document.querySelector('.screen_lower p');
 let event_btn = document.querySelector('.event_btn a');
 
 console.log(screen_number)
-// function ListClick_2(){
-//     screen_number.textcontent = eventText[1].screen_n;
-//     screen_texts.textcontent = eventText[1].screen_T1;
-//     screen_lower_h4.textcontent = eventText[1].screen_H4;
-//     screen_lower_p.textcontent = eventText[1].screen_p;
-// }
 
 let eventNum =1;
 function test(eventNum){
-    screen_number.textcontent = eventText[eventNum-1].screen_n
+    screen_number.innerHTML = eventText[eventNum-1].screen_n
+    screen_texts[0].innerHTML = eventText[eventNum-1].screen_T1
+    screen_texts[1].innerHTML = eventText[eventNum-1].screen_T2
+    screen_lower_h4.innerHTML = eventText[eventNum-1].screen_H4
+    screen_lower_p.innerHTML = eventText[eventNum-1].screen_P
 }
 test(eventNum)
 
 function eventEffect(id){
     eventNum = id.getAttribute('data-num')
+    if(eventNum == 2){
+        id.setAttribute('data-num',1);
+        document.querySelector(`.small_screen1 h1`).innerHTML = id.getAttribute('data-num');
+        document.querySelector(`.small_screen1 p`).innerHTML = eventSmallText[id-1].screen_ST;
+    }
     test(eventNum);
-    console.log(eventNum); 
+    console.log(eventNum);
+
+    //다시 눌렀을때 초기화 상태    
+    screen_number.style.opacity = `0`; 
+    screen_number.style.transition = `0s`;  
+    screen_texts[0].style.transform = `translateX(-100%)`;
+    screen_texts[0].style.transition = `0s`;
+    screen_texts[1].style.transform = `translateX(-100%)`;
+    screen_texts[1].style.transition = `0s`;
+    screen_lower_h4.style.transform = `translateX(-100%)`;
+    screen_lower_h4.style.transition = `0s`;
+    screen_lower_p.style.transform = `translateX(-100%)`;
+    screen_lower_p.style.transition = `0s`;
+    event_btn.style.transform = `translateX(-100%)`;
+    event_btn.style.transition = `0s`;
+
+    //클릭했을때 텍스트 인터렉션 효과
     setTimeout(function(){
         setTimeout(function() {      
             screen_number.style.opacity = `1`;
+            screen_number.style.transition = `0.5s`;
         }, 300);
         setTimeout(function() {      
             screen_texts[0].style.transform = `translateX(0)`;
+            screen_texts[0].style.transition = `0.5s`;
         }, 800);
         setTimeout(function() {      
             screen_texts[1].style.transform = `translateX(0)`;
+            screen_texts[1].style.transition = `0.5s`;
         }, 800);
         setTimeout(function() {      
             screen_lower_h4.style.transform = `translateX(0)`;
+            screen_lower_h4.style.transition = `0.5s`;
         }, 1200);
         setTimeout(function() {
             screen_lower_p.style.transform = `translateX(0)`;
+            screen_lower_p.style.transition = `0.5s`;
         }, 1500)
         setTimeout(function() {
             event_btn.style.transform = `translateX(0)`;
+            event_btn.style.transition = `0.5s`;
         }, 1800)
     }, 500);
 }

@@ -68,7 +68,7 @@
         width: 0;
     }
     to {
-        width: 958px;
+        width: 954px;
     }
 }
 
@@ -431,7 +431,7 @@ body{
                         font-size: 250px;
                         color: #E30613;
                         opacity: 0;
-                        transition: 0.5s;
+                        
                     }
                     .screen_text {
                         font-family: 'YoonGothic770';
@@ -448,7 +448,7 @@ body{
                     &::after {
                         position: absolute;
                         bottom: 30px;
-                        left: 161px;
+                        left: 165px;
                         display: block;
                         background: #E30613;
                         width: 0px;
