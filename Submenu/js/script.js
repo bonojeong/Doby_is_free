@@ -88,23 +88,22 @@ let selectedAnimation = function() {
     }
 //스크롤, 파일이 load됐을 때 function _checkPosition 작동
 //resize 됐을 때 function initModule 작동
-let _addEventHandlers = function(){
-    window.addEventListener("scroll", _checkPosition);
-    window.addEventListener("load", _checkPosition);
-    window.addEventListener("resize", initModule);
-}
-let _checkPosition = function () {
-    for (let i = 0; i < selMovieTextsArr.length; i++) {
-        //selMovieTextsArr 의 Top값이 winH보다 작을 때 함수 작동
-        let posFromTop = selMovieTextsArr[i].getBoundingClientRect().top;
-        if (winH > posFromTop + 300) {
+    let _addEventHandlers = function(){
+        window.addEventListener("scroll", _checkPosition);
+        window.addEventListener("load", _checkPosition);
+        window.addEventListener("resize", initModule);
+    }
+    let _checkPosition = function () {
+        for (let i = 0; i < selMovieTextsArr.length; i++) {
+            //selMovieTextsArr 의 Top값이 winH보다 작을 때 함수 작동
+            let posFromTop = selMovieTextsArr[i].getBoundingClientRect().top;
+            if (winH > posFromTop + 300) {
                 //classList.add로 클래스 이름 주기
                 selMovieTextsArr[i].classList.add("sel_movie_effect1");
                 selMoviePosterArr[i].classList.add("sel_movie_effect2");
             }
         }
     }  
-    //이거는 잘 모르겠..ㅎ
     return {
         init: initModule
     }
