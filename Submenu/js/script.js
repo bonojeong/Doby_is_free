@@ -123,6 +123,7 @@ selectedAnimation().init();
 
 //스크린용 class 생성
 
+<<<<<<< HEAD
 let screen_number = document.querySelector('.screen_number');
 let screen_texts = document.querySelectorAll('.screen_text span');
 let screen_lower_h4 = document.querySelector('.screen_lower_text h4');
@@ -132,10 +133,17 @@ let event_btn = document.querySelector('.event_btn a');
 function eventEffect(){
     let big = document.querySelectorAll('.event_screen')
     let small = document.querySelectorAll('.screens div')
+=======
+function eventEffect(){
+    let small = document.querySelectorAll('.screens');
+    let smalldiv = document.querySelectorAll('.screens div');
+    let big = document.querySelectorAll('.event_screen');
+>>>>>>> 3e2d7f1a6d2333eabee4fd802d8241e77490e572
     small.forEach(function(item){
         item.addEventListener('click',function(event){
             let num = event.target.dataset.num;
             big.forEach(function(item){
+<<<<<<< HEAD
                 item.style.opacity = '0';
                 item.style.display = 'none'
             })
@@ -177,6 +185,29 @@ function eventEffect(){
     }, 500);
 }
 eventEffect();
+=======
+                item.style.display= 'none'
+            })
+            big[num].style.display = 'block'
+            small.forEach(function(item){
+                item.style.display='block'
+            })
+            console.log(num);
+            event.target.style.display = 'none'
+
+            // let event_num = document.querySelectorAll('.screen_number span');
+            // let event_up_text = document.querySelectorAll('.screen_text span')
+            // let event_down_h4 = document.querySelectorAll('.screen_lower_text h4')
+            // let event_down_p = document.querySelectorAll('.screen_lower_text p')
+            // let event_btn = document.querySelectorAll('.event_btn')
+
+            // event_num[num].style.transform = 'translateX(-100%)'
+        })
+    })
+
+}
+eventEffect()
+>>>>>>> 3e2d7f1a6d2333eabee4fd802d8241e77490e572
 // ----------------------------------------------
 
 
