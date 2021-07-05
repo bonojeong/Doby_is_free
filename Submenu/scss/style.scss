@@ -72,6 +72,47 @@
     }
 }
 
+@keyframes event_up_num {
+    from {
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+@keyframes event_up_text_span {
+    from {
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+@keyframes event_down_h4 {
+    from {
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+@keyframes event_down_p {
+    from {
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+@keyframes event_down_btn {
+    from {
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
 body{
     width: 100%;
     background: #000;
@@ -408,96 +449,130 @@ body{
             width: 100%;
             border: 1px solid #fff;
             color: #fff;
-            .event_screen{
+            .bigscreen{
                 width: 1281px;
                 height: 803px;
-                overflow: hidden;
-                border-right:1px solid #fff;
                 position: relative;
-                line-height: 1;
-                >img{
+                .event_screen{
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    border-right:1px solid #fff;
                     position: absolute;
                     top: 0;
                     left: 0;
-                    z-index: -1;
-                }
-                .screen_upper{
-                    display: flex;
-                    align-items: center;
-                    padding: 154.6px 0 0 120.2px;
-                    position: relative;
-                    .screen_number {
-                        font-family: 'YoonGothic750';
-                        font-size: 250px;
-                        color: #E30613;
-                        opacity: 0;
-                        
-                    }
-                    .screen_text {
-                        font-family: 'YoonGothic770';
-                        font-size: 45px;
-                        line-height: 1.1;
-                        padding-bottom: 35px;
-                        overflow: hidden;
-                        span {
-                            transform: translateX(-100%);
-                            display: block;
-                            transition: 0.5s;
-                        }
-                    }
-                    &::after {
+                    line-height: 1;
+                    display: none;
+                    >img{
                         position: absolute;
-                        bottom: 30px;
-                        left: 165px;
-                        display: block;
-                        background: #E30613;
-                        width: 0px;
-                        height: 1px;
-                        content: "";
-                        transition: 1s;
-                        animation: event_under_bar;
-                        animation-delay: 0.8s;
-                        animation-duration: 1s;
-                        animation-fill-mode: forwards;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
                     }
-                }
-                .screen_lower {
-                    float: right;
-                    position: relative;
-                    padding-right: 168px;
-                    padding-top: 45.6px;
-                    .screen_lower_text {
-                        overflow: hidden;
-                        h4 {
-                            font-family: 'YoonGothic730';
-                            font-size: 17px;
-                            padding-bottom: 15.7px;
-                            transform: translateX(-100%);
-                            transition: 0.5s;
-                        }
-                        p {
-                            color: #A7A7A7;
-                            padding-bottom: 35.6px;
-                            line-height: 1.24;
-                            transform: translateX(-100%);
-                            transition: 0.5s;
-                            span {
+                    .screen_upper{
+                        display: flex;
+                        align-items: center;
+                        padding: 154.6px 0 0 120.2px;
+                        position: relative;
+                        .screen_number {
+                            font-family: 'YoonGothic750';
+                            font-size: 250px;
+                            color: #E30613;
+                            opacity: 1;
+                            overflow: hidden;
+                            span{
                                 display: block;
+                                animation: event_up_num;
+                                animation-duration: 1s;
+                                animation-fill-mode: forwards;
+                            }
+                        }
+                        .screen_text {
+                            font-family: 'YoonGothic770';
+                            font-size: 45px;
+                            line-height: 1.1;
+                            padding-bottom: 35px;
+                            overflow: hidden;
+                            span {
+                                animation: event_up_text_span;
+                                animation-duration: 1s;
+                                animation-fill-mode: forwards;
+                                transform: translateX(0%);
+                                display: block;
+                                transition: 0.5s;
+                            }
+                        }
+                        &::after {
+                            position: absolute;
+                            bottom: 30px;
+                            left: 165px;
+                            display: block;
+                            background: #E30613;
+                            width: 0px;
+                            height: 1px;
+                            content: "";
+                            transition: 1s;
+                            animation: event_under_bar;
+                            animation-duration: 1s;
+                            animation-fill-mode: forwards;
+                        }
+                    }
+                    .screen_lower {
+                        float: right;
+                        position: relative;
+                        padding-right: 168px;
+                        padding-top: 45.6px;
+                        .screen_lower_text {
+                            overflow: hidden;
+                            h4 {
+                                font-family: 'YoonGothic730';
+                                font-size: 17px;
+                                padding-bottom: 15.7px;
+                                transform: translateX(0%);
+                                transition: 0.5s;
+                                overflow: hidden;
+                                span {
+                                    display: block;
+                                    animation: event_down_h4;
+                                    animation-duration: 1s;
+                                    animation-fill-mode: forwards;
+                                }
+                            }
+                            p {
+                                color: #A7A7A7;
+                                padding-bottom: 35.6px;
+                                line-height: 1.24;
+                                transform: translateX(0%);
+                                transition: 0.5s;
+                                overflow: hidden;
+                                span {
+                                    display: block;
+                                    animation: event_down_p;
+                                    animation-duration: 1s;
+                                    animation-fill-mode: forwards;
+                                }
+                            }
+                        }
+                        .event_btn {
+                            position: absolute;
+                            bottom: -45.6px;
+                            right: 168px;
+                            overflow: hidden;
+                            a {
+                                transform: translateX(0%);
+                                transition: 0.5s;
+                                display: block;
+                                animation: event_down_btn;
+                                animation-duration: 1s;
+                                animation-fill-mode: forwards;
                             }
                         }
                     }
-                    .event_btn {
-                        position: absolute;
-                        bottom: -45.6px;
-                        right: 168px;
-                        overflow: hidden;
-                        a {
-                            transform: translateX(-100%);
-                            transition: 0.5s;
-                        }
-                    }
+    
                 }
-
+                .on {
+                    display: block;
+                }
             }
             .event_list {
                 width: 640px;
@@ -511,6 +586,15 @@ body{
                         height: 50%;
                         padding: 51.5px 0 55.4px 54px;
                         transition: 0.5s;
+                        position: relative;
+                        // div{
+                        //     width: 100%;
+                        //     height: 100%;
+                        //     position: absolute;
+                        //     top: 0;
+                        //     left: 0;
+                        //     z-index: 10;
+                        // }
                         h1 {
                             font-family: 'YoonGothic730';
                             font-size: 200px;
@@ -529,11 +613,8 @@ body{
                             background: #E30613;
                         }
                     }
-                    .small_screen1,.small_screen3{
-                        border-right: 1px solid #fff;
-                    }
-                    .small_screen3,.small_screen4 {
-                        border-top: 1px solid #fff;
+                    .off {
+                        display: none;
                     }
                 }
             }
