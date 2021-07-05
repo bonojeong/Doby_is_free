@@ -565,23 +565,31 @@ body main .event {
   color: #fff;
 }
 
-body main .event .event_screen {
+body main .event .big_screens {
   width: 1281px;
   height: 803px;
-  overflow: hidden;
   border-right: 1px solid #fff;
-  position: relative;
-  line-height: 1;
 }
 
-body main .event .event_screen > img {
+body main .event .big_screens .event_screen {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+  line-height: 1;
+  display: none;
+}
+
+body main .event .big_screens .event_screen > img {
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
 }
 
-body main .event .event_screen .screen_upper {
+body main .event .big_screens .event_screen .screen_upper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -592,14 +600,13 @@ body main .event .event_screen .screen_upper {
   position: relative;
 }
 
-body main .event .event_screen .screen_upper .screen_number {
+body main .event .big_screens .event_screen .screen_upper .screen_number {
   font-family: 'YoonGothic750';
   font-size: 250px;
   color: #E30613;
-  opacity: 0;
 }
 
-body main .event .event_screen .screen_upper .screen_text {
+body main .event .big_screens .event_screen .screen_upper .screen_text {
   font-family: 'YoonGothic770';
   font-size: 45px;
   line-height: 1.1;
@@ -607,15 +614,13 @@ body main .event .event_screen .screen_upper .screen_text {
   overflow: hidden;
 }
 
-body main .event .event_screen .screen_upper .screen_text span {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+body main .event .big_screens .event_screen .screen_upper .screen_text span {
   display: block;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-body main .event .event_screen .screen_upper::after {
+body main .event .big_screens .event_screen .screen_upper::after {
   position: absolute;
   bottom: 30px;
   left: 165px;
@@ -628,61 +633,57 @@ body main .event .event_screen .screen_upper::after {
   transition: 1s;
   -webkit-animation: event_under_bar;
           animation: event_under_bar;
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-body main .event .event_screen .screen_lower {
+body main .event .big_screens .event_screen .screen_lower {
   float: right;
   position: relative;
   padding-right: 168px;
   padding-top: 45.6px;
 }
 
-body main .event .event_screen .screen_lower .screen_lower_text {
+body main .event .big_screens .event_screen .screen_lower .screen_lower_text {
   overflow: hidden;
 }
 
-body main .event .event_screen .screen_lower .screen_lower_text h4 {
+body main .event .big_screens .event_screen .screen_lower .screen_lower_text h4 {
   font-family: 'YoonGothic730';
   font-size: 17px;
   padding-bottom: 15.7px;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-body main .event .event_screen .screen_lower .screen_lower_text p {
+body main .event .big_screens .event_screen .screen_lower .screen_lower_text p {
   color: #A7A7A7;
   padding-bottom: 35.6px;
   line-height: 1.24;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-body main .event .event_screen .screen_lower .screen_lower_text p span {
+body main .event .big_screens .event_screen .screen_lower .screen_lower_text p span {
   display: block;
 }
 
-body main .event .event_screen .screen_lower .event_btn {
+body main .event .big_screens .event_screen .screen_lower .event_btn {
   position: absolute;
   bottom: -45.6px;
   right: 168px;
   overflow: hidden;
 }
 
-body main .event .event_screen .screen_lower .event_btn a {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+body main .event .big_screens .event_screen .screen_lower .event_btn a {
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+body main .event .big_screens .event_on {
+  display: block;
 }
 
 body main .event .event_list {
@@ -705,6 +706,16 @@ body main .event .event_list ul .screens {
   padding: 51.5px 0 55.4px 54px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  position: relative;
+}
+
+body main .event .event_list ul .screens div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 body main .event .event_list ul .screens h1 {
@@ -726,6 +737,10 @@ body main .event .event_list ul .screens p span {
 
 body main .event .event_list ul .screens:hover {
   background: #E30613;
+}
+
+body main .event .event_list ul .event_list_off {
+  display: none;
 }
 
 body main .event .event_list ul .small_screen1, body main .event .event_list ul .small_screen3 {
