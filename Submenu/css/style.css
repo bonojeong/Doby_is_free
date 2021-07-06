@@ -451,6 +451,7 @@ body main .visual .movie_controler {
   content: "";
   width: 100%;
   height: 13px;
+  cursor: pointer;
 }
 
 body main .visual .movie_underbar {
@@ -744,11 +745,13 @@ body main .event .bigscreen .event_screen .screen_upper .screen_text span {
           animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   display: block;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 body main .event .bigscreen .event_screen .screen_upper::after {
@@ -785,19 +788,21 @@ body main .event .bigscreen .event_screen .screen_lower .screen_lower_text h4 {
   font-family: 'YoonGothic730';
   font-size: 17px;
   padding-bottom: 15.7px;
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
   -webkit-transition: 0.5s;
   transition: 0.5s;
   overflow: hidden;
 }
 
 body main .event .bigscreen .event_screen .screen_lower .screen_lower_text h4 span {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   display: block;
   -webkit-animation: event_down_h4;
           animation: event_down_h4;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -806,17 +811,19 @@ body main .event .bigscreen .event_screen .screen_lower .screen_lower_text p {
   color: #A7A7A7;
   padding-bottom: 35.6px;
   line-height: 1.24;
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
   -webkit-transition: 0.5s;
   transition: 0.5s;
   overflow: hidden;
 }
 
 body main .event .bigscreen .event_screen .screen_lower .screen_lower_text p span {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   display: block;
   -webkit-animation: event_down_p;
           animation: event_down_p;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
@@ -831,11 +838,13 @@ body main .event .bigscreen .event_screen .screen_lower .event_btn {
 }
 
 body main .event .bigscreen .event_screen .screen_lower .event_btn a {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   -webkit-transition: 0.5s;
   transition: 0.5s;
   display: block;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
   -webkit-animation: event_down_btn;
           animation: event_down_btn;
   -webkit-animation-duration: 1s;
@@ -869,6 +878,7 @@ body main .event .event_list ul .screens {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   position: relative;
+  border: 0.5px solid #fff;
 }
 
 body main .event .event_list ul .screens h1 {
@@ -1275,29 +1285,42 @@ body footer .black_footer div ul li:not(:last-child) {
 }
 
 body footer .black_footer div .Family_Site {
+  margin: 0px 230px 0px 280px;
   width: 212px;
-  height: 37.01px;
-  color: #535353;
-  background: #000 url("../image/footer/select_arrow.png") 189px 50% no-repeat;
-  font-family: 'YoonGothic740';
+  height: 40px;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  line-height: 37px;
   font-size: 14px;
-  padding: 0px 10px;
-  border-bottom: 1px solid #E3E3E3;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  position: relative;
+  font-family: "Yun740";
+  color: #535353;
+  background-color: black;
 }
 
-body footer .black_footer div .Family_Site::after {
-  position: absolute;
-  top: 0%;
-  left: 0;
-  display: block;
-  width: 191px;
-  height: 1px;
-  background-color: #E3E3E3;
-  content: "";
+body footer .black_footer div .Family_Site:hover {
+  height: 200px;
+}
+
+body footer .black_footer div .Family_Site ul {
+  margin-left: 10px;
+  width: 190px;
+  height: 38px;
+  border-bottom: 2px solid #535353;
+}
+
+body footer .black_footer div .Family_Site ul span {
+  width: 100px;
+  display: inline-block;
+}
+
+body footer .black_footer div .Family_Site ul li {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body footer .black_footer div .Family_Site ul li:not(:first-child):hover {
+  background-color: wheat;
 }
 
 body footer .black_footer address {
