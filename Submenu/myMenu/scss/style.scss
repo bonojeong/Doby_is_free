@@ -1,0 +1,460 @@
+@font-face {
+    font-family: 'YoonGothic710';
+    src: url("../webfont/YoonGothic710.woff") format('woff');
+}
+@font-face {
+    font-family: 'YoonGothic720';
+    src: url("../webfont/YoonGothic720_1.woff") format('woff');
+}
+@font-face {
+    font-family: 'YoonGothic730';
+    src: url("../webfont/YoonGothic730_1.woff") format('woff');
+}
+@font-face {
+    font-family: 'YoonGothic740';
+    src: url("../webfont/YoonGothic740.woff") format('woff');
+}
+@font-face {
+    font-family: 'YoonGothic750';
+    src: url("../webfont/YoonGothic750.woff") format('woff');
+}
+@font-face {
+    font-family: 'YoonGothic760';
+    src: url("../webfont/YoonGothic760.woff") format('woff');
+}
+@font-face {
+    font-family: 'YoonGothic770';
+    src: url("../webfont/YoonGothic770.woff") format('woff');
+}
+@font-face {
+    font-family: 'YoonGothic780';
+    src: url("../webfont/YoonGothic780.woff") format('woff');
+}
+@font-face {
+    font-family: 'YoonGothic790';
+    src: url("../webfont/YoonGothic790.woff") format('woff');
+}
+@font-face {
+    font-family: 'Helvetica75';
+    src: url("../webfont/Helvetica75-Bold.woff") format('woff');
+}
+//Arrows 애니메이션효과
+@keyframes arrowMove {
+    0% {
+        right: -2px;
+    }
+
+    50% {
+        right : 5px;
+    }
+    100% {
+        right : -2px;
+    }
+}
+
+p,h1,h2,h3,h4,li {
+    cursor: default;
+}
+body {
+    height: 100vh;
+    font-size: 13px;
+    #myInfo{
+        overflow: hidden;
+        background-color: #fff;
+        width: 559px;
+        height: 100%;
+        #who {
+            position: relative;
+            background-image: url("../../myMenu/image/who_bg.png");
+            width: 559px;
+            height: 317px;
+            padding-left: 24px;
+            padding-top: 60px;
+            .who_bg {
+                padding-bottom: 38px;
+            }
+            .close_btn {
+                position: absolute;
+                top: 16px;
+                right: 16px;
+            }
+            .who_under {
+                display: flex;
+                align-items: center;
+                color: #fff;
+                .who_ID{
+                    padding-left: 10px;
+                    font-family: "YoonGothic 750";
+                    h2 {
+                        font-size: 23px;
+                    }
+                }
+            }
+            #reserved {
+                position: absolute;
+                background: #fff;
+                bottom: -74px;
+                left: 0;
+                display: flex;
+                width: 531px;
+                height: 148px;
+                border-radius: 0 12px 12px 0;
+                box-shadow: 0px 3px 9px rgba($color: #000, $alpha: 0.26);
+                font-family: 'YoonGothic720';
+                .reserved_info {
+                    width: 50%;
+                    padding-left: 44px;
+                    h3{
+                        font-size: 17px;
+                        span{
+                            color: #E30613;
+                            font-size: 36px;
+                        }
+                    } 
+                    >p {
+                        padding-top: 5px;
+                        color: #464646;
+                    }
+                    h1 {
+                        font-family: 'YoonGothic750';
+                        font-size: 30px;
+                        padding-top: 0px;
+                        color: #464646;
+                    }
+                    div {
+                        padding-top: 3px;
+                        padding-right: 11px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        p{
+                            color: #E30613;
+                        }
+                        .arrow{
+                            width: 44.17px;
+                            height: 6px;
+                            position: relative;
+                            background: url(../../myMenu/image/arrow.png);
+                            animation: arrowMove;
+                            animation-duration: 2.5s;
+                            animation-iteration-count: infinite;
+                            &::after{
+                                display: inline-block;
+                                width: 15px;
+                                height: 15px;
+                                border: 0.3px solid #E30613;
+                                border-radius: 50%;
+                                opacity: 0.5;
+                                content: "";
+                                position: absolute;
+                                top: -5.5px;
+                                right: -0px;
+                                transition: 0.5s;
+                            }
+                            &:hover::after {
+                                background: #E30613;
+                            }
+                        }
+                    } 
+                }
+                .img{
+                    position: relative;
+                    a{
+                        display: inline-block;
+                        width: 281px;
+                        height: 148px;
+                    }
+                    .bg {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 281px;
+                        height: 148px;
+                        opacity: 0.52;
+                        border-radius: 0 12px 12px 0;
+                        background: #000;
+                        transition: 0.5s;
+                    }
+                    .search {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        opacity: 1;
+                        transition: 0.5s;
+                    }
+                    &:hover .bg {
+                        opacity: 0;
+                    }
+                    &:hover .search {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+        #coupon_point{
+            padding-top: 97px;
+            display: flex;
+            .coupon{
+                width: 274px;
+                height: 158px;
+                background: #E5E5E5;
+                color: #3D3D3D;
+                padding-left: 44px;
+                border-radius: 0 12px 12px 0;
+                box-shadow: 0px 3px 9px rgba($color: #000, $alpha: 0.26);
+                font-family: "YoonGothic720";
+                h2{
+                    font-size: 17px;
+                    padding-bottom: 8px;
+                    font-family: "YoonGothic750";
+                    span{
+                        font-size: 32px;
+                    }
+                }
+                .more {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-bottom: 4px;
+                    padding-right: 14px;
+                    p{
+                        &:first-child{
+                            padding-right: 10px;
+                        }
+                        .btn_more{
+                            display: none;
+                            font-size: 12px;
+                            width: 70px;
+                            height: 20px;
+                            background-color: #E30613;
+                            color: #fff;
+                            border-radius: 12px;
+                            text-align: center;
+                            line-height: 20px;
+                            font-family: "YoonGothic730";
+                        }
+                    }
+                    &:hover .btn_more {
+                        display: inline-block;
+                    }
+                    &:hover >p:first-child {
+                        font-family: "YoonGothic730";
+                        cursor: default;
+                    }
+                }
+            }
+            .point {
+                width: 246px;
+                height: 158px;
+                border-radius: 12px;
+                background-color: #E30613;
+                margin-left: 11px;
+                color: #fff;
+                padding-left: 21px;
+                padding-right: 14px;
+                box-shadow: 0px 3px 9px rgba($color: #000, $alpha: 0.26);
+                font-family: 'YoonGothic720';
+                h2{
+                    font-size: 17px;
+                    font-family: 'YoonGothic750';
+                    span {
+                        font-size: 32px;
+                        color: #000;
+                    }
+                }
+                .point_text {
+                    >div {
+                        padding-top: 4.5px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                        p{
+                            &:first-child {
+                                opacity: 0.8;
+                            }
+                        }
+                        .howmuchpoint{
+                            font-size: 24px;
+                            font-weight: bold;
+                            color: #FFF700;
+                            font-family: 'Helvetica75';
+                            span {
+                                font-size: 13px;
+                                font-weight: normal;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    .pointInfo {
+                        padding-top: 11px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        .arrow{
+                            width: 44.17px;
+                            height: 6px;
+                            position: relative;
+                            background: url('../../myMenu/image/arrow2.png');
+                            animation: arrowMove;
+                            animation-duration: 2.5s;
+                            animation-iteration-count: infinite;
+                            &::after{
+                                display: inline-block;
+                                width: 15px;
+                                height: 15px;
+                                border: 0.3px solid #fff;
+                                opacity: 0.5;
+                                border-radius: 50%;
+                                content: "";
+                                position: absolute;
+                                top: -5.5px;
+                                right: 0px;
+                                transition: 0.5s;
+                            }
+                            &:hover::after {
+                                background: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #menu {
+            padding-top: 21px;
+            padding-left: 44px;
+            display: flex;
+            width: 100%;
+            position: relative;
+            .nav{
+                width: 274px;
+                height: 376px;
+                padding-top: 20px;
+                font-family: 'YoonGothic750';
+                p{
+                    font-size: 24px;
+                    padding-bottom: 15px;
+                    padding-left: 2px;
+                    color: #fff;
+                    cursor: pointer;
+                    color: #3D3D3D;
+                    img{
+                        padding-left: 8px;
+                        padding-top: 6px;
+                        display: none;
+                    }
+                    &:hover{
+                        color: #E30613;
+                    }
+                    &:hover img{
+                        display: inline-block;
+                    }
+                }
+            }
+            .movie_poster {
+                width: 246px;
+                position: absolute;
+                right: 28px;
+                bottom: 0px;
+                opacity: 1;
+                transition: 1s;
+                img {
+                    width: 246px;
+                    border-radius: 12px 12px 0px 0;
+                }
+            }
+            .movie_poster_off {
+                opacity: 0;
+            }
+            .nav_depth_menu{
+                width: 305px;
+                height: 376px;
+                padding-top: 22px;
+                padding-left: 21px;
+                padding-bottom: 15px;
+                padding-right: 19px;
+                background: #fff;
+                border-radius: 12px 0 0 0;
+                position: relative;
+                bottom: 0;
+                right: -305px;
+                transition: 1s;
+                .depth_text1 {
+                    display: none;
+                    font-size: 17px;
+                    p{
+                        position: relative;
+                        font-family: 'YoonGothic710';
+                        &:not(:last-child) {
+                            padding-bottom: 15px;
+                        }
+                        &::before {
+                            width: 5px;
+                            height: 24px;
+                            display: none;
+                            background-color: #E30613;
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: -21px;
+                        }
+                        &:hover::before{
+                            display: inline-block;
+                        }
+                        &:hover {
+                            font-family: 'YoonGothic730';
+                        }
+                    }
+                }
+                .on {
+                    display: block;
+                }
+                .depth_text2 {
+                    display: flex;
+                    align-items: center;
+                    position: absolute;
+                    bottom: 34px;
+                    p {
+                        color: #E30613;
+                        font-size: 11px;
+                        padding-right: 33px;
+                        letter-spacing: -1.5px;
+                    }
+                    img {
+                        width: 51px;
+                        height: 57px;
+                    }
+                }
+                .depth_text3 {
+                    position: absolute;
+                    bottom: 14px;
+                    display: flex;
+                    align-items: flex-end;
+                    font-family: 'YoonGothic710';
+                    h4 {
+                        font-size: 14px;
+                        padding-top: 1px;
+                        padding-right: 6px;
+                        text-decoration: #BFBFBF underline;
+                    }
+                    p{
+                        font-size: 11px;
+                        &:nth-child(2) {
+                            padding-right: 4px; 
+                            border-right: 1px solid #BFBFBF;
+                        }
+                        &:nth-child(3) {
+                            padding-left: 5px;
+                        }
+                    }
+                }
+            }
+            .navToggle{
+                right: 0;
+                bottom: 0;
+                box-shadow: 0px 3px 25px rgba($color: #000, $alpha: 0.26);
+            }
+        }
+    }
+}
+//nav p 에 mouseenter했을 때 옆에 이미지생성
+//동시에 옆에 nav_depth_menu도 바뀜

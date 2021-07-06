@@ -5,20 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/javascript.js"></script>
     <title>Document</title>
 </head>
 <body>
     <div id="wrap">
         <div id = myInfo>
             <div id = "who">
-                <img src="image/mycgvhome.png" alt="" class="who_bg">
-                <img src="image/close_btn.png" alt="" class="close_btn" onclick="menuOff()">
+                <img src="myMenu/image/mycgvhome.png" alt="" class="who_bg">
+                <img src="myMenu/image/close_btn.png" alt="" class="close_btn" onclick="menuOff()">
                 <div class = "who_under">
-                    <img src="image/who_img.png" alt="">
+                    <img src="myMenu/image/who_img.png" alt="">
                     <div class = "who_ID">
                         <h2>abc1234님</h2>
                         <p>0101234*****</p>
@@ -36,9 +32,9 @@
                     </div>
                     <div class = "img">
                         <a href="#">
-                            <img src="image/reserved_img.png" alt="">
+                            <img src="myMenu/image/reserved_img.png" alt="">
                             <div class="bg"></div>
-                            <img src="image/outline_search_white_24dp.png" alt="" class = "search">
+                            <img src="myMenu/image/outline_search_white_24dp.png" alt="" class = "search">
                         </a>
                     </div>
                 </div>
@@ -82,16 +78,16 @@
             </div>
             <div id = menu>
                 <div class = "nav">
-                    <p onclick="navOn()">나의 예매내역<span><img src="image/menu_img.png" alt=""></span></p>
-                    <p onclick="navOn()">관람권·할인쿠폰<span><img src="image/menu_img.png" alt=""></span></p>
-                    <p onclick="navOn()">CJ ONE포인트<span><img src="image/menu_img.png" alt=""></span></p>
-                    <p onclick="navOn()">이벤트 참여내역<span><img src="image/menu_img.png" alt=""></span></p>
-                    <p onclick="navOn()">회원정보·프로필<span><img src="image/menu_img.png" alt=""></span></p>
-                    <p onclick="navOn()">나의문의내역<span><img src="image/menu_img.png" alt=""></span></p>
-                    <p onclick="navOn()">기프트샵<span><img src="image/menu_img.png" alt=""></span></p>
+                    <p onclick="navOn(); navDepth1();">나의 예매내역<span><img src="myMenu/image/menu_img.png" alt=""></span></p>
+                    <p onclick="navOn(); navDepth2();">관람권·할인쿠폰<span><img src="myMenu/image/menu_img.png" alt=""></span></p>
+                    <p onclick="navOn(); navDepth3();">CJ ONE포인트<span><img src="myMenu/image/menu_img.png" alt=""></span></p>
+                    <p onclick="navOn(); navDepth4();">이벤트 참여내역<span><img src="myMenu/image/menu_img.png" alt=""></span></p>
+                    <p onclick="navOn(); navDepth5();">회원정보·프로필<span><img src="myMenu/image/menu_img.png" alt=""></span></p>
+                    <p onclick="navOn(); navDepth6();">나의문의내역<span><img src="myMenu/image/menu_img.png" alt=""></span></p>
+                    <p onclick="navOn(); navDepth7();">기프트샵<span><img src="myMenu/image/menu_img.png" alt=""></span></p>
                 </div>
                 <div class = "movie_poster">
-                    <img src="image/movie_poster.png" alt="">
+                    <img src="myMenu/image/movie_poster.png" alt="">
                 </div>
                 <div class = "nav_depth_menu">
                     <div class= "depth_text1_1 depth_text1">
@@ -137,7 +133,7 @@
                     </div>
                     <div class= "depth_text2">
                         <p>영화 그 이상의 감동을 전합니다.</p>
-                        <img src="image/navimg.png" alt="">
+                        <img src="myMenu/image/navimg.png" alt="">
                     </div>
                     <div class= "depth_text3">
                         <h4><a href="#">개인처리정보방침</a></h4>

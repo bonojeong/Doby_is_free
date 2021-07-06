@@ -449,27 +449,16 @@ body{
             width: 100%;
             border: 1px solid #fff;
             color: #fff;
-<<<<<<< HEAD
-            .big_screens {
-                width: 1281px;
-                height: 803px;
-                border-right:1px solid #fff;
-=======
             .bigscreen{
                 width: 1281px;
                 height: 803px;
                 position: relative;
->>>>>>> 3e2d7f1a6d2333eabee4fd802d8241e77490e572
                 .event_screen{
                     width: 100%;
                     height: 100%;
                     overflow: hidden;
-<<<<<<< HEAD
-                    position: relative;
-=======
                     border-right:1px solid #fff;
                     position: absolute;
->>>>>>> 3e2d7f1a6d2333eabee4fd802d8241e77490e572
                     top: 0;
                     left: 0;
                     line-height: 1;
@@ -489,8 +478,6 @@ body{
                             font-family: 'YoonGothic750';
                             font-size: 250px;
                             color: #E30613;
-<<<<<<< HEAD
-=======
                             opacity: 1;
                             overflow: hidden;
                             span{
@@ -499,7 +486,6 @@ body{
                                 animation-duration: 1s;
                                 animation-fill-mode: forwards;
                             }
->>>>>>> 3e2d7f1a6d2333eabee4fd802d8241e77490e572
                         }
                         .screen_text {
                             font-family: 'YoonGothic770';
@@ -542,9 +528,6 @@ body{
                                 font-family: 'YoonGothic730';
                                 font-size: 17px;
                                 padding-bottom: 15.7px;
-<<<<<<< HEAD
-                                transition: 0.5s;
-=======
                                 transform: translateX(0%);
                                 transition: 0.5s;
                                 overflow: hidden;
@@ -554,17 +537,11 @@ body{
                                     animation-duration: 1s;
                                     animation-fill-mode: forwards;
                                 }
->>>>>>> 3e2d7f1a6d2333eabee4fd802d8241e77490e572
                             }
                             p {
                                 color: #A7A7A7;
                                 padding-bottom: 35.6px;
                                 line-height: 1.24;
-<<<<<<< HEAD
-                                transition: 0.5s;
-                                span {
-                                    display: block;
-=======
                                 transform: translateX(0%);
                                 transition: 0.5s;
                                 overflow: hidden;
@@ -573,7 +550,6 @@ body{
                                     animation: event_down_p;
                                     animation-duration: 1s;
                                     animation-fill-mode: forwards;
->>>>>>> 3e2d7f1a6d2333eabee4fd802d8241e77490e572
                                 }
                             }
                         }
@@ -583,16 +559,12 @@ body{
                             right: 168px;
                             overflow: hidden;
                             a {
-<<<<<<< HEAD
-                                transition: 0.5s;
-=======
                                 transform: translateX(0%);
                                 transition: 0.5s;
                                 display: block;
                                 animation: event_down_btn;
                                 animation-duration: 1s;
                                 animation-fill-mode: forwards;
->>>>>>> 3e2d7f1a6d2333eabee4fd802d8241e77490e572
                             }
                         }
                     }
@@ -601,12 +573,6 @@ body{
                 .on {
                     display: block;
                 }
-<<<<<<< HEAD
-                .event_on {
-                    display: block;
-                }
-=======
->>>>>>> 3e2d7f1a6d2333eabee4fd802d8241e77490e572
             }
             .event_list {
                 width: 640px;
@@ -621,16 +587,6 @@ body{
                         padding: 51.5px 0 55.4px 54px;
                         transition: 0.5s;
                         position: relative;
-<<<<<<< HEAD
-                        div {
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            height: 100%;
-                            z-index: 1;
-                        }
-=======
                         // div{
                         //     width: 100%;
                         //     height: 100%;
@@ -639,7 +595,6 @@ body{
                         //     left: 0;
                         //     z-index: 10;
                         // }
->>>>>>> 3e2d7f1a6d2333eabee4fd802d8241e77490e572
                         h1 {
                             font-family: 'YoonGothic730';
                             font-size: 200px;
@@ -658,19 +613,8 @@ body{
                             background: #E30613;
                         }
                     }
-<<<<<<< HEAD
-                    .event_list_off {
-                        display: none;
-                    }
-                    .small_screen1,.small_screen3{
-                        border-right: 1px solid #fff;
-                    }
-                    .small_screen3,.small_screen4 {
-                        border-top: 1px solid #fff;
-=======
                     .off {
                         display: none;
->>>>>>> 3e2d7f1a6d2333eabee4fd802d8241e77490e572
                     }
                 }
             }
