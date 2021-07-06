@@ -1,7 +1,3 @@
-//a태그 새로고침 방지
-$('a[href="#"]').click(function(e) {
-    e.preventDefault();
-});
 
 //my_menu 생성
 $(document).ready(function(){

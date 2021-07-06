@@ -65,7 +65,7 @@ body {
         height: 100%;
         #who {
             position: relative;
-            background-image: url("../../myMenu/image/who_bg.png");
+            background-image: url("../image/who_bg.png");
             width: 559px;
             height: 317px;
             padding-left: 24px;
@@ -134,7 +134,7 @@ body {
                             width: 44.17px;
                             height: 6px;
                             position: relative;
-                            background: url(../../myMenu/image/arrow.png);
+                            background: url("../image/arrow.png");
                             animation: arrowMove;
                             animation-duration: 2.5s;
                             animation-iteration-count: infinite;
@@ -294,7 +294,7 @@ body {
                             width: 44.17px;
                             height: 6px;
                             position: relative;
-                            background: url('../../myMenu/image/arrow2.png');
+                            background: url('../image/arrow2.png');
                             animation: arrowMove;
                             animation-duration: 2.5s;
                             animation-iteration-count: infinite;
@@ -337,6 +337,7 @@ body {
                     color: #fff;
                     cursor: pointer;
                     color: #3D3D3D;
+                    display: flex;
                     img{
                         padding-left: 8px;
                         padding-top: 6px;
@@ -394,7 +395,7 @@ body {
                             background-color: #E30613;
                             content: "";
                             position: absolute;
-                            top: 0;
+                            top: 0px;
                             left: -21px;
                         }
                         &:hover::before{

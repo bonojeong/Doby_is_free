@@ -1,7 +1,4 @@
-//a 태그 새로고침 방지
-$('a[href="#"]').click(function(e) {
-    e.preventDefault();
-});
+
 
 // 1. nav p 마우스 click 했을 때 classList 추가 .nav_depth_menu 왼쪽으로 이동
 function navOn() {
