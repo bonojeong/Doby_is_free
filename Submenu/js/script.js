@@ -123,69 +123,14 @@ selectedAnimation().init();
 
 //스크린용 class 생성
 
-<<<<<<< HEAD
-let screen_number = document.querySelector('.screen_number');
-let screen_texts = document.querySelectorAll('.screen_text span');
-let screen_lower_h4 = document.querySelector('.screen_lower_text h4');
-let screen_lower_p = document.querySelector('.screen_lower p');
-let event_btn = document.querySelector('.event_btn a');
-
-function eventEffect(){
-    let big = document.querySelectorAll('.event_screen')
-    let small = document.querySelectorAll('.screens div')
-=======
 function eventEffect(){
     let small = document.querySelectorAll('.screens');
     let smalldiv = document.querySelectorAll('.screens div');
     let big = document.querySelectorAll('.event_screen');
->>>>>>> 3e2d7f1a6d2333eabee4fd802d8241e77490e572
     small.forEach(function(item){
         item.addEventListener('click',function(event){
             let num = event.target.dataset.num;
             big.forEach(function(item){
-<<<<<<< HEAD
-                item.style.opacity = '0';
-                item.style.display = 'none'
-            })
-            small.forEach(function(item){
-                item.style.display = 'block';
-            })
-            big[num].style.opacity = '1'
-            big[num].style.display = 'block'
-            console.log(big[num])
-            event.target.style.display = 'none';
-        })
-    })
-    // 클릭했을때 텍스트 인터렉션 효과
-    setTimeout(function(){
-        setTimeout(function() {      
-            screen_number.style.opacity = `1`;
-            screen_number.style.transition = `0.5s`;
-        }, 300);
-        setTimeout(function() {      
-            screen_texts[0].style.transform = `translateX(0)`;
-            screen_texts[0].style.transition = `0.5s`;
-        }, 800);
-        setTimeout(function() {      
-            screen_texts[1].style.transform = `translateX(0)`;
-            screen_texts[1].style.transition = `0.5s`;
-        }, 800);
-        setTimeout(function() {      
-            screen_lower_h4.style.transform = `translateX(0)`;
-            screen_lower_h4.style.transition = `0.5s`;
-        }, 1200);
-        setTimeout(function() {
-            screen_lower_p.style.transform = `translateX(0)`;
-            screen_lower_p.style.transition = `0.5s`;
-        }, 1500)
-        setTimeout(function() {
-            event_btn.style.transform = `translateX(0)`;
-            event_btn.style.transition = `0.5s`;
-        }, 1800)
-    }, 500);
-}
-eventEffect();
-=======
                 item.style.display= 'none'
             })
             big[num].style.display = 'block'
@@ -207,7 +152,6 @@ eventEffect();
 
 }
 eventEffect()
->>>>>>> 3e2d7f1a6d2333eabee4fd802d8241e77490e572
 // ----------------------------------------------
 
 
