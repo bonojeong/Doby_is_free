@@ -1231,7 +1231,7 @@ body footer .white_footer .white_lower {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 414px;
+  padding-left: 195px;
   padding-right: 234px;
 }
 
@@ -1239,6 +1239,7 @@ body footer .white_footer .white_lower > p {
   font-family: 'YoonGothic760';
   font-size: 14px;
   color: #989898;
+  letter-spacing: -1px;
 }
 
 body footer .white_footer .white_lower div {
@@ -1281,7 +1282,7 @@ body footer .black_footer div {
   padding-right: 253px;
 }
 
-body footer .black_footer div ul {
+body footer .black_footer div .blackfoot_text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1290,7 +1291,7 @@ body footer .black_footer div ul {
   padding-bottom: 35px;
 }
 
-body footer .black_footer div ul li:not(:last-child) {
+body footer .black_footer div .blackfoot_text li:not(:last-child) {
   padding-right: 24px;
 }
 
@@ -1298,26 +1299,65 @@ body footer .black_footer div .Family_Site {
   width: 212px;
   height: 37.01px;
   color: #535353;
-  background: #000 url("../image/footer/select_arrow.png") 189px 50% no-repeat;
+  background-color: #000;
   font-family: 'YoonGothic740';
   font-size: 14px;
   padding: 0px 10px;
-  border-bottom: 1px solid #E3E3E3;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  position: relative;
+  position: absolute;
+  right: 253px;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-body footer .black_footer div .Family_Site::after {
+body footer .black_footer div .Family_Site:hover {
+  height: 185.05px;
+}
+
+body footer .black_footer div .Family_Site .Family_Site_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body footer .black_footer div .Family_Site .Family_Site_text img {
+  width: 6px;
+  height: 6px;
+}
+
+body footer .black_footer div .Family_Site .Family_Site_text::after {
   position: absolute;
-  top: 0%;
-  left: 0;
+  top: 36.01px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   display: block;
   width: 191px;
   height: 1px;
-  background-color: #E3E3E3;
+  background-color: #535353;
   content: "";
+}
+
+body footer .black_footer div .Family_Site li {
+  padding: 0 10px;
+  height: 37.01px;
+  width: 100%;
+  line-height: 36.01px;
+  letter-spacing: -1px;
+  display: inline-block;
+}
+
+body footer .black_footer div .Family_Site li:hover:not(:first-child) {
+  background: wheat;
 }
 
 body footer .black_footer address {

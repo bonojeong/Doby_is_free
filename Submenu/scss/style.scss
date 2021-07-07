@@ -850,12 +850,13 @@ body{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                padding-left: 414px;
+                padding-left: 195px;
                 padding-right: 234px;
                 >p {
                     font-family: 'YoonGothic760';
                     font-size: 14px;
                     color: #989898;
+                    letter-spacing: -1px;
                 }
                 div {
                     display: flex;
@@ -883,7 +884,7 @@ body{
                 display: flex;
                 justify-content: space-between;
                 padding-right: 253px;
-                ul {
+                .blackfoot_text {
                     display: flex;
                     font-family: 'YoonGothic770';
                     font-size: 14px;
@@ -898,23 +899,50 @@ body{
                     width: 212px;
                     height: 37.01px;
                     color: #535353;
-                    background: #000 url('../image/footer/select_arrow.png') 189px 50% no-repeat;
+                    background-color: #000;
                     font-family: 'YoonGothic740';
                     font-size: 14px;
                     padding: 0px 10px;
-                    border-bottom: 1px solid #E3E3E3;
                     appearance:none;
-                    position: relative;
-                    &::after {
-                        position: absolute;
-                        top: 0%;
-                        left: 0;
-                        display: block;
-                        width: 191px;
-                        height: 1px;
-                        background-color: #E3E3E3;
-                        content: "";
+                    position: absolute;
+                    right: 253px; 
+                    overflow: hidden;
+                    transition: 0.5s;
+                    &:hover {
+                        height: 185.05px; 
                     }
+                    .Family_Site_text{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        img {
+                            width: 6px;
+                            height: 6px;
+                        }
+                        &::after {
+                            position: absolute;
+                            top: 36.01px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            display: block;
+                            width: 191px;
+                            height: 1px;
+                            background-color: #535353;
+                            content: "";
+                        }
+                    }
+                    li{
+                        padding: 0 10px;
+                        height: 37.01px;
+                        width: 100%;
+                        line-height: 36.01px;
+                        letter-spacing: -1px;
+                        display: inline-block;
+                        &:hover:not(:first-child){
+                            background: wheat;
+                        }
+                    }
+                    
                 }
             }
             address {
