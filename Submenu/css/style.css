@@ -307,7 +307,7 @@ body header {
           align-items: center;
   padding: 0 64px;
   font-size: 13px;
-  font-family: "Helvetica-bold";
+  font-family: "Helvetica75";
 }
 
 body header h1 {
@@ -345,6 +345,10 @@ body header ul:nth-child(3) li {
 
 body header ul:nth-child(4) li {
   padding-left: 24px;
+}
+
+body header ul li:hover {
+  color: #E30613;
 }
 
 body main .visual {
@@ -506,6 +510,7 @@ body main .selection .sel_upper_text .sel_right_text {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  opacity: 0.7;
 }
 
 body main .selection .sel_upper_text .sel_right_text p span {
@@ -618,6 +623,7 @@ body main .selection .sel_movies .sel_movie_poster .more_img {
           transform: translate(-50%, -50%);
   -webkit-transition: 1s;
   transition: 1s;
+  opacity: 1;
 }
 
 body main .selection .sel_movies .sel_movie_poster:hover .poster {
@@ -1142,6 +1148,10 @@ body main .movie_info .movie_info_list .info_right ul li .info_right_text ul li 
   color: #E30613;
 }
 
+body main .movie_info .movie_info_list .info_right ul li .info_right_text ul li .rate_number h3 {
+  padding-right: 10px;
+}
+
 body main .movie_info .movie_info_list .info_right ul li .info_right_text ul li .rate_number img {
   margin-left: 3.5px;
 }
@@ -1285,42 +1295,29 @@ body footer .black_footer div ul li:not(:last-child) {
 }
 
 body footer .black_footer div .Family_Site {
-  margin: 0px 230px 0px 280px;
   width: 212px;
-  height: 40px;
-  overflow: hidden;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  line-height: 37px;
-  font-size: 14px;
-  font-family: "Yun740";
+  height: 37.01px;
   color: #535353;
-  background-color: black;
+  background: #000 url("../image/footer/select_arrow.png") 189px 50% no-repeat;
+  font-family: 'YoonGothic740';
+  font-size: 14px;
+  padding: 0px 10px;
+  border-bottom: 1px solid #E3E3E3;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
 }
 
-body footer .black_footer div .Family_Site:hover {
-  height: 200px;
-}
-
-body footer .black_footer div .Family_Site ul {
-  margin-left: 10px;
-  width: 190px;
-  height: 38px;
-  border-bottom: 2px solid #535353;
-}
-
-body footer .black_footer div .Family_Site ul span {
-  width: 100px;
-  display: inline-block;
-}
-
-body footer .black_footer div .Family_Site ul li {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-body footer .black_footer div .Family_Site ul li:not(:first-child):hover {
-  background-color: wheat;
+body footer .black_footer div .Family_Site::after {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  display: block;
+  width: 191px;
+  height: 1px;
+  background-color: #E3E3E3;
+  content: "";
 }
 
 body footer .black_footer address {

@@ -175,7 +175,7 @@ body{
         align-items: center;
         padding: 0 64px;
         font-size: 13px;
-        font-family: "Helvetica-bold";
+        font-family: "Helvetica75";
         h1{
             font-size: 40px;
             line-height: 40px;
@@ -204,6 +204,9 @@ body{
                 li{
                     padding-left: 24px;
                 }
+            }
+            li:hover{
+                color: #E30613;
             }
         }
     }
@@ -333,6 +336,7 @@ body{
                     padding-top: 66.5px;
                     display: flex;
                     justify-content: flex-end;
+                    opacity: 0.7;
                     p {
                         span{
                             display: block;
@@ -409,6 +413,7 @@ body{
                         left: 50%;
                         transform: translate(-50%,-50%);
                         transition: 1s;
+                        opacity: 1;
                     }
                     &:hover .poster{
                         transform: scale(1.1);
@@ -782,17 +787,20 @@ body{
                                              align-items: center;
                                              font-size: 36px;
                                              color: #E30613;
+                                             h3 {
+                                                 padding-right: 10px;
+                                             }
                                              img {
                                                  margin-left: 3.5px;
                                                 }
                                             }
-                                            .genre_box {
-                                                display: flex;
-                                                align-items: center;
-                                                p{
-                                                    padding-left: 5px;
-                                                }
+                                        .genre_box {
+                                            display: flex;
+                                            align-items: center;
+                                            p{
+                                                padding-left: 5px;
                                             }
+                                        }
                                     }
                                  }
                              }
@@ -887,34 +895,25 @@ body{
                     }
                 }
                 .Family_Site{
-                    margin: 0px 230px 0px 280px;
                     width: 212px;
-                    height: 40px;
-                    overflow: hidden;
-                    transition: 0.5s;
-                    &:hover{
-                        height: 200px;
-                    }
-                    line-height: 37px;
-                    font-size: 14px;
-                    font-family: "Yun740";
+                    height: 37.01px;
                     color: #535353;
-                    background-color: black;
-                    ul{
-                        span{
-                            width: 100px;
-                            display: inline-block;
-                        }
-                        margin-left: 10px;
-                        width: 190px;
-                        height: 38px;
-                        border-bottom: 2px solid #535353;
-                        li{
-                            transition: 0.3s;
-                            &:not(:first-child):hover{
-                                background-color: wheat;
-                            }
-                        }
+                    background: #000 url('../image/footer/select_arrow.png') 189px 50% no-repeat;
+                    font-family: 'YoonGothic740';
+                    font-size: 14px;
+                    padding: 0px 10px;
+                    border-bottom: 1px solid #E3E3E3;
+                    appearance:none;
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        top: 0%;
+                        left: 0;
+                        display: block;
+                        width: 191px;
+                        height: 1px;
+                        background-color: #E3E3E3;
+                        content: "";
                     }
                 }
             }
