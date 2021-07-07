@@ -134,7 +134,7 @@ function eventEffect(){
                 item.style.display='block'
             })
             console.log(num);
-            event.target.style.display = 'none'
+            event.path[1].style.display = 'none'
 
             // let event_num = document.querySelectorAll('.screen_number span');
             // let event_up_text = document.querySelectorAll('.screen_text span')
