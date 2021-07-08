@@ -14,6 +14,11 @@ const h2text = ['운명을 바꿀<span>최후의 전쟁</span>이',
                 '사이즈부터 다른 마블의'
             ];
 const h2text2 = ['지금 펼쳐진다!','이것이 <span>K-FAST</span>의 위엄!','<span>모험</span>이 시작된다','<span>히든카드</span>가 온다']
+const viewPort = document.documentElement.clientWidth;
+console.log(document.documentElement.clientHeight);
+console.log(viewPort);
+
+
 console.log(indexchild);
 
 let videoNum = 1;
@@ -51,7 +56,7 @@ document.addEventListener('scroll',function(){
     let scrollTop = document.documentElement.scrollTop;
     let windowHeight = window.innerHeight;
     
-    if(((scrollTop+200) > windowHeight ) && !eventcheckWeek){
+    if(((scrollTop+200) > (windowHeight*0.3) ) && !eventcheckWeek){
         eventcheckWeek = true;
         weekEffect();
         setInterval(() => {
@@ -141,12 +146,12 @@ preBtn.onclick = function(e){
     }
     movieSlide[videoNum-1].style.opacity = '1';
     bar[videoNum-1].style.opacity = '1';
-    bar[videoNu-1].style.width = '100px';
+    bar[videoNum-1].style.width = '100px';
 };
 nextBtn.onclick = function(){
     resetEffect();
     if(videoNum == 4){
-        videoNum = 1;m
+        videoNum = 1;
         video.src = preLoadVideo[videoNum];
         indexchild[1].innerHTML = h2text[videoNum-1];
         indexchild[2].innerHTML = h2text2[videoNum-1];
@@ -242,40 +247,41 @@ const recommendSlide = document.querySelector('.recommendslide');
 const recomli = document.querySelectorAll('.recommendimg li');
 console.log(recomli);
 
-const recomHeight = recommendSlide.offsetHeight;
+let recomHeight = recommendSlide.offsetHeight;
 const recomimg = recommendSlide.children;
 let recomSlideNum = 0;
 
 
 
 function recomSlideStart (){
-        if(recomSlideNum == 3){
-            let i = 4;
-            for(i=0;i<4;i++){
-                recomli[i].style.backgroundColor = '#B3B3B3';
-                recomli[i].style.opacity = '0.4';
-            }
-            recomli[0].style.backgroundColor ='#ECA100'; 
-            recomli[0].style.opacity ='1';
-            let subRecomRepeat = setInterval(function(){
-                recomimg[i-1].style.transform = `translateY(0)`;
-                i -=1;
-                if(i == 0){
-                    clearInterval(subRecomRepeat);
-                }
-            }, 333);
-            recomSlideNum =0;
+    recomHeight = recommendSlide.offsetHeight;
+    if(recomSlideNum == 3){
+        let i = 4;
+        for(i=0;i<4;i++){
+            recomli[i].style.backgroundColor = '#B3B3B3';
+            recomli[i].style.opacity = '0.4';
         }
-        else{
-            recomSlideNum +=1;
-            for(i=0;i<4;i++){
-                recomli[i].style.backgroundColor = '#B3B3B3';
-                recomli[i].style.opacity = '0.4';
+        recomli[0].style.backgroundColor ='#ECA100'; 
+        recomli[0].style.opacity ='1';
+        let subRecomRepeat = setInterval(function(){
+            recomimg[i-1].style.transform = `translateY(0)`;
+            i -=1;
+            if(i == 0){
+                clearInterval(subRecomRepeat);
             }
-            recomimg[recomSlideNum].style.transform = `translateY(-${recomHeight*recomSlideNum}px)`;
-            recomli[recomSlideNum].style.backgroundColor = '#ECA100';
-            recomli[recomSlideNum].style.opacity = '1';
-        } 
+        }, 333);
+        recomSlideNum =0;
+    }
+    else{
+        recomSlideNum +=1;
+        for(i=0;i<4;i++){
+            recomli[i].style.backgroundColor = '#B3B3B3';
+            recomli[i].style.opacity = '0.4';
+        }
+        recomimg[recomSlideNum].style.transform = `translateY(-${recomHeight*recomSlideNum}px)`;
+        recomli[recomSlideNum].style.backgroundColor = '#ECA100';
+        recomli[recomSlideNum].style.opacity = '1';
+    } 
 }
 
 
@@ -372,7 +378,7 @@ const rightBtn = document.querySelector('.rightbtn');
 const smallCardGage = document.querySelector('.smallcardgage div');
 const cardSlide = document.querySelector('.cardslide');
 const cardchild = cardSlide.children;
-const bigCard = document.querySelector('.bigcard');
+const bigCard = document.querySelector('.bigcard_img');
 const bigCardName = document.querySelector('.cardleft h3');
 const bigCardIndex = document.querySelector('.cardleft div:nth-child(3)');
 console.log(bigCardIndex.children);
@@ -471,7 +477,7 @@ function cardchange(id){
             bigCardName.style.opacity = '1';
             bigCardIndex.style.opacity ='1';
             setTimeout(function(){
-                bigCard.style.background = `url('../image/main4/bigCard_${id.alt.replace('카드','')}.png')`;
+                bigCard.src = `image/main4/bigCard_${id.alt.replace('카드','')}.png`;
                 bigCard.style.opacity = '1';    
                 setTimeout(function(){
                     bigCard.style.transition = '1s';
@@ -664,7 +670,7 @@ function brandEffect(){
 }
 brandEffect();
 setInterval(() =>{
-    brandLeft.style.top = '-'+brandNum1*0.05+'%';
+    brandLeft.style.top = '-'+brandNum1*0.044+'%';
     brandNum1 +=1;
     if(brandNum1 == 2465){
         brandLeft.style.transition = '0ms';
@@ -676,7 +682,7 @@ setInterval(() =>{
     }
 },10);
 setInterval(() =>{
-    brandRight.style.top = brandNum2*0.1+'%';
+    brandRight.style.top = brandNum2*0.089+'%';
     brandNum2 +=1;
     if(brandNum2 == 1260){
         brandRight.style.transition = '0ms';

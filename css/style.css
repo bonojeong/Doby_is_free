@@ -71,9 +71,9 @@ html {
 
 body {
   width: 100%;
-  height: 200vh;
   font-weight: normal;
   font-family: "Segoe UI", san-serif;
+  font-size: 0.72917vw;
 }
 
 .my_menu {
@@ -111,9 +111,9 @@ body {
 header {
   position: absolute;
   z-index: 100;
-  top: 5px;
+  top: 0.26042vw;
   width: 100%;
-  height: 80px;
+  height: 4.16667vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,22 +123,22 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 64px;
-  font-size: 13px;
+  padding: 0 3.33333vw;
+  font-size: 0.67708vw;
   font-family: "Helvetica-bold";
 }
 
 header h1 {
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 2.08333vw;
+  line-height: 2.08333vw;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
 header h1 img {
-  width: 70px;
-  height: 30px;
+  width: 3.64583vw;
+  height: 1.5625vw;
 }
 
 header ul {
@@ -150,19 +150,19 @@ header ul {
 }
 
 header ul:nth-child(2) li {
-  padding-left: 66px;
+  padding-left: 3.4375vw;
 }
 
 header ul:nth-child(3) {
-  padding-left: 80px;
+  padding-left: 4.16667vw;
 }
 
 header ul:nth-child(3) li {
-  padding-left: 27px;
+  padding-left: 1.40625vw;
 }
 
 header ul:nth-child(4) li {
-  padding-left: 24px;
+  padding-left: 1.25vw;
 }
 
 header ul li {
@@ -207,29 +207,30 @@ header ul li:hover {
   position: absolute;
   top: 0;
   left: 0;
-  width: 1074px;
+  width: 55.9375vw;
   height: 100vh;
   background: url("../image/main1/black_bg.png") no-repeat center center;
   background-size: cover;
+  opacity: 0.7;
 }
 
 #sidebg ul {
   position: relative;
   top: 40%;
   color: white;
-  padding-left: 64px;
+  padding-left: 3.33333vw;
   opacity: 0.85;
-  font-size: 12px;
+  font-size: 0.625vw;
   font-family: "Helvetica-bold";
 }
 
 #sidebg ul li {
   opacity: 1;
-  padding-top: 34px;
+  padding-top: 1.77083vw;
 }
 
 #sidebg ul li span {
-  padding-left: 15px;
+  padding-left: 0.78125vw;
 }
 
 #sidebg .movieSlide li {
@@ -243,13 +244,13 @@ header ul li:hover {
   display: inline-block;
   background-color: #fff;
   position: absolute;
-  top: 55px;
-  left: -85px;
-  width: 10px;
-  height: 2px;
+  top: 2.86458vw;
+  left: -4.42708vw;
+  width: 0.52083vw;
+  height: 0.10417vw;
   padding: 0;
   margin: 0;
-  margin-right: 5px;
+  margin-right: 0.26042vw;
   opacity: 0.2;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -260,16 +261,16 @@ header ul li:hover {
 }
 
 #sidebg .movieSlide li:nth-child(1) .bar {
-  width: 100px;
+  width: 5.20833vw;
   opacity: 1;
 }
 
 .index {
-  width: 1000px;
+  width: 52.08333vw;
   z-index: 5;
   position: absolute;
-  top: 160px;
-  left: 250px;
+  top: 8.33333vw;
+  left: 13.02083vw;
   color: white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -288,15 +289,15 @@ header ul li:hover {
   opacity: 0.85;
   -webkit-transition: 1s;
   transition: 1s;
-  font-size: 16;
+  font-size: 0.83333vw;
   font-weight: regular;
   display: block;
-  padding-left: 7px;
-  padding-bottom: 27px;
+  padding-left: 0.36458vw;
+  padding-bottom: 1.40625vw;
 }
 
 .index p span {
-  font-size: 30px;
+  font-size: 1.5625vw;
 }
 
 .index h2 {
@@ -304,7 +305,7 @@ header ul li:hover {
   -webkit-transition: 1s;
   transition: 1s;
   font-family: "SCD7";
-  font-size: 52px;
+  font-size: 2.70833vw;
   text-shadow: 1px 1px 1px black;
 }
 
@@ -313,28 +314,27 @@ header ul li:hover {
 }
 
 .index button {
-  margin-top: 60px;
+  margin-top: 3.125vw;
 }
 
 .btn {
-  width: 220px;
-  height: 48px;
-  line-height: 48px;
+  width: 11.45833vw;
+  height: 2.5vw;
+  line-height: 2.5vw;
   color: white;
   border: none;
-  border-radius: 23.5px;
+  border-radius: 1.22396vw;
   background-color: #E30613;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.07812vw;
   font-family: 'Yun750';
-  font-size: 16px;
+  font-size: 0.83333vw;
   font-weight: normal;
 }
 
 .btn img {
-  padding-left: 7px;
+  padding-left: 0.36458vw;
   position: relative;
-  top: -2px;
-  vertical-align: none;
+  top: -0.10417vw;
 }
 
 #sidebg .slide {
@@ -342,22 +342,22 @@ header ul li:hover {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  top: 350px;
-  left: 600px;
+  top: 18.22917vw;
+  left: 31.25vw;
   z-index: 6;
 }
 
 #sidebg .slide li {
   opacity: 1;
-  margin: 5.5px;
+  margin: 0.28646vw;
 }
 
 #main .ad {
   position: absolute;
-  bottom: 180px;
-  right: 160px;
-  width: 216px;
-  height: 202px;
+  bottom: 9.375vw;
+  right: 8.33333vw;
+  width: 11.25vw;
+  height: 10.52083vw;
   background: url("../image/main1/popup.png") no-repeat center center;
   background-size: cover;
   -webkit-transition: 0.5s;
@@ -370,8 +370,8 @@ header ul li:hover {
 
 #main .ad img {
   position: absolute;
-  right: 5px;
-  top: 5px;
+  right: 0.26042vw;
+  top: 0.26042vw;
 }
 
 #main .event {
@@ -382,11 +382,11 @@ header ul li:hover {
 
 #main .event li {
   position: absolute;
-  bottom: -70px;
-  padding-top: 15px;
-  padding-left: 19px;
-  width: 230px;
-  height: 115px;
+  bottom: -3.64583vw;
+  padding-top: 0.78125vw;
+  padding-left: 0.98958vw;
+  width: 11.97917vw;
+  height: 5.98958vw;
   background-color: aliceblue;
   color: #535252;
   -webkit-transition: 0.5s;
@@ -394,13 +394,13 @@ header ul li:hover {
 }
 
 #main .event li:nth-child(1) {
-  right: 460px;
+  right: 23.95833vw;
 }
 
 #main .event li:nth-child(2) {
   background-color: #E30613;
   color: #D3D3D3;
-  right: 230px;
+  right: 11.97917vw;
 }
 
 #main .event li:nth-child(2) h3 {
@@ -420,29 +420,29 @@ header ul li:hover {
 }
 
 #main .event li:hover img {
-  top: 65.5px;
+  top: 3.4375vw;
 }
 
 #main .event li p {
-  font-size: 12px;
+  font-size: 0.625vw;
   font-weight: normal;
-  padding-bottom: 15px;
+  padding-bottom: 0.78125vw;
 }
 
 #main .event li h3 {
-  font-size: 18px;
+  font-size: 0.9375vw;
   font-weight: normal;
   font-family: "Yun760";
 }
 
 #main .event li h3 span {
-  font-size: 30px;
+  font-size: 1.5625vw;
 }
 
 #main .event li img {
   position: absolute;
-  top: 18px;
-  right: 30px;
+  top: 0.9375vw;
+  right: 1.5625vw;
   -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
@@ -452,10 +452,10 @@ header ul li:hover {
           transform: rotate(90deg);
   color: #fff;
   position: absolute;
-  width: 300px;
-  bottom: 100px;
-  left: -80px;
-  font-size: 14px;
+  width: 15.625vw;
+  bottom: 5.20833vw;
+  left: -4.16667vw;
+  font-size: 0.72917vw;
   line-height: 1.1;
   border-bottom: 1px solid #fff;
   z-index: 100;
@@ -464,10 +464,13 @@ header ul li:hover {
 
 #weekMovie {
   width: 100%;
-  height: 825px;
+  height: 42.96875vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background: url("../image/main2/patternBg.png") no-repeat center center;
   background-size: cover;
   overflow: hidden;
@@ -482,7 +485,7 @@ header ul li:hover {
 }
 
 #weekMovie .left div:nth-child(1) {
-  width: 80px;
+  width: 4.16667vw;
   height: 100%;
   background-color: #E30613;
 }
@@ -509,11 +512,11 @@ header ul li:hover {
           transform: rotate(-90deg);
   -ms-flex-item-align: start;
       align-self: flex-start;
-  margin-top: 65px;
-  margin-left: 65px;
-  padding-right: 65px;
-  margin-bottom: 65px;
-  font-size: 14px;
+  margin-top: 3.38542vw;
+  margin-left: 3.38542vw;
+  padding-right: 3.38542vw;
+  margin-bottom: 3.38542vw;
+  font-size: 0.72917vw;
   font-weight: normal;
   font-family: "Yun750";
   border-bottom: 1px solid #333;
@@ -527,8 +530,8 @@ header ul li:hover {
 }
 
 .subTitle {
-  margin: 88px;
-  margin-top: 144px;
+  margin: 4.58333vw;
+  margin-top: 7.5vw;
   color: white;
   line-height: 1.25;
   overflow: hidden;
@@ -536,16 +539,16 @@ header ul li:hover {
 }
 
 .subTitle .redp {
-  font-size: 14px;
+  font-size: 0.72917vw;
   font-weight: normal;
   font-family: "Yun740";
   color: #E30613;
-  padding-bottom: 30px;
-  padding-left: 1px;
+  padding-bottom: 1.5625vw;
+  padding-left: 0.05208vw;
 }
 
 .subTitle h2 {
-  font-size: 52px;
+  font-size: 2.70833vw;
   font-weight: normal;
   font-family: "Yun770";
 }
@@ -555,7 +558,7 @@ header ul li:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 60px;
+  padding-left: 3.125vw;
   overflow: hidden;
 }
 
@@ -578,11 +581,13 @@ header ul li:hover {
   color: white;
   -webkit-transition: 1s;
   transition: 1s;
-  padding-top: 80px;
-  padding-right: 110px;
+  padding-top: 4.16667vw;
+  padding-right: 5.72917vw;
 }
 
 #weekMovie .right .poster .posterimg {
+  width: 17.1875vw;
+  height: 25vw;
   -webkit-box-shadow: 3px 3px 5px black;
           box-shadow: 3px 3px 5px black;
   -webkit-box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.25);
@@ -600,22 +605,27 @@ header ul li:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 24px;
+  padding-top: 1.25vw;
 }
 
 #weekMovie .right .poster .posterLetter > div {
-  width: 240px;
+  width: 12.5vw;
 }
 
 #weekMovie .right .poster .posterLetter h2 {
   position: absolute;
-  top: -10px;
-  left: -35px;
-  padding-right: 10px;
+  top: -0.52083vw;
+  left: -1.82292vw;
+  padding-right: 0.52083vw;
+}
+
+#weekMovie .right .poster .posterLetter h2 img {
+  width: 4.63542vw;
+  height: 9.79167vw;
 }
 
 #weekMovie .right .poster .posterLetter .score {
-  width: 220px;
+  width: 11.45833vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -626,36 +636,36 @@ header ul li:hover {
 
 #weekMovie .right .poster .posterLetter .score p {
   position: relative;
-  font-size: 17;
+  font-size: 0.88542vw;
   font-weight: normal;
   font-family: "Yun720";
   color: #B3B3B3;
-  padding-left: 20px;
+  padding-left: 1.04167vw;
 }
 
 #weekMovie .right .poster .posterLetter .score img {
   display: inline;
-  width: 18px;
-  height: 18px;
+  width: 0.9375vw;
+  height: 0.9375vw;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
-  top: 10px;
-  padding-right: 10px;
+  top: 0.52083vw;
+  padding-right: 0.52083vw;
 }
 
 #weekMovie .right .poster .posterLetter h3 {
   text-align: center;
-  font-size: 23px;
+  font-size: 1.19792vw;
   font-weight: normal;
   font-family: "Yun750";
-  padding-bottom: 16px;
-  padding-top: 6px;
+  padding-bottom: 0.83333vw;
+  padding-top: 0.3125vw;
 }
 
 #scrollBanner {
   width: 100%;
-  height: 300px;
+  height: 15.625vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -702,10 +712,10 @@ header ul li:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-family: "Yun750";
-  padding-top: 16.5px;
-  padding-right: 40px;
-  padding-left: 63.5px;
-  padding-bottom: 42px;
+  padding-top: 0.85938vw;
+  padding-right: 2.08333vw;
+  padding-left: 3.30729vw;
+  padding-bottom: 2.1875vw;
 }
 
 #scrollBanner .banner * {
@@ -715,34 +725,34 @@ header ul li:hover {
 
 #scrollBanner .banner span {
   color: #ECA100;
-  font-size: 18px;
+  font-size: 0.9375vw;
 }
 
 #scrollBanner .banner p:first-child {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  font-size: 14px;
+  font-size: 0.72917vw;
   font-weight: normal;
 }
 
 #scrollBanner .banner p:last-child {
-  padding-top: 16px;
-  font-size: 17px;
+  padding-top: 0.83333vw;
+  font-size: 0.88542vw;
   font-weight: normal;
 }
 
 #scrollBanner .banner h2 {
-  font-size: 23px;
+  font-size: 1.19792vw;
   font-weight: normal;
-  line-height: 23px;
+  line-height: 1.19792vw;
   margin-top: auto;
   justify-self: flex-end;
 }
 
 #scrollBanner .banner h2::before {
   font-weight: bold;
-  font-size: 25px;
-  line-height: 22px;
+  font-size: 1.30208vw;
+  line-height: 1.14583vw;
   content: "l  ";
   color: #ECA100;
 }
@@ -803,7 +813,7 @@ header ul li:hover {
 
 #recommendMovie {
   width: 100%;
-  height: 960px;
+  height: 50vw;
   background: url("../image/main3/redblack_bg.png") no-repeat center center;
   background-size: cover;
   display: -webkit-box;
@@ -826,8 +836,8 @@ header ul li:hover {
 }
 
 #recommendMovie .recommendimg .recommendslide {
-  width: 952px;
-  height: 782px;
+  width: 49.58333vw;
+  height: 40.72917vw;
   overflow: hidden;
   position: relative;
   display: -webkit-box;
@@ -849,17 +859,17 @@ header ul li:hover {
 #recommendMovie .recommendimg ul {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  padding-bottom: 120px;
-  padding-left: 30px;
+  padding-bottom: 6.25vw;
+  padding-left: 1.5625vw;
 }
 
 #recommendMovie .recommendimg li {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  width: 8px;
-  height: 8px;
-  margin: 10px;
-  border-radius: 4px;
+  width: 0.41667vw;
+  height: 0.41667vw;
+  margin: 0.52083vw;
+  border-radius: 0.20833vw;
   background-color: #B3B3B3;
   opacity: 0.4;
 }
@@ -870,7 +880,7 @@ header ul li:hover {
 }
 
 #recommendMovie .recommendText {
-  padding-right: 70px;
+  padding-right: 3.64583vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -884,7 +894,7 @@ header ul li:hover {
 }
 
 #recommendMovie .recommendText h2 {
-  font-size: 52px;
+  font-size: 2.70833vw;
   font-weight: normal;
   font-family: "Yun770";
 }
@@ -892,26 +902,26 @@ header ul li:hover {
 #recommendMovie .recommendText p {
   position: relative;
   color: #E30613;
-  letter-spacing: 10px;
-  padding-top: 50px;
-  padding-bottom: 40px;
-  font-size: 14px;
+  letter-spacing: 0.52083vw;
+  padding-top: 2.60417vw;
+  padding-bottom: 2.08333vw;
+  font-size: 0.72917vw;
   font-weight: normal;
 }
 
 #recommendMovie .recommendText p span {
   position: absolute;
-  top: 62px;
-  left: 200px;
+  top: 3.22917vw;
+  left: 10.41667vw;
   display: block;
-  height: 1px;
-  width: 600px;
+  height: 0.05208vw;
+  width: 31.25vw;
   background-color: #E30613;
 }
 
 #recommendMovie .recommendText ul li {
   color: #949494;
-  padding: 8px 0;
+  padding: 0.41667vw 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -922,7 +932,7 @@ header ul li:hover {
 
 #cardEvent {
   width: 100%;
-  height: 800px;
+  height: 41.66667vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -937,7 +947,7 @@ header ul li:hover {
 }
 
 #cardEvent .left div:nth-child(1) {
-  width: 70px;
+  width: 3.64583vw;
   height: 100%;
   background-color: #ECA100;
 }
@@ -950,9 +960,9 @@ header ul li:hover {
 #cardEvent .left .subTitle::before {
   content: "";
   display: block;
-  border-left: 1px solid #ccc;
-  width: 0px;
-  height: 305px;
+  border-left: 0.05208vw solid #ccc;
+  width: 0vw;
+  height: 15.88542vw;
   position: absolute;
 }
 
@@ -967,60 +977,70 @@ header ul li:hover {
   color: black;
 }
 
+#cardEvent .left .subTitle h2 img {
+  width: 6.14583vw;
+  height: 2.70833vw;
+}
+
 #cardEvent .left .subTitle div:last-child {
   position: relative;
-  left: -50px;
-  margin-top: 50px;
+  left: -2.60417vw;
+  margin-top: 2.60417vw;
 }
 
 #cardEvent .left .cardleft {
-  padding-top: 90px;
-  padding-left: 55px;
+  padding-top: 4.6875vw;
+  padding-left: 2.86458vw;
   overflow: hidden;
 }
 
 #cardEvent .left .cardleft h3 {
-  font-size: 23px;
+  font-size: 1.19792vw;
   font-weight: normal;
   font-family: "Yun780";
-  padding-bottom: 20px;
+  padding-bottom: 1.04167vw;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 #cardEvent .left .cardleft .bigcard {
-  padding-left: 5px;
-  width: 240px;
-  height: 370px;
-  background: url("../image/main4/bigCard_1.png") no-repeat center center;
-  background-size: cover;
+  width: 12.55208vw;
+  height: 19.27083vw;
   position: relative;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
+#cardEvent .left .cardleft .bigcard img {
+  width: 12.55208vw;
+  height: 19.27083vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 #cardEvent .left .cardleft div:nth-child(3) {
-  font-size: 16px;
+  font-size: 0.83333vw;
   font-weight: normal;
   font-family: "Yun720";
-  letter-spacing: -1.5px;
+  letter-spacing: -0.07812vw;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  padding: 22px 0;
+  padding: 1.14583vw 0;
 }
 
 #cardEvent .left .cardleft div:nth-child(3) span {
   color: black;
   font-family: 'Yun770';
+  font-size: 0.72917vw;
 }
 
 #cardEvent .left .cardleft div:nth-child(3) p {
   display: inline-block;
-  padding-bottom: 15px;
+  padding-bottom: 0.78125vw;
 }
 
 #cardEvent .left .cardleft .btn {
-  width: 240px;
+  width: 12.5vw;
 }
 
 #cardEvent .right {
@@ -1036,10 +1056,10 @@ header ul li:hover {
 
 #cardEvent .right .cardsmall {
   width: 100%;
-  padding-top: 160px;
-  padding-left: 40px;
+  padding-top: 8.33333vw;
+  padding-left: 2.08333vw;
   padding-right: 0;
-  padding-bottom: 80px;
+  padding-bottom: 4.16667vw;
   overflow: hidden;
 }
 
@@ -1059,8 +1079,8 @@ header ul li:hover {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  height: 350px;
-  margin-right: 40px;
+  height: 18.22917vw;
+  margin-right: 2.08333vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1074,6 +1094,11 @@ header ul li:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.cardslide > div img {
+  width: 9.6875vw;
+  height: 6.09375vw;
 }
 
 .cardslide > div div {
@@ -1093,23 +1118,23 @@ header ul li:hover {
 }
 
 .cardslide > div p {
-  font-size: 20px;
+  font-size: 1.04167vw;
   font-weight: normal;
   font-family: "Yun750";
 }
 
 .cardslide > div .btnS {
-  width: 150px;
-  height: 30px;
+  width: 7.8125vw;
+  height: 1.5625vw;
   border: none;
   background-color: white;
-  border: 1.5px solid #E30613;
+  border: 0.07812vw solid #E30613;
   color: #E30613;
-  font-size: 14px;
+  font-size: 0.72917vw;
   font-weight: normal;
   font-family: "Yun750";
-  border-radius: 23.5px;
-  letter-spacing: 1.5px;
+  border-radius: 1.22396vw;
+  letter-spacing: 0.07812vw;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -1121,9 +1146,9 @@ header ul li:hover {
 
 #cardEvent .right > div:nth-child(2) {
   width: 50%;
-  height: 49px;
-  line-height: 49px;
-  font-size: 24px;
+  height: 2.55208vw;
+  line-height: 2.55208vw;
+  font-size: 1.25vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1136,26 +1161,28 @@ header ul li:hover {
 }
 
 #cardEvent .right > div:nth-child(2) .smallcardgage {
-  border-radius: 5px;
+  border-radius: 0.26042vw;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 200px;
-  height: 10px;
+  width: 10.41667vw;
+  height: 0.52083vw;
   background-color: #ccc;
 }
 
 #cardEvent .right > div:nth-child(2) .smallcardgage div {
-  border-radius: 5px;
+  border-radius: 0.26042vw;
   background-color: black;
-  width: 42.85px;
-  height: 10px;
+  width: 2.23177vw;
+  height: 0.52083vw;
   position: relative;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 #cardEvent .right > div:nth-child(2) img {
+  width: 2.55208vw;
+  height: 2.55208vw;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -1172,9 +1199,9 @@ header ul li:hover {
 }
 
 #cinema article:nth-child(1) {
-  padding: 190px 280px 170px 300px;
+  padding: 9.89583vw 14.58333vw 8.85417vw 15.625vw;
   width: 100%;
-  height: 900px;
+  height: 46.875vw;
   background: url("../image/main5/backgound5.png") no-repeat center center;
   background-size: cover;
   display: -webkit-box;
@@ -1187,30 +1214,30 @@ header ul li:hover {
 }
 
 #cinema article:nth-child(1) > div:nth-child(1) {
-  font-size: 14px;
+  font-size: 0.72917vw;
   font-weight: normal;
   font-family: 'Yun750';
-  border-bottom: 1px solid #E30613;
-  padding-bottom: 90px;
+  border-bottom: 0.05208vw solid #E30613;
+  padding-bottom: 4.6875vw;
 }
 
 #cinema article:nth-child(1) > div:nth-child(1) h2 {
-  padding-top: 20px;
+  padding-top: 1.04167vw;
   line-height: 1.1;
-  font-size: 60px;
+  font-size: 3.125vw;
   font-weight: normal;
   font-family: "Yun770";
 }
 
 #cinema article:nth-child(1) > div:nth-child(1) img {
   position: relative;
-  top: 1px;
-  padding-right: 3px;
+  top: 0.05208vw;
+  padding-right: 0.15625vw;
 }
 
 #cinema article:nth-child(1) > div:nth-child(2) {
   width: 100%;
-  padding-top: 78px;
+  padding-top: 4.0625vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1224,12 +1251,12 @@ header ul li:hover {
 }
 
 #cinema article:nth-child(1) > div:nth-child(2) > div:nth-child(1) div {
-  width: 60px;
-  height: 60px;
+  width: 3.125vw;
+  height: 3.125vw;
   background-color: #C6C6C6;
-  border: #E30613 2px solid;
+  border: #E30613 0.10417vw solid;
   color: #E30613;
-  font-size: 50px;
+  font-size: 2.60417vw;
   line-height: 1.1;
   text-align: center;
   font-family: "Yun780";
@@ -1252,19 +1279,19 @@ header ul li:hover {
 #cinema article:nth-child(1) > div:nth-child(2) > div:nth-child(2) p:nth-child(1) {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  font-size: 18px;
+  font-size: 0.9375vw;
   font-weight: normal;
   font-family: "Yun780";
-  margin-bottom: 20px;
+  margin-bottom: 1.04167vw;
 }
 
 #cinema article:nth-child(1) > div:nth-child(2) > div:nth-child(2) p:nth-child(2) {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  font-size: 17px;
+  font-size: 0.88542vw;
   font-weight: normal;
   font-family: "Yun720";
-  letter-spacing: -0.9895px;
+  letter-spacing: -0.05154vw;
 }
 
 #cinema article:nth-child(2) {
@@ -1332,10 +1359,10 @@ header ul li:hover {
   width: 100%;
   height: 50%;
   margin: 0;
-  padding-top: 5px;
-  padding-left: 50px;
-  padding-right: 50px;
-  font-size: 14px;
+  padding-top: 0.26042vw;
+  padding-left: 2.60417vw;
+  padding-right: 2.60417vw;
+  font-size: 0.72917vw;
   font-family: "Yun740";
   line-height: 1.5;
   border: none;
@@ -1352,6 +1379,10 @@ header ul li:hover {
   line-height: 1;
   margin: 0;
   padding: 0;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(1):hover div {
+  z-index: 3;
 }
 
 #cinema article:nth-child(2) ul li:nth-child(1):hover div::before {
@@ -1367,10 +1398,10 @@ header ul li:hover {
   width: 100%;
   height: 50%;
   margin: 0;
-  padding-top: 5px;
-  padding-left: 50px;
-  padding-right: 50px;
-  font-size: 14px;
+  padding-top: 0.26042vw;
+  padding-left: 2.60417vw;
+  padding-right: 2.60417vw;
+  font-size: 0.72917vw;
   font-family: "Yun740";
   line-height: 1.5;
   border: none;
@@ -1387,6 +1418,10 @@ header ul li:hover {
   line-height: 1;
   margin: 0;
   padding: 0;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(2):hover div {
+  z-index: 3;
 }
 
 #cinema article:nth-child(2) ul li:nth-child(2):hover div::before {
@@ -1402,10 +1437,10 @@ header ul li:hover {
   width: 100%;
   height: 50%;
   margin: 0;
-  padding-top: 5px;
-  padding-left: 50px;
-  padding-right: 50px;
-  font-size: 14px;
+  padding-top: 0.26042vw;
+  padding-left: 2.60417vw;
+  padding-right: 2.60417vw;
+  font-size: 0.72917vw;
   font-family: "Yun740";
   line-height: 1.5;
   border: none;
@@ -1422,6 +1457,10 @@ header ul li:hover {
   line-height: 1;
   margin: 0;
   padding: 0;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(3):hover div {
+  z-index: 3;
 }
 
 #cinema article:nth-child(2) ul li:nth-child(3):hover div::before {
@@ -1437,10 +1476,10 @@ header ul li:hover {
   width: 100%;
   height: 50%;
   margin: 0;
-  padding-top: 5px;
-  padding-left: 50px;
-  padding-right: 50px;
-  font-size: 14px;
+  padding-top: 0.26042vw;
+  padding-left: 2.60417vw;
+  padding-right: 2.60417vw;
+  font-size: 0.72917vw;
   font-family: "Yun740";
   line-height: 1.5;
   border: none;
@@ -1457,6 +1496,10 @@ header ul li:hover {
   line-height: 1;
   margin: 0;
   padding: 0;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(4):hover div {
+  z-index: 3;
 }
 
 #cinema article:nth-child(2) ul li:nth-child(4):hover div::before {
@@ -1472,10 +1515,10 @@ header ul li:hover {
   width: 100%;
   height: 50%;
   margin: 0;
-  padding-top: 5px;
-  padding-left: 50px;
-  padding-right: 50px;
-  font-size: 14px;
+  padding-top: 0.26042vw;
+  padding-left: 2.60417vw;
+  padding-right: 2.60417vw;
+  font-size: 0.72917vw;
   font-family: "Yun740";
   line-height: 1.5;
   border: none;
@@ -1492,6 +1535,10 @@ header ul li:hover {
   line-height: 1;
   margin: 0;
   padding: 0;
+}
+
+#cinema article:nth-child(2) ul li:nth-child(5):hover div {
+  z-index: 3;
 }
 
 #cinema article:nth-child(2) ul li:nth-child(5):hover div::before {
@@ -1507,10 +1554,10 @@ header ul li:hover {
   width: 100%;
   height: 50%;
   margin: 0;
-  padding-top: 5px;
-  padding-left: 50px;
-  padding-right: 50px;
-  font-size: 14px;
+  padding-top: 0.26042vw;
+  padding-left: 2.60417vw;
+  padding-right: 2.60417vw;
+  font-size: 0.72917vw;
   font-family: "Yun740";
   line-height: 1.5;
   border: none;
@@ -1529,12 +1576,16 @@ header ul li:hover {
   padding: 0;
 }
 
+#cinema article:nth-child(2) ul li:nth-child(6):hover div {
+  z-index: 3;
+}
+
 #cinema article:nth-child(2) ul li:nth-child(6):hover div::before {
   content: '특별한 초대의 시간에 진정한 품격을 더합니다. 꿈이 현실로 이루어지는 씨네드쉐프에서 소중한 분들과 함께 최고의 가치를 경험하십시오.';
 }
 
 #cinema article:nth-child(2) ul li h3 {
-  font-size: 52px;
+  font-size: 2.70833vw;
   font-weight: normal;
   font-family: "Yun750";
   color: #ECA100;
@@ -1542,28 +1593,28 @@ header ul li:hover {
       align-self: flex-start;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  padding-top: 36px;
-  padding-left: 50px;
+  padding-top: 1.875vw;
+  padding-left: 2.60417vw;
 }
 
 #cinema article:nth-child(2) ul li div {
-  width: 60px;
-  height: 60px;
-  line-height: 47px;
+  width: 3.125vw;
+  height: 3.125vw;
+  line-height: 2.44792vw;
   text-align: center;
-  font-size: 45px;
+  font-size: 2.34375vw;
   font-weight: 200;
-  border-radius: 30px;
-  border: 1px solid white;
-  margin-bottom: 50px;
+  border-radius: 1.5625vw;
+  border: 0.05208vw solid white;
+  margin-bottom: 2.60417vw;
   opacity: 0.6;
 }
 
 #cinema article:nth-child(2) ul li p {
   position: relative;
   z-index: 5;
-  padding-bottom: 32px;
-  font-size: 14px;
+  padding-bottom: 1.66667vw;
+  font-size: 0.72917vw;
   font-weight: normal;
   font-family: "Yun750";
   -webkit-transition: 0.5s;
@@ -1573,8 +1624,8 @@ header ul li:hover {
 #cinema article:nth-child(2) ul li img {
   opacity: 0.5;
   position: absolute;
-  bottom: 3px;
-  left: 3px;
+  bottom: 0.15625vw;
+  left: 0.15625vw;
   z-index: 2;
   -webkit-transition: 0.1s;
   transition: 0.1s;
@@ -1585,8 +1636,8 @@ header ul li:hover {
 }
 
 #cinema article:nth-child(2) ul li:nth-child(odd) img {
-  width: 90px;
-  height: 100px;
+  width: 4.6875vw;
+  height: 5.20833vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1614,8 +1665,8 @@ header ul li:hover {
 }
 
 #cinema article:nth-child(2) ul li:nth-child(even) img {
-  width: 110px;
-  height: 100px;
+  width: 5.72917vw;
+  height: 5.20833vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1640,7 +1691,7 @@ header ul li:hover {
 
 #brand {
   width: 100%;
-  height: 98vh;
+  height: 49.5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1652,33 +1703,33 @@ header ul li:hover {
 
 #brand article:nth-child(1) {
   width: 47%;
-  padding-top: 80px;
-  padding-left: 360px;
-  letter-spacing: -1.75px;
+  padding-top: 4.16667vw;
+  padding-left: 18.75vw;
+  letter-spacing: -0.09115vw;
 }
 
 #brand article:nth-child(1) .brand_title {
-  width: 500px;
-  height: 500px;
+  width: 26.04167vw;
+  height: 26.04167vw;
   overflow: hidden;
 }
 
 #brand article:nth-child(1) .brand_title .btn {
-  margin-left: 15px;
+  margin-left: 0.78125vw;
 }
 
 #brand article:nth-child(1) img {
   position: relative;
-  top: 110px;
-  left: -120px;
+  top: 5.72917vw;
+  left: -6.25vw;
 }
 
 #brand article:nth-child(1) p {
-  font-size: 17px;
+  font-size: 0.88542vw;
   font-weight: normal;
   font-family: 'Yun730';
-  padding-left: 10px;
-  padding-bottom: 15px;
+  padding-left: 0.52083vw;
+  padding-bottom: 0.78125vw;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   -webkit-transition: 1s;
@@ -1686,12 +1737,12 @@ header ul li:hover {
 }
 
 #brand article:nth-child(1) h2 {
-  font-size: 72px;
+  font-size: 3.75vw;
   font-weight: normal;
   font-family: 'Yun770';
   line-height: 1.085;
-  padding-left: 10px;
-  padding-bottom: 60px;
+  padding-left: 0.52083vw;
+  padding-bottom: 3.125vw;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   -webkit-transition: 1s;
@@ -1699,8 +1750,8 @@ header ul li:hover {
 }
 
 #brand article:nth-child(1) button {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(-130%);
+          transform: translateX(-130%);
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -1717,8 +1768,8 @@ header ul li:hover {
 }
 
 #brand article:nth-child(2) > div > p {
-  width: 250px;
-  padding-bottom: 70px;
+  width: 13.02083vw;
+  padding-bottom: 3.64583vw;
 }
 
 #brand article:nth-child(2) > div > p::before {
@@ -1726,42 +1777,42 @@ header ul li:hover {
   display: inline-block;
   position: absolute;
   top: 0;
-  border-left: 1px solid #eee;
+  border-left: 0.05208vw solid #eee;
   color: black;
-  width: 1px;
-  height: 110px;
+  width: 0.05208vw;
+  height: 5.72917vw;
 }
 
 #brand article:nth-child(2) > div {
-  font-size: 14px;
+  font-size: 0.72917vw;
   font-weight: normal;
   font-family: "Yun770";
 }
 
 #brand article:nth-child(2) > div:not(:last-child) {
-  padding-top: 92px;
-  width: 300px;
+  padding-top: 4.79167vw;
+  width: 15.625vw;
 }
 
 #brand article:nth-child(2) > div .leftslide {
-  width: 250px;
-  height: 68vh;
+  width: 13.02083vw;
+  height: 49.5vw;
   overflow: hidden;
 }
 
 #brand article:nth-child(2) > div .rightslide {
-  width: 250px;
-  height: 68vh;
+  width: 13.02083vw;
+  height: 49.5vw;
   overflow: hidden;
 }
 
 #brand article:nth-child(2) > div ul p {
   font-family: "Yun730";
-  padding-top: 25px;
+  padding-top: 1.30208vw;
 }
 
 #brand article:nth-child(2) > div ul li {
-  padding-bottom: 60px;
+  padding-bottom: 3.125vw;
 }
 
 #brand article:nth-child(2) > div .brand_left {
@@ -1779,14 +1830,14 @@ header ul li:hover {
 }
 
 #brand article:nth-child(2) > div:last-child img {
-  width: 400px;
+  width: 20.83333vw;
   position: relative;
-  top: 20px;
+  top: 1.04167vw;
 }
 
 #QnA {
   width: 100%;
-  height: 300px;
+  height: 15.625vw;
   color: white;
   background: url("../image/main7/info_background.png") no-repeat center center;
   background-size: cover;
@@ -1808,27 +1859,27 @@ header ul li:hover {
 
 #QnA img {
   position: absolute;
-  top: -100px;
+  top: -40%;
   left: 35%;
 }
 
 #QnA h2 {
-  font-size: 33px;
+  font-size: 1.71875vw;
   font-weight: normal;
   font-family: "Yun770";
 }
 
 #QnA p {
-  font-size: 14px;
+  font-size: 0.72917vw;
   font-weight: normal;
   font-family: "Yun730";
   color: #C5C5C5;
-  padding-top: 14px;
-  padding-bottom: 52px;
+  padding-top: 0.72917vw;
+  padding-bottom: 2.70833vw;
 }
 
 #QnA .btn {
-  border: 1px solid white;
+  border: 0.05208vw solid white;
 }
 
 footer {
@@ -1843,12 +1894,13 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  height: 530px;
+  height: 27.60417vw;
+  position: relative;
 }
 
 footer > div {
   width: 100%;
-  height: 255px;
+  height: 13.28125vw;
 }
 
 footer > div:nth-child(1) {
@@ -1869,42 +1921,52 @@ footer > div:nth-child(1) div {
 }
 
 footer > div:nth-child(1) div:nth-child(1) {
-  padding: 50px 220px 0px 210px;
+  padding: 2.60417vw 11.45833vw 0vw 10.9375vw;
+}
+
+footer > div:nth-child(1) div:nth-child(1) img:nth-child(1) {
+  width: 6.82292vw;
+  height: 3.85417vw;
+}
+
+footer > div:nth-child(1) div:nth-child(1) img:nth-child(3) {
+  width: 42.29167vw;
+  height: 3.33333vw;
 }
 
 footer > div:nth-child(1) div:nth-child(1) ul {
   color: #989898;
-  font-size: 14px;
+  font-size: 0.72917vw;
   font-weight: normal;
   font-family: "Yun770";
 }
 
 footer > div:nth-child(1) div:nth-child(1) ul li {
-  padding-left: 26px;
+  padding-left: 1.35417vw;
 }
 
 footer > div:nth-child(1) div:nth-child(2) p {
   color: #989898;
-  font-size: 14px;
+  font-size: 0.72917vw;
   font-weight: normal;
   font-family: "Yun760";
-  padding-left: 414px;
-  padding-bottom: 80px;
-  letter-spacing: -0.95px;
+  padding-left: 21.5625vw;
+  padding-bottom: 4.16667vw;
+  letter-spacing: -0.04948vw;
 }
 
 footer > div:nth-child(1) div:nth-child(2) ul {
   opacity: 0.5;
-  padding-right: 240px;
-  padding-bottom: 81px;
-  font-size: 16px;
+  padding-right: 12.5vw;
+  padding-bottom: 4.21875vw;
+  font-size: 0.83333vw;
   font-weight: bold;
 }
 
 footer > div:nth-child(1) div:nth-child(2) ul i {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
-  padding-left: 30px;
+  padding-left: 1.5625vw;
 }
 
 footer > div:nth-child(1) ul {
@@ -1922,9 +1984,9 @@ footer > div:nth-child(1) ul {
 footer > div:nth-child(2) {
   background-color: #252526;
   color: #C6C6C6;
-  padding-left: 256px;
-  padding-top: 66px;
-  font-size: 14px;
+  padding-left: 13.33333vw;
+  padding-top: 3.4375vw;
+  font-size: 0.72917vw;
   font-weight: normal;
   font-family: "Yun740";
   display: -webkit-box;
@@ -1937,11 +1999,11 @@ footer > div:nth-child(2) div:nth-child(1) ul {
   display: -ms-flexbox;
   display: flex;
   font-family: "Yun770";
-  padding-bottom: 35px;
+  padding-bottom: 1.82292vw;
 }
 
 footer > div:nth-child(2) div:nth-child(1) ul li {
-  padding-right: 20px;
+  padding-right: 1.04167vw;
 }
 
 footer > div:nth-child(2) div:nth-child(1) address {
@@ -1949,32 +2011,38 @@ footer > div:nth-child(2) div:nth-child(1) address {
 }
 
 footer > div:nth-child(2) div:nth-child(2) {
-  margin: 0px 230px 0px 280px;
-  width: 212px;
-  height: 40px;
+  margin: 0vw 11.97917vw 0vw 14.58333vw;
+  width: 11.04167vw;
+  height: 2.08333vw;
   overflow: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  line-height: 37px;
-  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 1.92708vw;
+  font-size: 0.72917vw;
   font-family: "Yun740";
   color: #535353;
   background-color: black;
 }
 
 footer > div:nth-child(2) div:nth-child(2):hover {
-  height: 200px;
+  height: 10.41667vw;
 }
 
 footer > div:nth-child(2) div:nth-child(2) ul {
-  margin-left: 10px;
-  width: 190px;
-  height: 38px;
-  border-bottom: 2px solid #535353;
+  margin-left: 0.52083vw;
+  width: 9.89583vw;
+  height: 1.97917vw;
+  border-bottom: 1px solid #535353;
 }
 
 footer > div:nth-child(2) div:nth-child(2) ul span {
-  width: 100px;
+  width: 4.6875vw;
   display: inline-block;
 }
 
@@ -1983,6 +2051,733 @@ footer > div:nth-child(2) div:nth-child(2) ul li {
   transition: 0.3s;
 }
 
+footer > div:nth-child(2) div:nth-child(2) ul li img {
+  width: 0.3125vw;
+  height: 0.3125vw;
+}
+
 footer > div:nth-child(2) div:nth-child(2) ul li:not(:first-child):hover {
   background-color: wheat;
+}
+
+footer .Topbtn {
+  position: absolute;
+  width: 3.54167vw;
+  height: 4.47917vw;
+  bottom: 10.9375vw;
+  right: 5.20833vw;
+}
+
+footer .Topbtn img {
+  width: 3.54167vw;
+  height: 4.47917vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 1024px) and (min-height: 768px) {
+  header {
+    height: 7.8125vw;
+    padding: 0 3.125vw;
+    padding-top: 1.5625vw;
+    font-size: 2.5vw;
+  }
+  header h1 {
+    font-size: 2.08333vw;
+    line-height: 2.08333vw;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  header h1 img {
+    width: 14.58333vw;
+    height: 6.25vw;
+  }
+  header ul:nth-child(2) {
+    display: none;
+  }
+  header ul:nth-child(3) {
+    padding-right: 2.60417vw;
+  }
+  header ul:nth-child(3) li:nth-child(2) {
+    display: none;
+  }
+  #main #sidebg {
+    width: 100%;
+    height: 100vh;
+  }
+  #main #sidebg > div:nth-child(1) {
+    width: 100%;
+    height: 100vh;
+    background: url("../image/main1/black_bg.png") no-repeat center center;
+    background-size: cover;
+    opacity: 0.4;
+  }
+  #main #sidebg ul {
+    position: relative;
+    top: 50%;
+    font-size: 2.5vw;
+  }
+  #main #sidebg ul .bar {
+    display: none;
+  }
+  #main #sidebg .index {
+    width: 70%;
+    z-index: 5;
+    position: absolute;
+    top: 20.83333vw;
+    left: 15.625vw;
+  }
+  #main #sidebg .index p {
+    font-size: 32px;
+    font-weight: regular;
+  }
+  #main #sidebg .index p span {
+    font-size: 3.125vw;
+  }
+  #main #sidebg .index h2 {
+    font-size: 5.41667vw;
+  }
+  #main #sidebg .index button {
+    margin-top: 3.125vw;
+  }
+  .btn {
+    width: 22.91667vw;
+    height: 5vw;
+    line-height: 5vw;
+    color: white;
+    border: none;
+    border-radius: 2.44792vw;
+    background-color: #E30613;
+    letter-spacing: 0.15625vw;
+    font-family: 'Yun750';
+    font-size: 1.66667vw;
+    font-weight: normal;
+  }
+  .btn img {
+    padding-left: 0.36458vw;
+    position: relative;
+    top: -0.10417vw;
+  }
+  #main #sidebg .slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 41.66667vw;
+    left: 62.5vw;
+    z-index: 6;
+  }
+  #main #sidebg .slide li {
+    opacity: 1;
+    margin: 0.52083vw;
+  }
+  #main #sidebg .slide li img {
+    width: 3.125vw;
+    height: 3.125vw;
+  }
+  #main .ad {
+    display: none;
+  }
+  #main .event {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #main .event li {
+    position: absolute;
+    bottom: 0;
+    width: 15.625vw;
+    height: 7.8125vw;
+  }
+  #main .event li:nth-child(1) {
+    right: 31.25vw;
+  }
+  #main .event li:nth-child(2) {
+    right: 15.625vw;
+  }
+  #main .filmindex {
+    width: 26.04167vw;
+    bottom: 7.8125vw;
+    left: -8.33333vw;
+    font-size: 1.66667vw;
+  }
+  #weekMovie {
+    width: 100%;
+    height: 40vh;
+  }
+  #weekMovie .left {
+    width: 50%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #weekMovie .left div:nth-child(1) {
+    width: 5.20833vw;
+    height: 100%;
+  }
+  #weekMovie .left div:nth-child(2) {
+    width: 100%;
+  }
+  .subTitle {
+    margin: 4.58333vw;
+    margin-top: 7.5vw;
+    color: white;
+    line-height: 1.25;
+    overflow: hidden;
+    border-left: 1px solid #333;
+  }
+  .subTitle .redp {
+    font-size: 0.83333vw;
+    font-weight: normal;
+    font-family: "Yun740";
+    color: #E30613;
+    padding-bottom: 1.5625vw;
+    padding-left: 0.05208vw;
+  }
+  .subTitle h2 {
+    font-size: 3.33333vw;
+    font-weight: normal;
+    font-family: "Yun770";
+  }
+  #weekMovie .right {
+    width: 50%;
+    padding-left: 3.64583vw;
+  }
+  #weekMovie .right .poster {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: white;
+    -webkit-transition: 1s;
+    transition: 1s;
+    padding-top: 9.375vw;
+    padding-left: 2.08333vw;
+    padding-right: 5.20833vw;
+  }
+  #weekMovie .right .poster .posterimg {
+    width: 17.1875vw;
+    height: 25vw;
+    -webkit-box-shadow: 3px 3px 5px black;
+            box-shadow: 3px 3px 5px black;
+    -webkit-box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.25);
+            box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.25);
+  }
+  #weekMovie .right .poster .posterLetter {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 1.25vw;
+  }
+  #weekMovie .right .poster .posterLetter > div {
+    width: 12.5vw;
+  }
+  #weekMovie .right .poster .posterLetter h2 {
+    position: absolute;
+    top: -0.52083vw;
+    left: -1.82292vw;
+    padding-right: 0.52083vw;
+  }
+  #weekMovie .right .poster .posterLetter h2 img {
+    width: 4.63542vw;
+    height: 9.79167vw;
+  }
+  #weekMovie .right .poster .posterLetter .score {
+    width: 11.45833vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #weekMovie .right .poster .posterLetter .score p {
+    position: relative;
+    font-size: 0.88542vw;
+    font-weight: normal;
+    font-family: "Yun720";
+    color: #B3B3B3;
+    padding-left: 1.04167vw;
+  }
+  #weekMovie .right .poster .posterLetter .score img {
+    display: inline;
+    width: 0.9375vw;
+    height: 0.9375vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+    top: 0.52083vw;
+    padding-right: 0.52083vw;
+  }
+  #weekMovie .right .poster .posterLetter h3 {
+    text-align: center;
+    font-size: 1.19792vw;
+    font-weight: normal;
+    font-family: "Yun750";
+    padding-bottom: 0.83333vw;
+    padding-top: 0.3125vw;
+  }
+  #scrollBanner {
+    width: 100%;
+    height: 15vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+  #scrollBanner .bannerslide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+    -webkit-transition: 50ms;
+    transition: 50ms;
+    position: relative;
+    left: 30%;
+  }
+  #scrollBanner div:last-child {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 2;
+  }
+  #scrollBanner .banner {
+    position: relative;
+    right: 0;
+    width: 33.3333vw;
+    height: 100%;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-family: "Yun750";
+    padding-top: 0.85938vw;
+    padding-right: 2.08333vw;
+    padding-left: 3.30729vw;
+    padding-bottom: 2.1875vw;
+  }
+  #scrollBanner .banner * {
+    position: relative;
+    z-index: 4;
+  }
+  #scrollBanner .banner span {
+    color: #ECA100;
+    font-size: 0.9375vw;
+  }
+  #scrollBanner .banner p:first-child {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    font-size: 0.72917vw;
+    font-weight: normal;
+  }
+  #scrollBanner .banner p:last-child {
+    padding-top: 0.83333vw;
+    font-size: 0.88542vw;
+    font-weight: normal;
+  }
+  #scrollBanner .banner h2 {
+    font-size: 1.19792vw;
+    font-weight: normal;
+    line-height: 1.19792vw;
+    margin-top: auto;
+    justify-self: flex-end;
+  }
+  #scrollBanner .banner h2::before {
+    font-weight: bold;
+    font-size: 1.30208vw;
+    line-height: 1.14583vw;
+    content: "l  ";
+    color: #ECA100;
+  }
+  #scrollBanner .banner:nth-child(1) {
+    background: url("../image/main2/banner_1.png") no-repeat center center;
+    background-size: cover;
+  }
+  #scrollBanner .banner:nth-child(1) p:first-child {
+    color: #E30613;
+  }
+  #scrollBanner .banner:nth-child(2) {
+    background: url("../image/main2/banner_2.png") no-repeat center center;
+    background-size: cover;
+  }
+  #scrollBanner .banner:nth-child(2) p:first-child {
+    color: #ECA100;
+  }
+  #scrollBanner .banner:nth-child(3) {
+    background: url("../image/main2/banner_3.png") no-repeat center center;
+    background-size: cover;
+  }
+  #scrollBanner .banner:nth-child(3) p:first-child {
+    color: #E30613;
+  }
+  #scrollBanner .banner:nth-child(4) {
+    background: url("../image/main2/banner_1.png") no-repeat center center;
+    background-size: cover;
+  }
+  #scrollBanner .banner:nth-child(4) p:first-child {
+    color: #E30613;
+  }
+  #scrollBanner .banner:nth-child(5) {
+    background: url("../image/main2/banner_2.png") no-repeat center center;
+    background-size: cover;
+  }
+  #scrollBanner .banner:nth-child(5) p:first-child {
+    color: #ECA100;
+  }
+  #scrollBanner .banner:nth-child(6) {
+    background: url("../image/main2/banner_3.png") no-repeat center center;
+    background-size: cover;
+  }
+  #scrollBanner .banner:nth-child(6) p:first-child {
+    color: #E30613;
+  }
+  #recommendMovie {
+    width: 100%;
+    height: 45vh;
+    background: url("../image/main3/redblack_bg.png") no-repeat center center;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: white;
+    overflow: hidden;
+  }
+  #recommendMovie .recommendimg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #recommendMovie .recommendimg .recommendslide {
+    width: 49.58333vw;
+    height: 40.72917vw;
+    overflow: hidden;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #recommendMovie .recommendimg img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  #recommendMovie .recommendimg ul {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    padding-bottom: 6.25vw;
+    padding-left: 1.5625vw;
+  }
+  #recommendMovie .recommendimg li {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    width: 0.41667vw;
+    height: 0.41667vw;
+    margin: 0.52083vw;
+    border-radius: 0.20833vw;
+    background-color: #B3B3B3;
+    opacity: 0.4;
+  }
+  #recommendMovie .recommendimg li:nth-child(1) {
+    background-color: #ECA100;
+    opacity: 1;
+  }
+  #recommendMovie .recommendText {
+    padding-right: 3.64583vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #recommendMovie .recommendText h2 {
+    font-size: 2.70833vw;
+    font-weight: normal;
+    font-family: "Yun770";
+  }
+  #recommendMovie .recommendText p {
+    position: relative;
+    color: #E30613;
+    letter-spacing: 0.52083vw;
+    padding-top: 2.60417vw;
+    padding-bottom: 2.08333vw;
+    font-size: 0.72917vw;
+    font-weight: normal;
+  }
+  #recommendMovie .recommendText p span {
+    position: absolute;
+    top: 3.22917vw;
+    left: 10.41667vw;
+    display: block;
+    height: 0.05208vw;
+    width: 31.25vw;
+    background-color: #E30613;
+  }
+  #recommendMovie .recommendText ul li {
+    color: #949494;
+    padding: 0.41667vw 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  #recommendMovie .recommendText ul li:hover {
+    color: white;
+  }
+  #cardEvent {
+    width: 100%;
+    height: 55vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  #cardEvent .left {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #cardEvent .left div:nth-child(1) {
+    width: 5.20833vw;
+    height: 100%;
+    background-color: #ECA100;
+  }
+  #cardEvent .left .subTitle {
+    width: 45%;
+  }
+  #cardEvent .left .subTitle h2 {
+    font-size: 3.75vw;
+  }
+  #cardEvent .left .subTitle div {
+    position: absolute;
+    top: 5.20833vw;
+    left: 5.20833vw;
+  }
+  #cardEvent .left .subTitle div img {
+    width: 41.66667vw;
+    height: 20.83333vw;
+  }
+  #cardEvent .left .cardleft {
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    height: 50%;
+    padding: 3.125vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 0.7fr 1.7fr 0.6fr;
+        grid-template-rows: 0.7fr 1.7fr 0.6fr;
+    -ms-grid-columns: 1fr 0.15fr 1.5fr;
+        grid-template-columns: 1fr 0.15fr 1.5fr;
+        grid-template-areas: "h3 h3 h3" "big . indexcard"  "big . btn";
+  }
+  #cardEvent .left .cardleft h3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: h3;
+    -ms-grid-column-align: left;
+        justify-self: left;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 1.875vw;
+  }
+  #cardEvent .left .cardleft .bigcard {
+    width: 15.625vw;
+    height: 23.4375vw;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: big;
+  }
+  #cardEvent .left .cardleft .bigcard img {
+    width: 14.58333vw;
+    height: 21.875vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #cardEvent .left .cardleft div:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: indexcard;
+    padding: 0;
+    font-size: 1.30208vw;
+  }
+  #cardEvent .left .cardleft div:nth-child(3) span {
+    font-size: 1.30208vw;
+  }
+  #cardEvent .left .cardleft .btn {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    grid-area: btn;
+    width: 13.02083vw;
+    -ms-grid-column-align: left;
+        justify-self: left;
+    font-size: 1.45833vw;
+    height: 4.16667vw;
+    line-height: 4.16667vw;
+  }
+  #cardEvent .right {
+    position: absolute;
+    right: 0;
+    bottom: 5.20833vw;
+    width: 46%;
+  }
+  #cinema {
+    height: 60vh;
+  }
+  #cinema article:nth-child(1) {
+    padding: 5.20833vw;
+  }
+  #cinema article:nth-child(1) > div:nth-child(2) {
+    width: 100%;
+  }
+  #cinema article:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+    width: 5%;
+  }
+  #cinema article:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
+    width: 90%;
+  }
+  #cinema article:nth-child(1) > div:nth-child(2) > div:nth-child(2) p:nth-child(1) {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    font-size: 1.66667vw;
+    font-weight: normal;
+    font-family: "Yun780";
+    margin-bottom: 1.04167vw;
+  }
+  #cinema article:nth-child(1) > div:nth-child(2) > div:nth-child(2) p:nth-child(2) {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    font-size: 1.45833vw;
+    font-weight: normal;
+    font-family: "Yun720";
+    letter-spacing: -0.05154vw;
+  }
+  #cinema article:nth-child(2) ul {
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: 33.3334vw;
+  }
+  #cinema article:nth-child(2) ul li {
+    position: absolute;
+    width: 33.3334%;
+    height: 16.6666vw;
+  }
+  #cinema article:nth-child(2) ul li:nth-child(1) {
+    bottom: 16.6666vw;
+    left: 0%;
+  }
+  #cinema article:nth-child(2) ul li:nth-child(2) {
+    bottom: 16.6666vw;
+    left: 33.3334%;
+  }
+  #cinema article:nth-child(2) ul li:nth-child(3) {
+    bottom: 16.6666vw;
+    left: 66.6666%;
+  }
+  #cinema article:nth-child(2) ul li:nth-child(4) {
+    bottom: 0vw;
+    left: 0%;
+  }
+  #cinema article:nth-child(2) ul li:nth-child(5) {
+    bottom: 0vw;
+    left: 33.3334%;
+  }
+  #cinema article:nth-child(2) ul li:nth-child(6) {
+    bottom: 0vw;
+    left: 66.6666%;
+  }
+  #brand {
+    height: 49.5vw;
+  }
+  #brand article:nth-child(1) {
+    width: 50%;
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 13.02083vw;
+  }
+  #brand article:nth-child(1) .brand_title {
+    width: 31.25vw;
+    height: 31.25vw;
+    overflow: hidden;
+  }
+  #brand article:nth-child(1) .brand_title .btn {
+    margin-left: 0.78125vw;
+  }
+  #brand article:nth-child(2) {
+    padding: 0;
+    margin: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 48%;
+  }
+  #brand article:nth-child(2) > div:nth-child(1) {
+    width: 50%;
+  }
+  #brand article:nth-child(2) > div:nth-child(1) .leftslide {
+    width: 80%;
+  }
+  #brand article:nth-child(2) > div:nth-child(2) {
+    width: 50%;
+  }
+  #brand article:nth-child(2) > div:nth-child(2) .rightslide {
+    width: 80%;
+  }
+  #brand article:nth-child(2) > div:last-child {
+    display: none;
+  }
+  #QnA img {
+    position: absolute;
+    top: -30%;
+    left: 15%;
+  }
 }
