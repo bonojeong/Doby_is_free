@@ -310,6 +310,10 @@ body header {
   font-family: "Helvetica75";
 }
 
+body header .mobile414px_header {
+  display: none;
+}
+
 body header h1 {
   font-size: 40px;
   line-height: 40px;
@@ -447,6 +451,10 @@ body main .visual .vis_lower_text span {
   display: block;
 }
 
+body main .visual .mobile414px_vis_lower_text {
+  display: none;
+}
+
 body main .visual .movie_controler {
   position: absolute;
   bottom: 0;
@@ -525,6 +533,10 @@ body main .selection .sel_upper_text .sel_right_text p span:nth-child(2) {
   letter-spacing: 0.13px;
 }
 
+body main .selection .sel_upper_text .mobile414px_sel_right_text {
+  display: none;
+}
+
 body main .selection .sel_movies {
   width: 100%;
   padding-top: 70.6px;
@@ -592,7 +604,17 @@ body main .selection .sel_movies .sel_movie_texts .movie_texts2 span {
   display: block;
 }
 
-body main .selection .sel_movies .sel_movie_texts a {
+body main .selection .sel_movies .sel_movie_texts .movie_texts2 a {
+  display: none;
+  -webkit-animation: diagonal;
+          animation: diagonal;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+body main .selection .sel_movies .sel_movie_texts > a {
   position: absolute;
   -webkit-animation: diagonal;
           animation: diagonal;
@@ -603,6 +625,7 @@ body main .selection .sel_movies .sel_movie_texts a {
 }
 
 body main .selection .sel_movies .sel_movie_poster {
+  cursor: pointer;
   position: relative;
   overflow: hidden;
   -webkit-transform: translateX(-101%);
@@ -892,6 +915,7 @@ body main .event .event_list ul .screens {
 }
 
 body main .event .event_list ul .screens .black_bg111 {
+  cursor: pointer;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -966,6 +990,10 @@ body main .movie_info .movie_info_list .info_left .info_left_text h4 span {
   display: block;
 }
 
+body main .movie_info .movie_info_list .info_left .info_left_text h4 .info_left_text_header_title {
+  display: unset;
+}
+
 body main .movie_info .movie_info_list .info_left .info_left_text p {
   font-family: 'YoonGothic740';
   font-size: 17px;
@@ -982,6 +1010,7 @@ body main .movie_info .movie_info_list .info_left .info_left_text .middle_text {
 }
 
 body main .movie_info .movie_info_list .info_left .info_left_img {
+  cursor: pointer;
   width: 658px;
   height: 375px;
   position: relative;
@@ -1068,6 +1097,7 @@ body main .movie_info .movie_info_list .info_right ul li {
 }
 
 body main .movie_info .movie_info_list .info_right ul li .info_right_poster {
+  cursor: pointer;
   width: 100%;
   height: 322px;
   overflow: hidden;
@@ -1186,6 +1216,14 @@ body main .movie_info .mask img {
   width: 100%;
 }
 
+body main .movie_info .mask .Maskimg {
+  display: block;
+}
+
+body main .movie_info .mask .mobileMaskimg {
+  display: none;
+}
+
 body footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1201,7 +1239,8 @@ body footer .white_footer {
   width: 100%;
   height: 253px;
   background: #fff;
-  padding: 47px 0 0 207px;
+  padding-top: 47px;
+  padding-left: 207px;
 }
 
 body footer .white_footer .white_upper {
@@ -1256,6 +1295,7 @@ body footer .white_footer .white_lower > p {
 }
 
 body footer .white_footer .white_lower div {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1270,7 +1310,12 @@ body footer .white_footer .white_lower div img {
   margin-left: 9px;
 }
 
+body footer .white_footer .mobileCinema {
+  display: none;
+}
+
 body footer .gototheTop {
+  cursor: pointer;
   position: absolute;
   top: 50%;
   right: 93px;
@@ -1361,6 +1406,7 @@ body footer .black_footer div .Family_Site .Family_Site_text::after {
 }
 
 body footer .black_footer div .Family_Site li {
+  cursor: pointer;
   padding: 0 10px;
   height: 37.01px;
   width: 100%;
@@ -1388,4 +1434,632 @@ body footer .black_footer > p {
   font-family: 'YoonGothic740';
   font-size: 14px;
   color: #535353;
+}
+
+@media (max-width: 767px) and (min-width: 414px) {
+  body {
+    max-width: 414px;
+  }
+  body header {
+    width: 100%;
+    padding: 0 24px;
+    height: auto;
+  }
+  body header .nav {
+    display: none;
+  }
+  body header .login {
+    display: none;
+  }
+  body header .menu {
+    display: none;
+  }
+  body header .mainLogo {
+    display: none;
+  }
+  body header .mobile414px_header {
+    width: 100%;
+    position: relative;
+    display: block;
+  }
+  body header .mobile414px_header .mobile414px_login_menu {
+    height: 80px;
+    width: 100%;
+    font-family: "Helvetica75";
+    font-size: 15px;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body header .mobile414px_header .mobile414px_login_menu .mobile414px_login {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body header .mobile414px_header .mobile414px_login_menu .mobile414px_login li {
+    padding-right: 19px;
+  }
+  body header .mobile414px_header .mobile414px_login_menu .mobile414px_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body header .mobile414px_header .mobile414px_login_menu .mobile414px_menu li {
+    padding-left: 19px;
+  }
+  body header .mobile414px_header .mobile414px_cgvLogo {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-40%);
+            transform: translateX(-40%);
+    top: 0px;
+    height: 85px;
+    width: 85px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body header .mobile414px_header .mobile414px_cgvLogo h1 {
+    width: 100%;
+    text-align: center;
+  }
+  body header .mobile414px_header .mobile414px_nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: "Helvetica75";
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 23px;
+  }
+  body header .mobile414px_header .mobile414px_nav ul {
+    padding-top: 34px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body header .mobile414px_header .mobile414px_nav ul li {
+    padding-bottom: 34px;
+  }
+  body main {
+    max-width: 414px;
+  }
+  body main .visual {
+    overflow: hidden;
+    width: 100%;
+    height: 667px;
+    padding: 0;
+    position: relative;
+  }
+  body main .visual video {
+    width: 1920px;
+  }
+  body main .visual .vis_upper_text {
+    padding: 0;
+    position: absolute;
+    bottom: 63px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  body main .visual .vis_upper_text p {
+    display: none;
+  }
+  body main .visual .vis_lower_text {
+    display: none;
+  }
+  body main .visual .mobile414px_vis_lower_text {
+    display: block;
+    color: #e2e2e2;
+    text-align: center;
+    width: 252px;
+    height: 89px;
+    position: absolute;
+    bottom: 186.2px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    line-height: 1.5;
+  }
+  body main .visual .mobile414px_vis_lower_text span {
+    display: block;
+  }
+  body main .visual .mobile414px_vis_lower_text .mobile414px_vis_lower_text_span0 {
+    letter-spacing: -1.5px;
+  }
+  body main .visual .mobile414px_vis_lower_text .mobile414px_vis_lower_text_span1 {
+    letter-spacing: -1px;
+  }
+  body main .visual .mobile414px_vis_lower_text .mobile414px_vis_lower_text_span2 {
+    letter-spacing: -0.6px;
+  }
+  body main .selection {
+    height: auto;
+    padding: 0;
+    padding-top: 26.2px;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 201px;
+  }
+  body main .selection .sel_upper_text {
+    padding-top: 26.2px;
+    padding: 0 24px;
+    width: 100%;
+  }
+  body main .selection .sel_upper_text .sel_right_text {
+    display: none;
+  }
+  body main .selection .sel_upper_text .mobile414px_sel_right_text {
+    font-family: 'YoonGothic760';
+    display: block;
+    font-size: 12px;
+    padding-top: 32.8px;
+    line-height: 2;
+  }
+  body main .selection .sel_upper_text .mobile414px_sel_right_text span {
+    display: block;
+  }
+  body main .selection .sel_upper_text .mobile414px_sel_right_text .mobile414px_sel_right_text2 {
+    letter-spacing: -0.2px;
+  }
+  body main .selection .sel_upper_text .mobile414px_sel_right_text .mobile414px_sel_right_text4 {
+    letter-spacing: 0.1px;
+  }
+  body main .selection .sel_movies {
+    display: block;
+    width: 100%;
+    padding-top: 96px;
+  }
+  body main .selection .sel_movies .sel_movies_left {
+    width: 100%;
+  }
+  body main .selection .sel_movies .sel_movies_left .left_upper {
+    padding-bottom: 54px;
+  }
+  body main .selection .sel_movies .sel_movies_right {
+    width: 100%;
+    margin-right: 0;
+    padding-top: 54px;
+  }
+  body main .selection .sel_movies .sel_movies_right .left_lower {
+    padding-top: 54px;
+  }
+  body main .selection .sel_movies .sel_movie_texts {
+    width: 100%;
+    margin-bottom: 23.8px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 24px;
+  }
+  body main .selection .sel_movies .sel_movie_texts .movie_texts1 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    padding-bottom: 11.7px;
+  }
+  body main .selection .sel_movies .sel_movie_texts .movie_texts1 img {
+    width: 19.5px;
+    height: 19.5px;
+    margin-top: 0;
+    margin-right: 10.6px;
+  }
+  body main .selection .sel_movies .sel_movie_texts .movie_texts1 p {
+    font-size: 13px;
+  }
+  body main .selection .sel_movies .sel_movie_texts .movie_texts2 {
+    font-size: 30px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body main .selection .sel_movies .sel_movie_texts .movie_texts2 p {
+    line-height: 1.3;
+  }
+  body main .selection .sel_movies .sel_movie_texts .movie_texts2 a {
+    width: 28px;
+    height: 28px;
+    display: block;
+    position: relative;
+  }
+  body main .selection .sel_movies .sel_movie_texts .movie_texts2 a img {
+    width: 100%;
+  }
+  body main .selection .sel_movies .sel_movie_texts > a {
+    display: none;
+  }
+  body main .selection .sel_movies .sel_movie_poster {
+    width: 100%;
+    height: auto;
+  }
+  body main .event {
+    height: auto;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .event .bigscreen {
+    width: 100%;
+    height: 466px;
+  }
+  body main .event .bigscreen .event_screen {
+    width: 100%;
+    height: 100%;
+  }
+  body main .event .bigscreen .event_screen .screen_upper {
+    padding-top: 45.6px;
+    padding-left: 14px;
+    margin-bottom: 55px;
+  }
+  body main .event .bigscreen .event_screen .screen_upper .screen_number {
+    font-size: 144px;
+    padding-right: 12px;
+  }
+  body main .event .bigscreen .event_screen .screen_upper .screen_text {
+    font-size: 30px;
+    line-height: 1.3;
+    padding: 0;
+    padding-right: 10px;
+    letter-spacing: -1px;
+  }
+  body main .event .bigscreen .event_screen .screen_upper::after {
+    bottom: 16px;
+    left: 20px;
+  }
+  body main .event .bigscreen .event_screen .screen_lower {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  body main .event .bigscreen .event_screen .screen_lower .screen_lower_text h4 {
+    text-align: center;
+    font-size: 12px;
+  }
+  body main .event .bigscreen .event_screen .screen_lower .screen_lower_text p {
+    text-align: center;
+    font-size: 12px;
+  }
+  body main .event .bigscreen .event_screen .screen_lower .event_btn {
+    position: unset;
+  }
+  body main .event .event_list {
+    width: 100%;
+    height: 430px;
+  }
+  body main .event .event_list ul {
+    width: 100%;
+    height: 430px;
+  }
+  body main .event .event_list ul .screens {
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 25px;
+    padding-top: 10px;
+    background-color: #313033;
+  }
+  body main .event .event_list ul .screens h1 {
+    font-size: 130px;
+    padding-bottom: 0;
+    line-height: 1;
+  }
+  body main .event .event_list ul .screens p {
+    padding-left: 5px;
+    font-family: 'YoonGothic740';
+  }
+  body main .event .event_list ul .small_screen3 p .small_screen_title {
+    letter-spacing: -1px;
+  }
+  body main .event .event_list ul .small_screen5 p span {
+    display: unset;
+  }
+  body main .movie_info {
+    width: 100%;
+    padding-top: 53px;
+  }
+  body main .movie_info .movie_info_list {
+    width: 100%;
+    padding-left: 0;
+    padding-bottom: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .movie_info .movie_info_list .info_left {
+    width: 100%;
+    border: unset;
+  }
+  body main .movie_info .movie_info_list .info_left .info_left_text {
+    padding: 0 22px;
+    width: 100%;
+  }
+  body main .movie_info .movie_info_list .info_left .info_left_text h4 {
+    text-align: center;
+    font-family: 'YoonGothic770';
+    font-size: 30px;
+  }
+  body main .movie_info .movie_info_list .info_left .info_left_text h4 .info_left_text_header_title1 {
+    letter-spacing: -3px;
+  }
+  body main .movie_info .movie_info_list .info_left .info_left_text h4 .info_left_text_header_title2 {
+    display: block;
+  }
+  body main .movie_info .movie_info_list .info_left .info_left_text .middle_text {
+    text-align: center;
+    letter-spacing: -1px;
+  }
+  body main .movie_info .movie_info_list .info_left .info_left_text .bottom_text {
+    display: none;
+  }
+  body main .movie_info .movie_info_list .info_left .info_left_img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 0;
+    margin-bottom: 9.2px;
+  }
+  body main .movie_info .movie_info_list .info_left .info_left_bottom {
+    padding: 0;
+    padding-bottom: 42.3px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  body main .movie_info .movie_info_list .info_left .info_left_bottom p {
+    padding-right: 5.3px;
+  }
+  body main .movie_info .movie_info_list .info_left .info_left_bottom div {
+    position: unset;
+    height: 12px;
+  }
+  body main .movie_info .movie_info_list .info_right {
+    width: 100%;
+  }
+  body main .movie_info .movie_info_list .info_right > ul {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .movie_info .movie_info_list .info_right > ul li {
+    width: 100%;
+  }
+  body main .movie_info .movie_info_list .info_right > ul li .info_right_poster {
+    width: 100%;
+    height: auto;
+  }
+  body main .movie_info .movie_info_list .info_right > ul li .info_right_poster .more_btn {
+    display: none;
+  }
+  body main .movie_info .movie_info_list .info_right > ul li .info_right_text ul li {
+    padding: 0 23.5px;
+  }
+  body main .movie_info .movie_info_list .info_right > ul li .info_right_text ul li:not(:last-child)::after {
+    left: 0;
+  }
+  body main .movie_info .movie_info_list .info_right > ul li .info_right_text ul .rate span {
+    display: block;
+  }
+  body main .movie_info .movie_info_list .info_right > ul li .info_right_text ul .rate .rate_number h3 {
+    padding: 0;
+    font-size: 36px;
+  }
+  body main .movie_info .movie_info_list .info_right > ul li .info_right_text ul .rate .rate_number img {
+    display: none;
+  }
+  body main .movie_info .movie_info_list .info_right > ul li .info_right_text ul .director img {
+    display: none;
+  }
+  body main .movie_info .movie_info_list .info_right > ul li .info_right_text ul .actor img {
+    display: none;
+  }
+  body main .movie_info .movie_info_list .info_right > ul li .info_right_text ul .genre > img {
+    display: none;
+  }
+  body main .movie_info .movie_info_list .info_right > ul li .info_right_text ul .release_date img {
+    display: none;
+  }
+  body main .movie_info .movie_info_list .info_right > ul .info_right1 {
+    margin-right: 0;
+  }
+  body main .movie_info .movie_info_list .info_right > ul .info_right2 {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .movie_info .movie_info_list .info_right > ul .info_right2 > p {
+    text-align: center;
+    font-size: 15px;
+  }
+  body main .movie_info .mask {
+    width: 100%;
+    height: 193px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+  body main .movie_info .mask .Maskimg {
+    display: none;
+  }
+  body main .movie_info .mask .mobileMaskimg {
+    display: block;
+  }
+  body footer {
+    width: 100%;
+  }
+  body footer .white_footer {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body footer .white_footer .white_upper {
+    width: 100%;
+    padding-top: 23px;
+    padding-left: 18px;
+    padding-right: 24px;
+    padding-bottom: 21.6px;
+  }
+  body footer .white_footer .white_upper .cinema {
+    display: none;
+  }
+  body footer .white_footer .white_upper .menu {
+    padding: 0;
+    font-size: 12px;
+    font-family: 'YoonGothic730';
+    color: #606060;
+  }
+  body footer .white_footer .white_upper .footer_logo {
+    width: 72px;
+    height: 41px;
+    margin-right: 41px;
+  }
+  body footer .white_footer .white_lower {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 18px;
+    padding-right: 0;
+  }
+  body footer .white_footer .white_lower > p {
+    font-size: 10px;
+    font-family: 'YoonGothic720';
+    padding-bottom: 14.4px;
+  }
+  body footer .white_footer .mobileCinema {
+    display: block;
+    padding-bottom: 44px;
+  }
+  body footer .gototheTop {
+    width: 53px;
+    height: 67px;
+    right: 0;
+    -webkit-transform: translateY(-90%);
+            transform: translateY(-90%);
+  }
+  body footer .gototheTop img {
+    width: 100%;
+  }
+  body footer .black_footer {
+    width: 100%;
+    padding-left: 18px;
+    padding-right: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #535353;
+  }
+  body footer .black_footer > div {
+    padding-right: 0;
+    padding-bottom: 36.3px;
+  }
+  body footer .black_footer > div .blackfoot_text {
+    font-size: 10px;
+    padding-bottom: 0;
+    padding-top: 33.8px;
+    font-family: 'YoonGothic730';
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    color: #878787;
+  }
+  body footer .black_footer > div .blackfoot_text li {
+    line-height: 2;
+  }
+  body footer .black_footer > div .blackfoot_text li:not(:last-child) {
+    padding-right: 15px;
+  }
+  body footer .black_footer > div .Family_Site {
+    display: block;
+    bottom: 37.6px;
+    right: 24px;
+    width: 190px;
+    height: 33.16px;
+  }
+  body footer .black_footer > div .Family_Site .Family_Site_text p {
+    font-size: 12px;
+  }
+  body footer .black_footer > div .Family_Site .Family_Site_text::after {
+    width: 171.18px;
+    top: unset;
+    bottom: 0;
+  }
+  body footer .black_footer address {
+    font-size: 10px;
+    font-family: 'YoonGothic730';
+    padding-bottom: 0;
+  }
+  body footer .black_footer p {
+    font-size: 10px;
+    font-family: 'YoonGothic730';
+  }
 }

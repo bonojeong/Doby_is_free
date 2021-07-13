@@ -176,6 +176,9 @@ body{
         padding: 0 64px;
         font-size: 13px;
         font-family: "Helvetica75";
+        .mobile414px_header{
+            display: none;
+        }
         h1{
             font-size: 40px;
             line-height: 40px;
@@ -287,6 +290,9 @@ body{
                     display: block;
                 }
             }
+            .mobile414px_vis_lower_text{
+                display: none;
+            }
             .movie_controler{
                 position: absolute;
                 bottom: 0;
@@ -349,6 +355,9 @@ body{
                         }
                     }
                 }
+                .mobile414px_sel_right_text{
+                    display: none;
+                }
             }
             .sel_movies {
                 width: 100%;
@@ -391,8 +400,14 @@ body{
                         span {
                             display: block;
                         }
+                        a{
+                            display: none;
+                            animation: diagonal;
+                            animation-duration: 2s;
+                            animation-iteration-count: infinite;
+                        }
                     }
-                    a{
+                    >a{
                         position: absolute;
                         animation: diagonal;
                         animation-duration: 2s;
@@ -400,6 +415,7 @@ body{
                     }
                 }
                 .sel_movie_poster{
+                    cursor: pointer;
                     position: relative;
                     overflow: hidden;
                     transform: translateX(-101%);
@@ -603,6 +619,7 @@ body{
                         border-right: 1px solid #fff;
                         border-top: 1px solid #fff;
                         .black_bg111{
+                            cursor: pointer;
                             width: 100%;
                             height: 100%;
                             position: absolute;
@@ -657,6 +674,9 @@ body{
                             span {
                                 display: block;
                             }
+                            .info_left_text_header_title{
+                                display: unset;
+                            }
                         }
                         p{
                             font-family: 'YoonGothic740';
@@ -672,6 +692,7 @@ body{
                         }
                     }
                     .info_left_img {
+                        cursor: pointer;
                         width: 658px;
                         height: 375px;
                         position: relative;
@@ -730,6 +751,7 @@ body{
                              width: 488px;
                              overflow: hidden;
                              .info_right_poster {
+                                 cursor: pointer;
                                  width: 100%;
                                  height: 322px;
                                  overflow: hidden;
@@ -816,6 +838,12 @@ body{
                 img {
                     width: 100%;
                 }
+                .Maskimg{
+                    display: block;
+                }
+                .mobileMaskimg{
+                    display: none;
+                }
             }
         }
     }
@@ -827,7 +855,8 @@ body{
             width: 100%;
             height: 253px;
             background: #fff;
-            padding: 47px 0 0 207px;
+            padding-top: 47px;
+            padding-left: 207px;
             .white_upper {
                 display: flex;
                 align-items: center;
@@ -863,6 +892,7 @@ body{
                     letter-spacing: -1px;
                 }
                 div {
+                    cursor: pointer;
                     display: flex;
                     align-items: center;
                     font-family: 'YoonGothic760';
@@ -872,8 +902,12 @@ body{
                     }
                 }
             }
+            .mobileCinema{
+                display: none;
+            }
         }
         .gototheTop {
+            cursor: pointer;
             position: absolute;
             top: 50%;
             right: 93px;
@@ -936,6 +970,7 @@ body{
                         }
                     }
                     li{
+                        cursor: pointer;
                         padding: 0 10px;
                         height: 37.01px;
                         width: 100%;
@@ -965,6 +1000,578 @@ body{
         }
     }
 }
-// @media all and (max-width : 414px) {
-
-// }
+@media (max-width : 767px) and (min-width: 414px){
+    body{
+        max-width: 414px;
+        header{
+            width: 100%;
+            padding:0 24px;
+            height: auto;
+            .nav{
+                display: none;
+            }
+            .login{
+                display: none;
+            }
+            .menu{
+                display: none;
+            }
+            .mainLogo{
+                display: none;
+            }
+            .mobile414px_header{
+                width: 100%;
+                position: relative;
+                display: block;
+                .mobile414px_login_menu{
+                    height: 80px;
+                    width: 100%;
+                    font-family: "Helvetica75";
+                    font-size: 15px;
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .mobile414px_login{
+                        display: flex;
+                        li{
+                            padding-right: 19px;
+                        }
+                    }
+                    .mobile414px_menu{
+                        display: flex;
+                        li{
+                            padding-left: 19px;
+                        }
+                    }
+                }
+                .mobile414px_cgvLogo{
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-40%);
+                    top: 0px;
+                    height: 85px;
+                    width: 85px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    h1 {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+                .mobile414px_nav{
+                    width: 100%;
+                    display: flex;
+                    font-family: "Helvetica75";
+                    justify-content: center;
+                    font-size: 23px;
+                    ul{
+                        padding-top: 34px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        li{
+                            padding-bottom: 34px;
+                        }
+                    }
+                }
+            }
+        }
+        main{
+            max-width: 414px;
+            .visual{
+                overflow: hidden;
+                width: 100%;
+                height: 667px;
+                padding: 0;
+                position: relative;
+                video{
+                    width: 1920px;
+                }
+                .vis_upper_text{
+                    padding: 0;
+                    position: absolute;
+                    bottom: 63px;
+                    left: 50%;                    
+                    transform: translateX(-50%);
+                    p{
+                        display: none;
+                    }
+                    .reserve_btn{
+                    
+                    }
+                }
+                .vis_lower_text{
+                display: none;
+                }
+                .mobile414px_vis_lower_text{
+                    display: block;
+                    color: #e2e2e2;
+                    text-align: center;
+                    width: 252px;
+                    height: 89px;
+                    position: absolute;
+                    bottom: 186.2px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    line-height: 1.5;
+                    span{
+                        display: block;
+                    }
+                    .mobile414px_vis_lower_text_span0 {
+                        letter-spacing: -1.5px;
+                    }
+                    .mobile414px_vis_lower_text_span1 {
+                        letter-spacing: -1px;
+                    }
+                    .mobile414px_vis_lower_text_span2 {
+                        letter-spacing: -0.6px;
+                    }
+                }
+            }
+            .selection {
+                height: auto;
+                padding: 0;
+                padding-top: 26.2px;
+                margin: 0 auto;
+                width: 100%;
+                margin-bottom: 201px;
+                .sel_upper_text{
+                    padding-top: 26.2px;
+                    padding: 0 24px;
+                    width: 100%;
+                    .sel_right_text{
+                        display: none;
+                    }
+                    .mobile414px_sel_right_text{
+                        font-family: 'YoonGothic760';
+                        display: block;
+                        font-size: 12px;
+                        padding-top: 32.8px;
+                        line-height: 2;
+                        span{
+                            display: block;
+                        }
+                        .mobile414px_sel_right_text2{
+                            letter-spacing: -0.2px;
+                        }
+                        .mobile414px_sel_right_text4{
+                            letter-spacing: 0.1px;
+                        }
+                    }
+                }
+                .sel_movies{
+                    display: block;
+                    width: 100%;
+                    padding-top: 96px;
+                    .sel_movies_left{
+                        width: 100%;
+                        .left_upper{
+                            padding-bottom: 54px;
+                        }
+                    }
+                    .sel_movies_right{
+                        width: 100%;
+                        margin-right: 0;
+                        padding-top: 54px;
+                        .left_lower{
+                            padding-top: 54px;
+                        }
+                    }
+                    .sel_movie_texts{
+                        width: 100%;
+                        margin-bottom: 23.8px;
+                        flex-direction: column;
+                        padding: 0 24px;
+                        .movie_texts1{
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: unset;
+                            padding-bottom: 11.7px;
+                            img{
+                                width: 19.5px;
+                                height: 19.5px;
+                                margin-top: 0;
+                                margin-right: 10.6px;
+                            }
+                            p{
+                                font-size: 13px;
+                            }
+                        }
+                        .movie_texts2{
+                            font-size: 30px;
+                            width: 100%;
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: space-between;
+                            p{
+                                line-height: 1.3;
+                            }
+                            a {
+                                width: 28px;
+                                height: 28px;
+                                display: block;
+                                position: relative;
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        >a {
+                            display: none;
+                        }
+                    }
+                    .sel_movie_poster{
+                        width: 100%;
+                        height: auto
+                    }
+                }
+            }
+            .event {
+                height: auto;
+                width: 100%;
+                flex-direction: column;
+                .bigscreen{
+                    width: 100%;
+                    height: 466px;
+                    .event_screen{
+                        width: 100%;
+                        height: 100%;
+                        .screen_upper{
+                            padding-top: 45.6px;
+                            padding-left: 14px;
+                            margin-bottom: 71 - 16px;
+                            .screen_number{
+                                font-size: 144px;
+                                padding-right: 12px;
+                            }
+                            .screen_text{
+                                font-size: 30px;
+                                line-height: 1.3;
+                                padding: 0;
+                                padding-right: 10px;
+                                letter-spacing: -1px;
+                            }
+                            &::after {
+                                bottom: 16px;
+                                left: 20px;
+                            }
+                        }
+                        .screen_lower{
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            padding: 0;
+                            .screen_lower_text{
+                                h4{
+                                    text-align: center;
+                                    font-size: 12px;
+                                }
+                                p{
+                                    text-align: center;
+                                    font-size: 12px;
+                                }
+                            }  
+                            .event_btn{
+                                position: unset;
+                            }       
+                        }
+                    }
+                }
+                .event_list{
+                    width: 100%;
+                    height: 430px;
+                    ul{
+                        width: 100%;
+                        height: 430px;
+                        .screens{
+                            padding: 0;
+                            padding-left: 20px;
+                            padding-right: 25px;
+                            padding-top: 10px;
+                            background-color: #313033;
+                            h1{
+                                font-size: 130px;
+                                padding-bottom: 0;
+                                line-height: 1;
+                            }
+                            p{
+                                padding-left: 5px;
+                                font-family: 'YoonGothic740';
+                            }
+                        }
+                        .small_screen3{
+                            p{
+                                .small_screen_title{
+                                    letter-spacing: -1px;
+                                }
+                            }
+                        }
+                        .small_screen5{
+                            p{
+                                span{
+                                    display: unset;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .movie_info{
+                width: 100%;
+                padding-top: 53px;
+                .movie_info_list{
+                    width: 100%;
+                    padding-left: 0;
+                    padding-bottom: 0;
+                    flex-direction: column;
+                    .info_left{
+                        width: 100%;
+                        border: unset;
+                        .info_left_text{
+                            padding: 0 22px;
+                            width: 100%;
+                            h4{
+                                text-align: center;
+                                font-family: 'YoonGothic770';
+                                font-size: 30px;
+                                .info_left_text_header_title1{
+                                    letter-spacing: -3px;
+                                }
+                                .info_left_text_header_title2{
+                                    display: block;
+                                }
+                            }
+                            .middle_text{
+                                text-align: center;
+                                letter-spacing: -1px;
+                            }
+                            .bottom_text{
+                                display: none;
+                            }
+                        }
+                        .info_left_img{
+                            width: 100%;
+                            height: auto;
+                            padding-bottom: 0;
+                            margin-bottom: 9.2px;
+                        }
+                        .info_left_bottom{
+                            padding: 0;
+                            padding-bottom: 42.3px;
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: flex-end;
+                            p{
+                                padding-right: 5.3px;
+                            }
+                            div {
+                                position: unset;
+                                height: 12px;
+                            }
+                        }
+                    }
+                    .info_right{
+                        width: 100%;
+                        >ul {
+                            width: 100%;
+                            flex-direction: column;
+                            li{
+                                width: 100%;
+                                .info_right_poster{
+                                    width: 100%;
+                                    height: auto;
+                                    .more_btn{
+                                        display: none;
+                                    }
+                                }
+                                .info_right_text{
+                                    ul{
+                                        li{
+                                            padding: 0 23.5px ;
+                                            &:not(:last-child) {
+                                                &::after {
+                                                    left: 0;
+                                                }
+                                            }
+                                        }
+                                        .rate{
+                                            span{
+                                                display: block;
+                                            }
+                                            .rate_number{
+                                                h3{
+                                                    padding: 0;
+                                                    font-size: 36px;
+                                                }
+                                                img{
+                                                    display: none;
+                                                }
+                                            }
+                                        }
+                                        .director{
+                                            img{
+                                                display: none;
+                                            }
+                                        }
+                                        .actor{
+                                            img{
+                                                display: none;
+                                            }
+                                        }
+                                        .genre{
+                                            >img{
+                                                display: none;
+                                            }
+                                        }
+                                        .release_date{
+                                            img{
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .info_right1{
+                                margin-right: 0;
+                            }
+                            .info_right2{
+                                align-items: center;
+                                >p {
+                                    text-align: center;
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .mask {
+                    width: 100%;
+                    height: 193px;
+                    display: flex;
+                    justify-content: center;
+                    overflow: hidden;
+                    position: relative;
+                    .Maskimg{
+                        display: none;
+                    }
+                    .mobileMaskimg{
+                        display: block;
+                    }
+                }
+            }
+        }
+        footer{
+            width: 100%;
+            .white_footer{
+                width: 100%;
+                height: auto;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                .white_upper{
+                    width: 100%;
+                    padding-top: 23px;
+                    padding-left: 18px;
+                    padding-right: 24px;
+                    padding-bottom: 21.6px;
+                    .cinema{
+                        display: none;
+                    }
+                    .menu {
+                        padding: 0;
+                        font-size: 12px;
+                        font-family: 'YoonGothic730';
+                        color: #606060;
+                    }
+                    .footer_logo {
+                        width: 72px;
+                        height: 41px;
+                        margin-right: 41px;
+                    }
+                }
+                .white_lower{
+                    width: 100%;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding-left: 18px;
+                    padding-right: 0;
+                    >p{
+                        font-size: 10px;
+                        font-family: 'YoonGothic720';
+                        padding-bottom: 14.4px;
+                    }
+                }
+                .mobileCinema{
+                    display: block;
+                    padding-bottom: 44px;
+                }
+            }
+            .gototheTop {
+                width: 53px;
+                height: 67px;
+                right: 0;
+                transform: translateY(-90%);
+                img{
+                    width: 100%;
+                }
+            }
+            .black_footer{
+                width: 100%;
+                padding-left: 18px;
+                padding-right: 0px;
+                padding-top: 0;
+                padding-bottom: 0;
+                color: #535353;
+                >div {
+                    padding-right: 0;
+                    padding-bottom: 36.3px;
+                    .blackfoot_text{
+                        font-size: 10px;
+                        padding-bottom: 0;
+                        padding-top: 33.8px;
+                        font-family: 'YoonGothic730';
+                        flex-wrap: wrap;
+                        color: #878787;
+                        li {
+                            line-height: 2;
+                            &:not(:last-child) {
+                                padding-right: 15px;
+                            }
+                        }
+                    }
+                    .Family_Site{
+                        display: block;
+                        bottom: 37.6px;
+                        right: 24px;
+                        width: 190px;
+                        height: 33.16px;
+                        .Family_Site_text{
+                            p{
+                                font-size: 12px;
+                            }
+                            &::after {
+                                width: 171.18px;
+                                top: unset;
+                                bottom: 0;
+                            }
+                        }
+                    }
+                }
+                address {
+                    font-size: 10px;
+                    font-family: 'YoonGothic730';
+                    padding-bottom: 0;
+                }
+                p{
+                    font-size: 10px;
+                    font-family: 'YoonGothic730';
+                }
+            }
+        }
+    }
+    
+}

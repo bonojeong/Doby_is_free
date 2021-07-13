@@ -18,22 +18,46 @@
         <div class="my_menu_bg"></div>
         <div class="my_menu"></div>
         <header>
-            <h1><a href="../index.html"><img src="image/header/cgvLogo.png" alt="CGV 로고"></a></h1>
-            <ul>
+            <h1 class="mainLogo"><a href="../index.html"><img src="image/header/cgvLogo.png" alt="CGV 로고"></a></h1>
+            <ul class="nav">
                 <li><a href="#">MOVIE</a></li>
                 <li><a href="#">TICKET</a></li>
                 <li><a href="#">THEATER</a></li>
                 <li><a href="#">CULTUREPLEX</a></li>
             </ul>
-            <ul>
+            <ul class="login">
                 <li><span><a href="#">LOGIN</span></a></li>
                 <li><a href="#">JOIN US</a></li>
             </ul>
-            <ul>
+            <ul class="menu">
                 <li><a href="#"><i class="fas fa-history"></i></a></li>
                 <li><a href="#"><i class="fas fa-search"></i></a></li>
                 <li onclick="menuOn()"><a href="#" ><i class="fas fa-align-justify"></i></a></li>
             </ul>
+            <div class="mobile414px_header">
+                <div class="mobile414px_login_menu">
+                    <ul class="mobile414px_login">
+                        <li><span><a href="#">Login</span></a></li>
+                        <li><a href="#">Join us</a></li>
+                    </ul>
+                    <ul class="mobile414px_menu">
+                        <li><a href="#"><i class="fas fa-history"></i></a></li>
+                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                        <li onclick="menuOn()"><a href="#" ><i class="fas fa-align-justify"></i></a></li>
+                    </ul>
+                </div>
+                <div class="mobile414px_cgvLogo">
+                    <h1><a href="../index.html"><img src="image/header/cgvLogo.png" alt="CGV 로고"></a></h1>
+                </div>
+                <div class="mobile414px_nav">
+                    <ul>
+                        <li><a href="#">MOVIE</a></li>
+                        <li><a href="#">TICKET</a></li>
+                        <li><a href="#">THEATER</a></li>
+                        <li><a href="#">CULTUREPLEX</a></li>
+                    </ul>
+                </div>
+            </div>
         </header>
         <main>
             <section class="visual">
@@ -46,14 +70,19 @@
                     </p>
                     <div class= "red_btn reserve_btn">
                         <a href="#">단체 예매문의하기
-                            <img src="image/main/red_btn_arrow.png" alt=""> 
+                            <img src="image/main/red_btn_arrow.png" alt="arrow"> 
                         </a>   
                     </div>
                 </div>
                 <div class="vis_lower_text">
-                <p>지속적인 진화를 바탕으로 영화 관람환경뿐만 아니라 그 이상의 서비스와 감동을
-                    <span>전달하고,TOTAL LIFESTYLE을 선도하는 종합생활문화공간으로 도약합니다.</span>
-                </p>
+                    <p>지속적인 진화를 바탕으로 영화 관람환경뿐만 아니라 그 이상의 서비스와 감동을
+                        <span>전달하고,TOTAL LIFESTYLE을 선도하는 종합생활문화공간으로 도약합니다.</span>
+                    </p>
+                </div>
+                <div class="mobile414px_vis_lower_text">
+                    <p><span class="mobile414px_vis_lower_text_span0">지속적인 진화를 바탕으로 영화 관람환경뿐만</span><span class="mobile414px_vis_lower_text_span1">아니라 그 이상의 서비스와 감동을
+                        전달하고,</span><span class="mobile414px_vis_lower_text_span2">TOTAL LIFESTYLE을 선도하는 종합생활문화</span>공간으로 도약합니다.
+                    </p>
                 </div>
                 <div class="movie_controler">
                     <div class="movie_underbar"></div>
@@ -63,7 +92,7 @@
                 <div class="sel_upper_text">
                     <div class="sel_left_text">
                         <p>MOVIE SELECTION 
-                            <span><img src="image/main/selection_arrow.png" alt=""></span>
+                            <span><img src="image/main/selection_arrow.png" alt="arrow"></span>
                         </p>
                     </div>
                     <div class="sel_right_text">
@@ -74,43 +103,54 @@
                             <span>가장 앞서서 이끄는 최고의 극장문화기업이 되는 것이 바로 CJ CGV의 꿈입니다.</span>
                         </p>
                     </div>
+                    <div class="mobile414px_sel_right_text">
+                        <p>
+                            <span class="mobile414px_sel_right_text1">문화를 만드는 일은 CJ CGV가 가장 잘하는 일입니다.</span>
+                            <span class="mobile414px_sel_right_text2">세계의 라이프스타일을 주도하는 한류의 중심에 CJ CGV가 있습니다.</span>
+                            <span class="mobile414px_sel_right_text3">전 세계인이 일상속에서한국의 영화, 음식, 드라마, 음악을 마음껏 즐</span>
+                            <span class="mobile414px_sel_right_text4">기며 일상의 행복을 누리게 되는 것. 그리고 이를가장 앞서서 이끄는</span>
+                            <span class="mobile414px_sel_right_text5">최고의 극장문화기업이 되는 것이 바로 CJ CGV의 꿈입니다.</span>
+                        </p>
+                    </div>
                 </div>
                 <div class="sel_movies">
                     <ul class="sel_movies_left">
                         <li class="left_upper">
                             <div class="sel_movie_texts" >
                                 <div class="movie_texts1">
-                                    <img src="image/main/selection_num1.png" alt="">
+                                    <img src="image/main/selection_num1.png" alt="number1">
                                     <p>2021</p>
                                 </div>
                                 <div class="movie_texts2">
                                     <p>어벤져스:엔드게임
-                                    <span>둘러보기</span>
+                                        <span>둘러보기</span>
                                     </p>
+                                    <a href="#"><img src="image/main/selection_arrow2.png" alt="arrow"></a>
                                 </div>
-                                <a href="#"><img src="image/main/selection_arrow2.png" alt=""></a>
+                                <a href="#"><img src="image/main/selection_arrow2.png" alt="arrow"></a>
                             </div>
                             <div class="sel_movie_poster">
-                                <img src="image/main/selection_left_top.png" alt="" class="poster">
-                                <img src="image/main/selection_more.png" alt="" class="more_img">
+                                <img src="image/main/selection_left_top.png" alt="poster" class="poster">
+                                <img src="image/main/selection_more.png" alt="moreImg" class="more_img">
                             </div>
                         </li>
                         <li class="left_lower">
                             <div class="sel_movie_texts">
                                 <div class="movie_texts1">
-                                    <img src="image/main/selection_num2.png" alt="">
+                                    <img src="image/main/selection_num2.png" alt="number2">
                                     <p>2021</p>
                                 </div>
                                 <div class="movie_texts2">
                                     <p>어벤져스:엔드게임
-                                    <span>둘러보기</span>
+                                        <span>둘러보기</span>
                                     </p>
+                                    <a href="#"><img src="image/main/selection_arrow2.png" alt="arrow"></a>
                                 </div>
-                                <a href="#"><img src="image/main/selection_arrow2.png" alt=""></a>
+                                <a href="#"><img src="image/main/selection_arrow2.png" alt="arrow"></a>
                             </div>
                             <div class="sel_movie_poster">
-                                <img src="image/main/selection_left_bottom.png" alt="" class="poster">
-                                <img src="image/main/selection_more.png" alt="" class="more_img">
+                                <img src="image/main/selection_left_bottom.png" alt="poster" class="poster">
+                                <img src="image/main/selection_more.png" alt="moreImg" class="more_img">
                             </div>
                         </li>
                     </ul>
@@ -118,37 +158,39 @@
                         <li class="left_upper">
                             <div class="sel_movie_texts">
                                 <div class="movie_texts1">
-                                    <img src="image/main/selection_num3.png" alt="">
+                                    <img src="image/main/selection_num3.png" alt="number3">
                                     <p>2021</p>
                                 </div>
                                 <div class="movie_texts2">
                                     <p>어벤져스:엔드게임
-                                    <span>둘러보기</span>
+                                        <span>둘러보기</span>
                                     </p>
+                                    <a href="#"><img src="image/main/selection_arrow2.png" alt="arrow"></a>
                                 </div>
-                                <a href="#"><img src="image/main/selection_arrow2.png" alt=""></a>
+                                <a href="#"><img src="image/main/selection_arrow2.png" alt="arrow"></a>
                             </div>
                             <div class="sel_movie_poster">
-                                <img src="image/main/selection_right_top.png" alt="" class="poster">
-                                <img src="image/main/selection_more.png" alt="" class="more_img">
+                                <img src="image/main/selection_right_top.png" alt="poster" class="poster">
+                                <img src="image/main/selection_more.png" alt="moreImg" class="more_img">
                             </div>
                         </li>
                         <li class="left_lower">
                             <div class="sel_movie_texts">
                                 <div class="movie_texts1">
-                                    <img src="image/main/selection_num4.png" alt="">
+                                    <img src="image/main/selection_num4.png" alt="number4">
                                     <p>2021</p>
                                 </div>
                                 <div class="movie_texts2">
                                     <p>어벤져스:엔드게임
                                     <span>둘러보기</span>
                                     </p>
+                                    <a href="#"><img src="image/main/selection_arrow2.png" alt="arrow"></a>
                                 </div>
-                                <a href="#"><img src="image/main/selection_arrow2.png" alt=""></a>
+                                <a href="#"><img src="image/main/selection_arrow2.png" alt="arrow"></a>
                             </div>
                             <div class="sel_movie_poster">
-                                <img src="image/main/selection_right_bottom.png" alt="" class="poster">
-                                <img src="image/main/selection_more.png" alt="" class="more_img">
+                                <img src="image/main/selection_right_bottom.png" alt="poster" class="poster">
+                                <img src="image/main/selection_more.png" alt="moreImg" class="more_img">
                             </div>
                         </li>
                     </ul>
@@ -157,14 +199,14 @@
             <section class="event">
                 <div class="bigscreen">
                     <div class="event_screen big1 on">
-                        <img src="image/main/event_big_screen.png" alt="">
+                        <img src="image/main/event_big_screen.png" alt="eventMoviePoster">
                         <div class="screen_upper">
                             <p class="screen_number">
                                 <span>1</span>
                             </p>
                             <p class="screen_text">
                                 <span>FILM MARK EVENT</span> 
-                                <span>LUCA</span>
+                                <span class="screen_text_title">LUCA</span>
                             </p>
                         </div>
                         <div class="screen_lower">
@@ -181,18 +223,18 @@
                             </div>
                             <div class="red_btn event_btn">
                                 <a href="#">사전 예매하기
-                                    <img src="image/main/red_btn_arrow.png" alt="">
+                                    <img src="image/main/red_btn_arrow.png" alt="arrow">
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="event_screen big2">
-                        <img src="image/main/event_big_screen.png" alt="">
+                        <img src="image/main/event_big_screen.png" alt="eventMoviePoster">
                         <div class="screen_upper">
                             <p class="screen_number"><span>2</span></p>
                             <p class="screen_text">
                                 <span>FILM MARK EVENT</span> 
-                                <span>Call Restriction</span>
+                                <span class="screen_text_title">Call Restriction</span>
                             </p>
                         </div>
                         <div class="screen_lower">
@@ -209,18 +251,18 @@
                             </div>
                             <div class="red_btn event_btn">
                                 <a href="#">사전 예매하기
-                                    <img src="image/main/red_btn_arrow.png" alt="">
+                                    <img src="image/main/red_btn_arrow.png" alt="arrow">
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="event_screen big3">
-                        <img src="image/main/event_big_screen.png" alt="">
+                        <img src="image/main/event_big_screen.png" alt="eventMoviePoster">
                         <div class="screen_upper">
                             <p class="screen_number"><span>3</span></p>
                             <p class="screen_text">
                                 <span>FILM MARK EVENT</span> 
-                                <span>Killer's Bodyguard 2</span>
+                                <span class="screen_text_title">Killer's Bodyguard</span>
                             </p>
                         </div>
                         <div class="screen_lower">
@@ -237,18 +279,18 @@
                             </div>
                             <div class="red_btn event_btn">
                                 <a href="#">사전 예매하기
-                                    <img src="image/main/red_btn_arrow.png" alt="">
+                                    <img src="image/main/red_btn_arrow.png" alt="arrow">
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="event_screen big4">
-                        <img src="image/main/event_big_screen.png" alt="">
+                        <img src="image/main/event_big_screen.png" alt="eventMoviePoster">
                         <div class="screen_upper">
                             <p class="screen_number"><span>4</span></p>
                             <p class="screen_text">
                                 <span>FILM MARK EVENT</span> 
-                                <span>Cash Truck</span>
+                                <span class="screen_text_title">Cash Truck</span>
                             </p>
                         </div>
                         <div class="screen_lower">
@@ -265,18 +307,18 @@
                             </div>
                             <div class="red_btn event_btn">
                                 <a href="#">사전 예매하기
-                                    <img src="image/main/red_btn_arrow.png" alt="">
+                                    <img src="image/main/red_btn_arrow.png" alt="arrow">
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="event_screen big5">
-                        <img src="image/main/event_big_screen.png" alt="">
+                        <img src="image/main/event_big_screen.png" alt="eventMoviePoster">
                         <div class="screen_upper">
                             <p class="screen_number"><span>5</span></p>
                             <p class="screen_text">
                                 <span>Battleground PCS4 Live</span> 
-                                <span>In-Game Item</span>
+                                <span class="screen_text_title">In-Game Item</span>
                             </p>
                         </div>
                         <div class="screen_lower">
@@ -293,7 +335,7 @@
                             </div>
                             <div class="red_btn event_btn">
                                 <a href="#">사전 예매하기
-                                    <img src="image/main/red_btn_arrow.png" alt="">
+                                    <img src="image/main/red_btn_arrow.png" alt="arrow">
                                 </a>
                             </div>
                         </div>
@@ -312,14 +354,14 @@
                             <div class="black_bg111" data-num="1"></div>
                             <h1>2</h1>
                             <p><span>FILM MARK EVENT</span>
-                                <span>Killer's Bodyguard 2</span>
+                                <span>Call Restriction</span>
                             </p>
                         </li>
                         <li class="small_screen3 screens" data-num='2'>
                             <div class="black_bg111" data-num="2"></div>
                             <h1>3</h1>
                             <p><span>FILM MARK EVENT</span>
-                                <span>Killer's Bodyguard 2</span>
+                                <span class="small_screen_title">Killer's Bodyguard 2</span>
                             </p>
                         </li>
                         <li class="small_screen4 screens" data-num='3'>
@@ -344,7 +386,7 @@
                     <div class="info_left">
                         <div class="info_left_text">
                             <h4>기다림은 끝났다!
-                                <span>전 세계가 기다려온 단 하나의 액션블록버스터!</span>
+                                <span class="info_left_text_header_title1">전 세계가 기다려온 단 하나의</span><span class="info_left_text_header_title2">액션블록버스터!</span>
                             </h4>
                             <p class="middle_text">
                             도미닉(빈 디젤)은 자신과 가장 가까웠던 형제 제이콥(존 시나)이 사이퍼(샤를리즈 테론)와 연합해
@@ -358,13 +400,13 @@
                             </p>
                         </div>
                         <div class="info_left_img">
-                            <img src="image/main/info_poster1.png" alt="" class="info_poster">
-                            <img src="image/main/info_poster1_play.png" alt="" class="play_btn">
+                            <img src="image/main/info_poster1.png" alt="poster" class="info_poster">
+                            <img src="image/main/info_poster1_play.png" alt="posterPlayBtn" class="play_btn">
                         </div>
                         <div class="info_left_bottom">
                             <p>MOVIE MAIN TRAILER</p>
                             <div>
-                                <img src="image/main/info_arrow.png" alt="">
+                                <img src="image/main/info_arrow.png" alt="arrow">
                             </div>
                         </div>
                     </div>
@@ -372,8 +414,8 @@
                         <ul>
                             <li class="info_right1">
                                 <div class="info_right_poster">
-                                    <img src="image/main/info_poster2.png" alt="" class="poster">
-                                    <a href="#" class="more_btn"><img src="image/main/info_poster_arrow.png" alt=""></a>
+                                    <img src="image/main/info_poster2.png" alt="poster" class="poster">
+                                    <a href="#" class="more_btn"><img src="image/main/info_poster_arrow.png" alt="arrow"></a>
                                 </div>
                                 <div class="info_right_text">
                                     <ul>
@@ -385,7 +427,7 @@
                                             </div>
                                             <div class="rate_number">
                                                 <h3>15.26%</h3>
-                                                <img src="image/main/info_plus.png" alt="" class="more_btn">
+                                                <img src="image/main/info_plus.png" alt="infoMore" class="more_btn">
                                             </div>
                                         </li>
                                         <li class="director">
@@ -393,31 +435,31 @@
                                                 <h4>Movie director</h4>
                                                 <p>Justin Lin</p>
                                             </div>
-                                            <img src="image/main/info_plus.png" alt="" class="more_btn">
+                                            <img src="image/main/info_plus.png" alt="infoMore" class="more_btn">
                                         </li>
                                         <li class="actor">
                                             <div>
                                                 <h4>Actor</h4>
                                                 <p>Vin Diesel·John Cena·Sung Kang·Charlize Theron</p>
                                             </div>
-                                            <img src="image/main/info_plus.png" alt="" class="more_btn">
+                                            <img src="image/main/info_plus.png" alt="infoMore" class="more_btn">
                                         </li>
                                         <li class="genre">
                                             <div>
                                                 <h4>Genre</h4>
                                                 <div class="genre_box">
-                                                    <img src="image/main/info_box.png" alt=""> 
+                                                    <img src="image/main/info_box.png" alt="redBox"> 
                                                     <p>액션</p>
                                                 </div>
                                             </div>
-                                            <img src="image/main/info_plus.png" alt="" class="more_btn">
+                                            <img src="image/main/info_plus.png" alt="infoMore" class="more_btn">
                                         </li>
                                         <li class="release_date">
                                             <div>
                                                 <h4>Release date</h4>
                                                 <p>2021.05.19</p>
                                             </div>
-                                            <img src="image/main/info_plus.png" alt="" class="more_btn">
+                                            <img src="image/main/info_plus.png" alt="infoMore" class="more_btn">
                                         </li>
                                     </ul>
                                 </div>
@@ -425,8 +467,8 @@
                             <li class="info_right2">
                                 <div>
                                     <div class="info_right_poster">
-                                        <img src="image/main/info_poster3.png" alt="" class="poster">
-                                        <a href="#" class="more_btn"><img src="image/main/info_poster_arrow.png" alt=""></a>
+                                        <img src="image/main/info_poster3.png" alt="poster" class="poster">
+                                        <a href="#" class="more_btn"><img src="image/main/info_poster_arrow.png" alt="arrow"></a>
                                     </div>
                                     <div class="info_right_text">
                                         <ul>
@@ -438,7 +480,7 @@
                                                 </div>
                                                 <div class="rate_number">
                                                     <h3>88%</h3>
-                                                    <img src="image/main/info_plus.png" alt="" class="more_btn">
+                                                    <img src="image/main/info_plus.png" alt="infoMore" class="more_btn">
                                                 </div>
                                             </li>
                                             <li class="director">
@@ -446,31 +488,31 @@
                                                     <h4>Age person</h4>
                                                     <p>12세 연령가</p>
                                                 </div>
-                                                <img src="image/main/info_plus.png" alt="" class="more_btn">
+                                                <img src="image/main/info_plus.png" alt="infoMore" class="more_btn">
                                             </li>
                                             <li class="actor">
                                                 <div>
                                                     <h4>Running time</h4>
                                                     <p>143분</p>
                                                 </div>
-                                                <img src="image/main/info_plus.png" alt="" class="more_btn">
+                                                <img src="image/main/info_plus.png" alt="infoMore" class="more_btn">
                                             </li>
                                             <li class="genre">
                                                 <div>
                                                     <h4>Country</h4>
                                                     <div class="genre_box">
-                                                        <img src="image/main/info_box.png" alt=""> 
+                                                        <img src="image/main/info_box.png" alt="redBox"> 
                                                         <p>미국 United States of America</p>
                                                     </div>
                                                 </div>
-                                                <img src="image/main/info_plus.png" alt="" class="more_btn">
+                                                <img src="image/main/info_plus.png" alt="infoMore" class="more_btn">
                                             </li>
                                             <li class="release_date">
                                                 <div>
                                                     <h4>Fast & Furious 9 THE FAST SAGA</h4>
                                                     <p>절찬상영중</p>
                                                 </div>
-                                                <img src="image/main/info_plus.png" alt="" class="more_btn">
+                                                <img src="image/main/info_plus.png" alt="infoMore" class="more_btn">
                                             </li>
                                         </ul>
                                     </div>
@@ -481,31 +523,33 @@
                     </div>
                 </div>
                 <div class="mask">
-                    <img src="image/main/maskimg.png" alt="">
+                    <img src="image/main/maskimg.png" alt="maskimg" class="Maskimg">
+                    <img src="image/main/mobilemaskimg.png" alt="mobilemaskimg" class="mobileMaskimg">
                 </div>
             </section>
         </main>
         <footer>
             <div class="white_footer">
                 <div class="white_upper">
-                    <img src="image/footer/footerlogo.png" alt="" class="footer_logo">
+                    <img src="image/footer/footerlogo.png" alt="cgvfooterLogo" class="footer_logo">
                     <ul class="menu">
                         <li><a href="">개인정보 취급방침</a></li>
                         <li><a href="">제휴제안 문의</a></li>
                         <li><a href="">고객센터</a></li>
                     </ul>
-                    <img src="image/footer/cinema.png" alt="" class="cinema">
+                    <img src="image/footer/cinema.png" alt="cinemalogo" class="cinema">
                 </div>
                 <div class="white_lower">
                     <p>ⓒ 2020 CJ CGV Enterprise. TCJ CGV. All Rights Reserved.</p>
                     <div>
                         <p>Share</p>
-                        <img src="image/footer/sns.png" alt="" class="sns">
+                        <img src="image/footer/sns.png" alt="snslogo" class="sns">
                     </div>
                 </div>
+                <img src="image/footer/cinema.png" alt="mobileCinemalogo" class="mobileCinema">
             </div>
             <div onclick="toTheTop()" class="gototheTop">
-                <img src="image/footer/goTop.png" alt="">
+                <img src="image/footer/goTop.png" alt="totheTop">
             </div>
             <div class="black_footer">
                 <div>
@@ -525,7 +569,7 @@
                     <ul class="Family_Site">
                         <li class="Family_Site_text">
                             <p>Family Site</p>
-                            <img src="image/footer/select_arrow.png" alt="">
+                            <img src="image/footer/select_arrow.png" alt="arrow">
                         </li>
                         <li>1</li>
                         <li>2</li>
