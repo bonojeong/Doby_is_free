@@ -285,12 +285,6 @@ header{
                         position: relative;
                         top: get-vw(-2px);
                     }
-                    &:hover{
-                        background-color: #fff;
-                        border: $cgvred 1px solid;
-                        color: $cgvred;
-                        font-weight: bold;
-                    }
                 }
             }
         }
@@ -317,6 +311,9 @@ header{
         transition: 0.5s;
         &:hover{
             background: url('../image/main1/popup_hover.png') no-repeat center center;
+            background-size: cover;
+            width: get-vw(216px);
+            height: get-vw(202px);
         }
         img{
             position: absolute;
@@ -1198,7 +1195,7 @@ header{
 }
 #brand{
     width: 100%;
-    height: 49.5vw;
+    height: 45vw;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
@@ -1319,8 +1316,8 @@ header{
     align-items: center;
     img{
         position: absolute;
-        top: -40%;
-        left: 35%;
+        top: get-vw(-80px);
+        left: 30%;
     }
     h2{
         @include font(get-vw(33px),normal);

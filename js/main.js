@@ -24,6 +24,21 @@ console.log(indexchild);
 let videoNum = 1;
 let videostop = 0;
 
+//mymenu 추가
+$(document).ready(function(){
+    $(".my_menu").load("myMenu/index.html");
+})
+//my_menu on
+function menuOn() {
+    document.querySelector('.my_menu').classList.add('myMenuOn');
+    document.querySelector('.my_menu_bg').classList.add('my_menu_bg_on')
+}
+//my_menu off
+function menuOff(){
+    document.querySelector('.my_menu').classList.remove('myMenuOn');
+    document.querySelector('.my_menu_bg').classList.remove('my_menu_bg_on')
+}
+
 // 스크롤시 이벤트 발생
 eventcheckWeek = false;
 eventcheckrecom = false;
@@ -655,9 +670,9 @@ function brandEffect(){
 }
 brandEffect();
 setInterval(() =>{
-    brandLeft.style.top = '-'+brandNum1*0.044+'%';
+    brandLeft.style.top = '-'+brandNum1*0.036+'%';
     brandNum1 +=1;
-    if(brandNum1 == 2465){
+    if(brandNum1 == 2280){
         brandLeft.style.transition = '0ms';
         brandLeft.style.top = '0%';
         brandNum1 = 0;
@@ -667,9 +682,9 @@ setInterval(() =>{
     }
 },10);
 setInterval(() =>{
-    brandRight.style.top = brandNum2*0.089+'%';
+    brandRight.style.top = brandNum2*0.070+'%';
     brandNum2 +=1;
-    if(brandNum2 == 1260){
+    if(brandNum2 == 1200){
         brandRight.style.transition = '0ms';
         brandRight.style.top = '0%';
         brandNum2 = 0;
