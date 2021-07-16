@@ -61,6 +61,32 @@ body{
     font-family : "Segoe UI", san-serif;
     font-size: get-vw(14px);
 }
+// .my_menu {
+//     height: 100%;
+//     width: 559px;
+//     position: fixed;
+//     top: 0;
+//     right: -559px;
+//     z-index: 300;
+//     transition: 1s;
+// }
+// .my_menu_bg {
+//     width: 100%;
+//     height: 100vh;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     background: rgba(0, 0, 0, 0);
+//     transition: 1s;
+//     z-index: -1;
+// }
+// .my_menu_bg_on{
+//     background: rgba(0, 0, 0, 0.75);
+//     z-index: 299;
+// }
+// .myMenuOn {
+//     right: 0px;
+// }
 // #scroll{
 //     width: 100px;
 //     height: 50px;
@@ -248,6 +274,7 @@ header{
                     border-radius: get-vw(23.5px);
                     background-color: $cgvred;
                     letter-spacing: get-vw(1.5px);
+                    transition: 0.3s;
                     font: {
                         family : 'Yun750';
                         size: get-vw(16px);
@@ -257,6 +284,12 @@ header{
                         padding-left: get-vw(7px);
                         position: relative;
                         top: get-vw(-2px);
+                    }
+                    &:hover{
+                        background-color: #fff;
+                        border: $cgvred 1px solid;
+                        color: $cgvred;
+                        font-weight: bold;
                     }
                 }
             }
@@ -1573,7 +1606,7 @@ footer{
     }
     #weekMovie{
         width: 100%;
-        height: 40vh;
+        height: get-vw(340px);
         .left{
             width: 50%;
             height: 100%;
@@ -1681,7 +1714,7 @@ footer{
     }
     #scrollBanner{
         width: 100%;
-        height: 15vh;
+        height: get-vw(127.5px);
         display: flex;
         position: relative;
         overflow: hidden;
@@ -1793,7 +1826,7 @@ footer{
     }
     #recommendMovie{
         width: 100%;
-        height: 45vh;
+        height: get-vw(381.5px);
     
         background: url('../image/main3/redblack_bg.png') no-repeat center center;
         background-size: cover;
@@ -1878,7 +1911,7 @@ footer{
     }
     #cardEvent{
         width: 100%;
-        height: 55vh;
+        height: get-vw(467.5px);
         display: flex;
         flex-direction: column;
         position: relative;
@@ -1935,7 +1968,7 @@ footer{
         }   
     }
     #cinema{
-        height: 60vh;
+        height: get-vw(510px);
         article:nth-child(1){
             padding: get-vw(100px);
             > div:nth-child(2){
@@ -2139,6 +2172,7 @@ footer{
                 }
             }
             .slide{
+                display: none;
                 padding: 0;
                 top: get-vw(350px);
                 left: 50%;
@@ -2193,7 +2227,7 @@ footer{
     #weekMovie{
         max-width: 767px;
         width: 100%;
-        height: 100vh;
+        height: get-vw(900px);
         display: flex;
         flex-direction: column;
         .left{
@@ -2293,13 +2327,13 @@ footer{
     #scrollBanner{
         max-width: 767px;
         width: 100%;
-        height: 20vh;
+        height: get-vw(170px);
         .bannerslide{
             width: 600%;
-            height: 20vh;
+            height: get-vw(170px);
             .banner{
                 width: get-vw(414px);
-                height: 20vh;
+                height: get-vw(170px);
                 h2{
                     span{
                         font-size: get-vw(16px);
@@ -2316,7 +2350,7 @@ footer{
     #recommendMovie{
         max-width: 767px;
         width: 100%;
-        height: 80vh;
+        height: get-vw(765px);
         flex-direction: column;
         position: relative;
         background: none;
@@ -2377,7 +2411,7 @@ footer{
     #cardEvent{
         max-width: 767px;
         width: 100%;
-        height: 100vh;
+        height: get-vw(1000px);
         flex-direction: column;
         .left{
             width: 100%;
@@ -2450,13 +2484,13 @@ footer{
     }
     #cinema{
         width: 100%;
-        height: 100vh;
+        height: get-vw(1000px);
         article:nth-child(1){
             text-align: center;
             padding: 0; margin: 0;
             padding: get-vw(40px) get-vw(22px);
             width: 100%;
-            height: 60vh;
+            height: get-vw(640px);
             > div{
                 &:nth-child(1){
                     p{
@@ -2516,16 +2550,16 @@ footer{
         }
         article:nth-child(2){
             width: 100%;
-            height: 40vh;
+            height: get-vw(360px);
             ul{
                 position: absolute;
                 display: grid;
                 grid-template-columns: 50% 50%;
-                grid-template-rows: 20vh 20vh;
+                grid-template-rows: get-vw(180px) get-vw(180px);
                 grid-template-areas: 'li1 li2' 'li3 li4';
                 li{
                     width: 100%;
-                    height: 20vh;
+                    height: get-vw(180px);
                     padding: 0; margin: 0;
                     padding-left: get-vw(20px);
                     padding-top: get-vw(20px);
@@ -2558,7 +2592,7 @@ footer{
                         padding-bottom: get-vw(20px);
                     }
                     @mixin hoverDiv {
-                        height: 20vh;
+                        height: get-vw(180px);
                         div{
                             visibility: hidden;
                             width: 100%;
@@ -2626,13 +2660,13 @@ footer{
     #brand{
         max-width: 767px;
         width: 100%;
-        height: 130vh;
+        height: get-vw(1100px);
         flex-direction: column;
         padding: 0; margin: 0;
         padding: get-vw(44px) get-vw(23px);
         position: relative;
         article:nth-child(1){
-            width: 100%; height: 50vh;
+            width: 100%; height: get-vw(425px);
             padding: 0; margin: 0;
             img{
                 position: absolute;
@@ -2641,7 +2675,7 @@ footer{
             }
             .brand_title{
                 width: 100%;
-                height: 100%;
+                height: get-vw(1100px);
                 display: flex;
                 flex-direction: column;
                 p{
@@ -2663,7 +2697,7 @@ footer{
             }
         }
         article:nth-child(2){
-            width: 100%; height: 80vh;
+            width: 100%; height: get-vw(680px);
             > div:nth-child(1){
                 width: 100%;
                 *{width: 100%;}
@@ -2682,7 +2716,7 @@ footer{
                 }
                 .leftslide{
                     width: 65%;
-                    height: 80vh;
+                    height: get-vw(680px);
                     .brand_left{
                         img{
                             width: get-vw(120px);
@@ -2715,7 +2749,7 @@ footer{
     #QnA{
         width: 100%;
         max-width: 767px;
-        height: 30vh;
+        height: get-vw(255px);
         img{
             display: none;
         }
@@ -2739,14 +2773,14 @@ footer{
     }
     footer{
         width: 100%;
-        height: 55vh;
+        height: get-vw(500px);
         max-width: 767px;
         > div:nth-child(1){
             width: 100%;
-            height: 25vh;
+            height: get-vw(235px);
             position: relative;
             > div:nth-child(1){
-                padding: get-vw(25px) get-vw(20px) get-vw(10px) get-vw(20px); margin: 0;
+                padding: get-vw(25px) get-vw(25px) get-vw(10px) get-vw(20px); margin: 0;
                 ul{
                     font-size: get-vw(12px);
                     li{
@@ -2761,9 +2795,9 @@ footer{
                     }
                     &:last-child{
                         position: absolute;
-                        bottom: get-vw(20px);
+                        bottom: get-vw(40px);
                         left: get-vw(22px);
-                        width: get-vw(377px);
+                        width: get-vw(370px);
                         height: get-vw(30px);
                     }
                 }
@@ -2788,7 +2822,7 @@ footer{
         }
         > div:nth-child(2){
             width: 100%;
-            height: 30vh;
+            height: get-vw(250px);
             padding: 0; margin: 0;
             display: block;
             > div{
@@ -2819,13 +2853,14 @@ footer{
             
         }
         .Topbtn{
-            width: get-vw(30px);
-            height: get-vw(40px);
-            bottom: get-vw(30px);
-            right: get-vw(50px);
+            width: get-vw(53px);
+            height: get-vw(67px);
+            top: get-vw(235px);
+            right: 0;
+            transform: translateY(-25%);
             img{
-                width: get-vw(30px);
-                height: get-vw(40px);
+                width: get-vw(53px);
+                height: get-vw(67px);
             }
         }
     }

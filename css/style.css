@@ -294,6 +294,8 @@ header ul li:hover {
   border-radius: 1.22396vw;
   background-color: #E30613;
   letter-spacing: 0.07812vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   font-family: 'Yun750';
   font-size: 0.83333vw;
   font-weight: normal;
@@ -303,6 +305,13 @@ header ul li:hover {
   padding-left: 0.36458vw;
   position: relative;
   top: -0.10417vw;
+}
+
+.btn:hover {
+  background-color: #fff;
+  border: #E30613 1px solid;
+  color: #E30613;
+  font-weight: bold;
 }
 
 #sidebg .slide {
@@ -2173,7 +2182,7 @@ footer .Topbtn img {
   }
   #weekMovie {
     width: 100%;
-    height: 40vh;
+    height: 17.70833vw;
   }
   #weekMovie .left {
     width: 50%;
@@ -2300,7 +2309,7 @@ footer .Topbtn img {
   }
   #scrollBanner {
     width: 100%;
-    height: 15vh;
+    height: 6.64062vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2426,7 +2435,7 @@ footer .Topbtn img {
   }
   #recommendMovie {
     width: 100%;
-    height: 45vh;
+    height: 19.86979vw;
     background: url("../image/main3/redblack_bg.png") no-repeat center center;
     background-size: cover;
     display: -webkit-box;
@@ -2532,7 +2541,7 @@ footer .Topbtn img {
   }
   #cardEvent {
     width: 100%;
-    height: 55vh;
+    height: 24.34896vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2637,7 +2646,7 @@ footer .Topbtn img {
     width: 46%;
   }
   #cinema {
-    height: 60vh;
+    height: 26.5625vw;
   }
   #cinema article:nth-child(1) {
     padding: 5.20833vw;
@@ -2865,6 +2874,7 @@ footer .Topbtn img {
             transform: translateX(-50%);
   }
   #main #sidebg .slide {
+    display: none;
     padding: 0;
     top: 84.54106vw;
     left: 50%;
@@ -2920,7 +2930,7 @@ footer .Topbtn img {
   #weekMovie {
     max-width: 767px;
     width: 100%;
-    height: 100vh;
+    height: 217.3913vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3049,15 +3059,15 @@ footer .Topbtn img {
   #scrollBanner {
     max-width: 767px;
     width: 100%;
-    height: 20vh;
+    height: 41.0628vw;
   }
   #scrollBanner .bannerslide {
     width: 600%;
-    height: 20vh;
+    height: 41.0628vw;
   }
   #scrollBanner .bannerslide .banner {
     width: 100vw;
-    height: 20vh;
+    height: 41.0628vw;
   }
   #scrollBanner .bannerslide .banner h2 {
     font-size: 3.86473vw;
@@ -3072,7 +3082,7 @@ footer .Topbtn img {
   #recommendMovie {
     max-width: 767px;
     width: 100%;
-    height: 80vh;
+    height: 184.78261vw;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -3138,7 +3148,7 @@ footer .Topbtn img {
   #cardEvent {
     max-width: 767px;
     width: 100%;
-    height: 100vh;
+    height: 241.54589vw;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -3227,7 +3237,7 @@ footer .Topbtn img {
   }
   #cinema {
     width: 100%;
-    height: 100vh;
+    height: 241.54589vw;
   }
   #cinema article:nth-child(1) {
     text-align: center;
@@ -3235,7 +3245,7 @@ footer .Topbtn img {
     margin: 0;
     padding: 9.66184vw 5.31401vw;
     width: 100%;
-    height: 60vh;
+    height: 154.58937vw;
   }
   #cinema article:nth-child(1) > div:nth-child(1) {
     border-bottom: none;
@@ -3299,7 +3309,7 @@ footer .Topbtn img {
   }
   #cinema article:nth-child(2) {
     width: 100%;
-    height: 40vh;
+    height: 86.95652vw;
   }
   #cinema article:nth-child(2) ul {
     position: absolute;
@@ -3307,13 +3317,13 @@ footer .Topbtn img {
     display: grid;
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
-    -ms-grid-rows: 20vh 20vh;
-        grid-template-rows: 20vh 20vh;
+    -ms-grid-rows: 43.47826vw 43.47826vw;
+        grid-template-rows: 43.47826vw 43.47826vw;
         grid-template-areas: 'li1 li2' 'li3 li4';
   }
   #cinema article:nth-child(2) ul li {
     width: 100%;
-    height: 20vh;
+    height: 43.47826vw;
     padding: 0;
     margin: 0;
     padding-left: 4.83092vw;
@@ -3349,7 +3359,7 @@ footer .Topbtn img {
     padding-bottom: 4.83092vw;
   }
   #cinema article:nth-child(2) ul li:nth-child(1):hover {
-    height: 20vh;
+    height: 43.47826vw;
   }
   #cinema article:nth-child(2) ul li:nth-child(1):hover div {
     visibility: hidden;
@@ -3377,7 +3387,7 @@ footer .Topbtn img {
     padding: 0;
   }
   #cinema article:nth-child(2) ul li:nth-child(2):hover {
-    height: 20vh;
+    height: 43.47826vw;
   }
   #cinema article:nth-child(2) ul li:nth-child(2):hover div {
     visibility: hidden;
@@ -3405,7 +3415,7 @@ footer .Topbtn img {
     padding: 0;
   }
   #cinema article:nth-child(2) ul li:nth-child(3):hover {
-    height: 20vh;
+    height: 43.47826vw;
   }
   #cinema article:nth-child(2) ul li:nth-child(3):hover div {
     visibility: hidden;
@@ -3433,7 +3443,7 @@ footer .Topbtn img {
     padding: 0;
   }
   #cinema article:nth-child(2) ul li:nth-child(4):hover {
-    height: 20vh;
+    height: 43.47826vw;
   }
   #cinema article:nth-child(2) ul li:nth-child(4):hover div {
     visibility: hidden;
@@ -3494,7 +3504,7 @@ footer .Topbtn img {
   #brand {
     max-width: 767px;
     width: 100%;
-    height: 130vh;
+    height: 265.70048vw;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -3506,7 +3516,7 @@ footer .Topbtn img {
   }
   #brand article:nth-child(1) {
     width: 100%;
-    height: 50vh;
+    height: 102.657vw;
     padding: 0;
     margin: 0;
   }
@@ -3517,7 +3527,7 @@ footer .Topbtn img {
   }
   #brand article:nth-child(1) .brand_title {
     width: 100%;
-    height: 100%;
+    height: 265.70048vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3546,7 +3556,7 @@ footer .Topbtn img {
   }
   #brand article:nth-child(2) {
     width: 100%;
-    height: 80vh;
+    height: 164.25121vw;
   }
   #brand article:nth-child(2) > div:nth-child(1) {
     width: 100%;
@@ -3571,7 +3581,7 @@ footer .Topbtn img {
   }
   #brand article:nth-child(2) > div:nth-child(1) .leftslide {
     width: 65%;
-    height: 80vh;
+    height: 164.25121vw;
   }
   #brand article:nth-child(2) > div:nth-child(1) .leftslide .brand_left img {
     width: 28.98551vw;
@@ -3599,7 +3609,7 @@ footer .Topbtn img {
   #QnA {
     width: 100%;
     max-width: 767px;
-    height: 30vh;
+    height: 61.5942vw;
   }
   #QnA img {
     display: none;
@@ -3623,16 +3633,16 @@ footer .Topbtn img {
   }
   footer {
     width: 100%;
-    height: 55vh;
+    height: 120.77295vw;
     max-width: 767px;
   }
   footer > div:nth-child(1) {
     width: 100%;
-    height: 25vh;
+    height: 56.76329vw;
     position: relative;
   }
   footer > div:nth-child(1) > div:nth-child(1) {
-    padding: 6.03865vw 4.83092vw 2.41546vw 4.83092vw;
+    padding: 6.03865vw 6.03865vw 2.41546vw 4.83092vw;
     margin: 0;
   }
   footer > div:nth-child(1) > div:nth-child(1) ul {
@@ -3649,9 +3659,9 @@ footer .Topbtn img {
   }
   footer > div:nth-child(1) > div:nth-child(1) img:last-child {
     position: absolute;
-    bottom: 4.83092vw;
+    bottom: 9.66184vw;
     left: 5.31401vw;
-    width: 91.0628vw;
+    width: 89.37198vw;
     height: 7.24638vw;
   }
   footer > div:nth-child(1) > div:nth-child(2) {
@@ -3681,7 +3691,7 @@ footer .Topbtn img {
   }
   footer > div:nth-child(2) {
     width: 100%;
-    height: 30vh;
+    height: 60.38647vw;
     padding: 0;
     margin: 0;
     display: block;
@@ -3716,13 +3726,15 @@ footer .Topbtn img {
     display: none;
   }
   footer .Topbtn {
-    width: 7.24638vw;
-    height: 9.66184vw;
-    bottom: 7.24638vw;
-    right: 12.07729vw;
+    width: 12.80193vw;
+    height: 16.18357vw;
+    top: 56.76329vw;
+    right: 0;
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
   }
   footer .Topbtn img {
-    width: 7.24638vw;
-    height: 9.66184vw;
+    width: 12.80193vw;
+    height: 16.18357vw;
   }
 }
