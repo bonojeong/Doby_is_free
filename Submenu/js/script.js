@@ -1,19 +1,3 @@
-
-//my_menu 생성
-$(document).ready(function(){
-    $(".my_menu").load("../myMenu/index.html");
-})
-//my_menu on
-function menuOn() {
-    document.querySelector('.my_menu').classList.add('myMenuOn');
-    document.querySelector('.my_menu_bg').classList.add('my_menu_bg_on')
-}
-//my_menu off
-function menuOff(){
-    document.querySelector('.my_menu').classList.remove('myMenuOn');
-    document.querySelector('.my_menu_bg').classList.remove('my_menu_bg_on')
-}
-
 //video자료 선언
 //video 언더바 선언
 //함수 - 현재시간/전체시간 *100해서 증가율 구하기

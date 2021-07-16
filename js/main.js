@@ -24,21 +24,6 @@ console.log(indexchild);
 let videoNum = 1;
 let videostop = 0;
 
-//mymenu 추가
-$(document).ready(function(){
-    $(".my_menu").load("myMenu/index.html");
-})
-//my_menu on
-function menuOn() {
-    document.querySelector('.my_menu').classList.add('myMenuOn');
-    document.querySelector('.my_menu_bg').classList.add('my_menu_bg_on')
-}
-//my_menu off
-function menuOff(){
-    document.querySelector('.my_menu').classList.remove('myMenuOn');
-    document.querySelector('.my_menu_bg').classList.remove('my_menu_bg_on')
-}
-
 // 스크롤시 이벤트 발생
 eventcheckWeek = false;
 eventcheckrecom = false;
