@@ -76,6 +76,38 @@ body {
   font-size: 0.72917vw;
 }
 
+.my_menu {
+  height: 100%;
+  width: 559px;
+  position: fixed;
+  top: 0;
+  right: -559px;
+  z-index: 300;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.my_menu_bg {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: -1;
+}
+
+.my_menu_bg_on {
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 299;
+}
+
+.myMenuOn {
+  right: 0px;
+}
+
 header {
   position: absolute;
   z-index: 100;

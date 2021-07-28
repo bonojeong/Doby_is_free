@@ -233,6 +233,38 @@ body {
   background: #000;
 }
 
+body .my_menu {
+  height: 100%;
+  width: 559px;
+  position: fixed;
+  top: 0;
+  right: -559px;
+  z-index: 300;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .my_menu_bg {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: -1;
+}
+
+body .my_menu_bg_on {
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 299;
+}
+
+body .myMenuOn {
+  right: 0px;
+}
+
 body .red_btn {
   width: 218px;
   height: 47.34px;
