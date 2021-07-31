@@ -481,6 +481,10 @@ header ul li:hover {
   overflow: hidden;
 }
 
+#weekMovie > h2 {
+  display: none;
+}
+
 #weekMovie .left {
   width: 40%;
   height: 100%;
@@ -944,6 +948,10 @@ header ul li:hover {
   display: flex;
 }
 
+#cardEvent > h2 {
+  display: none;
+}
+
 #cardEvent .left {
   width: 60%;
   display: -webkit-box;
@@ -1058,6 +1066,10 @@ header ul li:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+#cardEvent .right > h2 {
+  display: none;
 }
 
 #cardEvent .right .cardsmall {
@@ -1202,6 +1214,10 @@ header ul li:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   color: white;
+}
+
+#cinema > h2 {
+  display: none;
 }
 
 #cinema article:nth-child(1) {
@@ -1707,6 +1723,10 @@ header ul li:hover {
   overflow: hidden;
 }
 
+#brand > h2 {
+  display: none;
+}
+
 #brand article:nth-child(1) {
   width: 47%;
   padding-top: 4.16667vw;
@@ -1771,6 +1791,10 @@ header ul li:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+#brand article:nth-child(2) > h2 {
+  display: none;
 }
 
 #brand article:nth-child(2) > div > p {
@@ -2344,6 +2368,9 @@ footer .Topbtn img {
     position: relative;
     overflow: hidden;
   }
+  #scrollBanner > h2 {
+    display: none;
+  }
   #scrollBanner .bannerslide {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2354,6 +2381,9 @@ footer .Topbtn img {
     transition: 50ms;
     position: relative;
     left: 30%;
+  }
+  #scrollBanner .bannerslide > h2 {
+    display: none;
   }
   #scrollBanner div:last-child {
     width: 100%;
@@ -2475,6 +2505,9 @@ footer .Topbtn img {
     color: white;
     overflow: hidden;
   }
+  #recommendMovie h2 {
+    display: none;
+  }
   #recommendMovie .recommendimg {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2482,6 +2515,9 @@ footer .Topbtn img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  #recommendMovie .recommendimg > h2 {
+    display: none;
   }
   #recommendMovie .recommendimg .recommendslide {
     width: 49.58333vw;
