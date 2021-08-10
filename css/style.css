@@ -682,6 +682,10 @@ header ul li:hover {
   overflow: hidden;
 }
 
+#scrollBanner > h2 {
+  display: none;
+}
+
 #scrollBanner .bannerslide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -692,6 +696,10 @@ header ul li:hover {
   transition: 50ms;
   position: relative;
   left: 30%;
+}
+
+#scrollBanner .bannerslide > h2 {
+  display: none;
 }
 
 #scrollBanner div:last-child {
@@ -835,6 +843,10 @@ header ul li:hover {
   overflow: hidden;
 }
 
+#recommendMovie > h2 {
+  display: none;
+}
+
 #recommendMovie .recommendimg {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -842,6 +854,10 @@ header ul li:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#recommendMovie .recommendimg > h2 {
+  display: none;
 }
 
 #recommendMovie .recommendimg .recommendslide {
@@ -2382,9 +2398,6 @@ footer .Topbtn img {
     position: relative;
     left: 30%;
   }
-  #scrollBanner .bannerslide > h2 {
-    display: none;
-  }
   #scrollBanner div:last-child {
     width: 100%;
     height: 100%;
@@ -2505,9 +2518,6 @@ footer .Topbtn img {
     color: white;
     overflow: hidden;
   }
-  #recommendMovie h2 {
-    display: none;
-  }
   #recommendMovie .recommendimg {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2515,9 +2525,6 @@ footer .Topbtn img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  #recommendMovie .recommendimg > h2 {
-    display: none;
   }
   #recommendMovie .recommendimg .recommendslide {
     width: 49.58333vw;

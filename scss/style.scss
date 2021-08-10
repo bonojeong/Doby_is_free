@@ -552,12 +552,18 @@ header{
     display: flex;
     position: relative;
     overflow: hidden;
+    >h2{
+        display: none;
+    }
     .bannerslide{
         display: flex;
         transition-timing-function: linear;
         transition: 50ms;
         position: relative;
         left: 30%;
+        >h2{
+            display: none;
+        }
     }
     div:last-child{
         width: 100%;
@@ -661,16 +667,21 @@ header{
 #recommendMovie{
     width: 100%;
     height: get-vw(960px);
-
     background: url('../image/main3/redblack_bg.png') no-repeat center center;
     background-size: cover;
     display: flex;
     justify-content: space-between;
     color: white;
     overflow: hidden;
+    >h2{
+        display: none;
+    }
     .recommendimg{
         display: flex;
         align-items: center;
+        >h2{
+            display: none;
+        }
         .recommendslide{
             width: get-vw(952px);
             height: get-vw(782px);
@@ -1742,9 +1753,6 @@ footer{
             transition: 50ms;
             position: relative;
             left: 30%;
-            >h2{
-                display: none;
-            }
         }
         div:last-child{
             width: 100%;
@@ -1854,15 +1862,9 @@ footer{
         justify-content: space-between;
         color: white;
         overflow: hidden;
-        h2{
-            display: none;
-        }
         .recommendimg{
             display: flex;
             align-items: center;
-            >h2{
-                display: none;
-            }
             .recommendslide{
                 width: get-vw(952px);
                 height: get-vw(782px);
