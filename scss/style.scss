@@ -61,32 +61,32 @@ body{
     font-family : "Segoe UI", san-serif;
     font-size: get-vw(14px);
 }
-.my_menu {
-    height: 100%;
-    width: 559px;
-    position: fixed;
-    top: 0;
-    right: -559px;
-    z-index: 300;
-    transition: 1s;
-}
-.my_menu_bg {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0);
-    transition: 1s;
-    z-index: -1;
-}
-.my_menu_bg_on{
-    background: rgba(0, 0, 0, 0.75);
-    z-index: 299;
-}
-.myMenuOn {
-    right: 0px;
-}
+// .my_menu {
+//     height: 100%;
+//     width: 559px;
+//     position: fixed;
+//     top: 0;
+//     right: -559px;
+//     z-index: 300;
+//     transition: 1s;
+// }
+// .my_menu_bg {
+//     width: 100%;
+//     height: 100vh;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     background: rgba(0, 0, 0, 0);
+//     transition: 1s;
+//     z-index: -1;
+// }
+// .my_menu_bg_on{
+//     background: rgba(0, 0, 0, 0.75);
+//     z-index: 299;
+// }
+// .myMenuOn {
+//     right: 0px;
+// }
 // #scroll{
 //     width: 100px;
 //     height: 50px;
@@ -405,9 +405,6 @@ header{
     background: url('../image/main2/patternBg.png') no-repeat center center;
     background-size: cover;
     overflow: hidden;
-    >h2{
-        display: none;
-    }
     .left{
         width: 40%;
         height: 100%;
@@ -552,18 +549,12 @@ header{
     display: flex;
     position: relative;
     overflow: hidden;
-    >h2{
-        display: none;
-    }
     .bannerslide{
         display: flex;
         transition-timing-function: linear;
         transition: 50ms;
         position: relative;
         left: 30%;
-        >h2{
-            display: none;
-        }
     }
     div:last-child{
         width: 100%;
@@ -667,21 +658,16 @@ header{
 #recommendMovie{
     width: 100%;
     height: get-vw(960px);
+
     background: url('../image/main3/redblack_bg.png') no-repeat center center;
     background-size: cover;
     display: flex;
     justify-content: space-between;
     color: white;
     overflow: hidden;
-    >h2{
-        display: none;
-    }
     .recommendimg{
         display: flex;
         align-items: center;
-        >h2{
-            display: none;
-        }
         .recommendslide{
             width: get-vw(952px);
             height: get-vw(782px);
@@ -759,9 +745,6 @@ header{
     width: 100%;
     height: get-vw(800px);
     display: flex;
-    >h2{
-        display: none;
-    }
     .left{
         width: 60%;
         display: flex;
@@ -850,9 +833,6 @@ header{
         width: 40%;
         display: flex;
         flex-direction: column;
-        >h2{
-            display: none;
-        }
         .cardsmall{
             width: 100%;
             padding: {
@@ -947,9 +927,6 @@ header{
     display: flex;
     flex-direction: column;
     color: white;
-    >h2 {
-        display: none;
-    }
     article:nth-child(1){
         padding: get-vw(190px) get-vw(280px) get-vw(170px) get-vw(300px);
         width: 100%;
@@ -1217,9 +1194,6 @@ header{
     }
 }
 #brand{
-    >h2{
-        display: none;
-    }
     width: 100%;
     height: 45vw;
     display: flex;
@@ -1269,9 +1243,6 @@ header{
         
     }
     article:nth-child(2){
-        >h2{
-            display: none;
-        }
         position: relative;
         width: 52%;
         display: flex;
@@ -1744,9 +1715,6 @@ footer{
         display: flex;
         position: relative;
         overflow: hidden;
-        >h2{
-            display: none;
-        }
         .bannerslide{
             display: flex;
             transition-timing-function: linear;
@@ -1856,6 +1824,7 @@ footer{
     #recommendMovie{
         width: 100%;
         height: get-vw(381.5px);
+    
         background: url('../image/main3/redblack_bg.png') no-repeat center center;
         background-size: cover;
         display: flex;
