@@ -258,7 +258,7 @@ header ul li:hover {
   -webkit-transition: 1s;
   transition: 1s;
   font-size: 0.83333vw;
-  font-weight: regular;
+  font-weight: normal;
   display: block;
   padding-left: 0.36458vw;
   padding-bottom: 1.40625vw;
@@ -1278,8 +1278,8 @@ header ul li:hover {
   height: 16.6666vw;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 #cinema article:nth-child(2) ul li {
@@ -2104,7 +2104,7 @@ footer .Topbtn img {
   }
   #main #sidebg .index p {
     font-size: 32px;
-    font-weight: regular;
+    font-weight: normal;
   }
   #main #sidebg .index p span {
     font-size: 3.125vw;
